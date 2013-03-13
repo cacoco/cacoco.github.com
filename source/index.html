@@ -1,0 +1,55 @@
+---
+layout: bootstrap
+---
+
+<div class="row-fluid">
+	<div class="span3">
+		<div class="well sidebar-nav">
+			<ul class="nav nav-list">
+				<li class="nav-header">Blog</li>				
+				{% if site.blog_index_asides.size %}
+			    	{% include_array blog_index_asides %}
+			    {% else %}
+			    	{% include_array default_asides %}
+			    {% endif %}
+				<li class="nav-header">Personal</li>
+				<li><a href="http://resume.linkedinlabs.com/ik9f748e7">LinkedIn Resumé</a></li>
+				<li><a href="http://resume.github.com/?cacoco">Github Resumé</a></li>
+				<li><a href="/about">About</a></li>
+				<li class="nav-header">On the Internet</li>
+				<li><a href="http://flickr.com/photos/strangerinberkeley/sets" title="see me">Flickr</a></li>
+				<li><a href="http://coderwall.com/cacoco" title="i'm trying">Coderwall</a></li>			
+			</ul>
+		</div><!--/.well -->
+		<span><a href="https://twitter.com/cac" class="twitter-follow-button" data-show-count="false">Follow @cac</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></span><br /><p>
+		<span><p><iframe src="http://ghbtns.com/github-btn.html?user=cacoco&type=follow" allowtransparency="true" frameborder="0" scrolling="0" width="132" height="20"></iframe></p></span>
+		<span><a href="http://www.linkedin.com/in/ccoco"><img src="http://www.linkedin.com/img/webpromo/btn_myprofile_160x33.png" width="160" height="33" border="0" alt="View Christopher Coco's profile on LinkedIn"></a></span>				
+	</div><!--/span-->
+	<div class="span9">
+		<div class="hero-unit" style="color:white; background-image: url('images/IMG_2587.JPG')">
+			<h1>life and code <font size="-1">in</font> small doses.</h1>
+			<p class="lead">Writings and code from another programmer.</p>
+		</div>
+		<div class="row-fluid">
+			<div class="span12">
+				{% assign index = true %}
+				  {% for post in paginator.posts %}
+				  {% assign content = post.content %}
+				    <article>
+				      {% include article.html %}
+				    </article>
+				  {% endfor %}
+				  <div class="pagination">
+				    {% if paginator.next_page %}
+				      <a class="prev" href="{{paginator.next_page}}">&larr; Older</a>
+				    {% endif %}
+				    <a href="/blog/archives">Blog Archives</a>
+				    {% if paginator.previous_page %}
+				    <a class="next" href="{{paginator.previous_page}}">Newer &rarr;</a>
+				    {% endif %}
+				 </div>
+			</div><!--/span-->			
+		</div><!--/row-->
+	</div><!--/span-->
+</div><!--/row-->
+</div>
