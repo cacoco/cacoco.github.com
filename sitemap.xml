@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
+    <url>
+        <loc>http://cacoco.github.com/blog/2013/01/12/seven-deadly-sins-geometry/</loc>
+        <lastmod>2013-03-13T07:30:00-07:00</lastmod>
+    </url>
+    <url>
+        <loc>http://cacoco.github.com/blog/2013/03/10/sensible-tmux-defaults/</loc>
+        <lastmod>2013-03-13T07:31:10-07:00</lastmod>
+    </url>
+    <url>
+        <loc>http://cacoco.github.com/about/</loc>
+        <lastmod>2013-03-13T07:18:23-07:00</lastmod>
+    </url>
+    <url>
+        <loc>http://cacoco.github.com/blog/archives/</loc>
+        <lastmod>2013-03-13T07:31:10-07:00</lastmod>
+    </url>
+    <url>
+        <loc>http://cacoco.github.com/</loc>
+        <lastmod>2013-03-13T07:31:10-07:00</lastmod>
+    </url>
+    <url>
+        <loc>http://cacoco.github.com/robots.txt</loc>
+        <lastmod>2013-03-13T07:18:23-07:00</lastmod>
+    </url>
+</urlset>
