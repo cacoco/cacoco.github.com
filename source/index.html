@@ -5,20 +5,20 @@ layout: bootstrap
 <div class="row-fluid">
 	<div class="span3">
 		<div class="well sidebar-nav">
-			<ul class="nav nav-list">
-				<li class="nav-header">Blog</li>				
+			<ul class="nav nav-list">				
+				<li class="nav-header"><i class="icon-user"></i>&nbsp;Personal</li>
+				<li><a href="http://resume.linkedinlabs.com/ik9f748e7">LinkedIn Resumé</a></li>
+				<li><a href="http://resume.github.com/?cacoco">Github Resumé</a></li>
+				<li><a href="/about">About</a></li>
+				<li class="nav-header"><i class="icon-globe"></i>&nbsp;On the Internet</li>
+				<li><a href="http://flickr.com/photos/strangerinberkeley/sets" title="see me">Flickr</a></li>
+				<li><a href="http://coderwall.com/cacoco" title="i'm trying">Coderwall</a></li>
+				<li class="nav-header"><i class="icon-list"></i>&nbsp;Blog</li>			
 				{% if site.blog_index_asides.size %}
 			    	{% include_array blog_index_asides %}
 			    {% else %}
 			    	{% include_array default_asides %}
-			    {% endif %}
-				<li class="nav-header">Personal</li>
-				<li><a href="http://resume.linkedinlabs.com/ik9f748e7">LinkedIn Resumé</a></li>
-				<li><a href="http://resume.github.com/?cacoco">Github Resumé</a></li>
-				<li><a href="/about">About</a></li>
-				<li class="nav-header">On the Internet</li>
-				<li><a href="http://flickr.com/photos/strangerinberkeley/sets" title="see me">Flickr</a></li>
-				<li><a href="http://coderwall.com/cacoco" title="i'm trying">Coderwall</a></li>			
+			    {% endif %}			
 			</ul>
 		</div><!--/.well -->
 		<span><a href="https://twitter.com/cac" class="twitter-follow-button" data-show-count="false">Follow @cac</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></span><br /><p>

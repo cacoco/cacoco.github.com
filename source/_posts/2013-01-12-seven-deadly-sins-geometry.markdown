@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Seven Deadly Sins Geometry"
-date: 2013-03-12 21:18
+date: 2013-01-12 21:18
 comments: false
 categories: 
 ---
