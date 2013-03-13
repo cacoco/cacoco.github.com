@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[angstrom.io]]></title>
+  <link href="http://cacoco.github.com/atom.xml" rel="self"/>
+  <link href="http://cacoco.github.com/"/>
+  <updated>2013-03-12T23:16:27-07:00</updated>
+  <id>http://cacoco.github.com/</id>
+  <author>
+    <name><![CDATA[Christopher Coco]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+</feed>
