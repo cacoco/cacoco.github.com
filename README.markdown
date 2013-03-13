@@ -7,8 +7,4 @@ Website + Blog using [Octopress](http://octopress.org/) and [Twitter Bootstrap](
 
 ## Documentation  
 
-rake generate  
-rake preview  
-rake deploy
-
 [Blogging basics](http://octopress.org/docs/blogging/) from Octopress.
