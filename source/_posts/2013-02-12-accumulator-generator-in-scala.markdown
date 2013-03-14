@@ -1,10 +1,9 @@
 ---
 layout: post
 title: "Accumulator Generator in Scala"
-date: 2013-03-12 23:01
+date: 2013-02-12 23:01
 comments: false
 categories:
-published: false
 ---
 
 [http://www.paulgraham.com/accgen.html](http://www.paulgraham.com/accgen.html)
