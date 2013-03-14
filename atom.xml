@@ -4,7 +4,7 @@
   <title><![CDATA[angstrom.io]]></title>
   <link href="http://cacoco.github.com/atom.xml" rel="self"/>
   <link href="http://cacoco.github.com/"/>
-  <updated>2013-03-13T19:49:01-07:00</updated>
+  <updated>2013-03-13T20:17:12-07:00</updated>
   <id>http://cacoco.github.com/</id>
   <author>
     <name><![CDATA[Christopher Coco]]></name>
@@ -33,6 +33,21 @@
     <updated>2013-03-10T21:20:00-07:00</updated>
     <id>http://cacoco.github.com/blog/2013/03/10/sensible-tmux-defaults</id>
     <content type="html"><![CDATA[<script src="https://gist.github.com/cacoco/4033534.js"></script>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Accumulator Generator in Scala]]></title>
+    <link href="http://cacoco.github.com/blog/2013/02/12/accumulator-generator-in-scala/"/>
+    <updated>2013-02-12T23:01:00-08:00</updated>
+    <id>http://cacoco.github.com/blog/2013/02/12/accumulator-generator-in-scala</id>
+    <content type="html"><![CDATA[<p><a href="http://www.paulgraham.com/accgen.html">http://www.paulgraham.com/accgen.html</a></p>
+
+<!-- more -->
+
+
+<script src="https://gist.github.com/cacoco/4757252.js"></script>
 
 ]]></content>
   </entry>
