@@ -4,7 +4,7 @@
   <title><![CDATA[angstrom.io]]></title>
   <link href="http://cacoco.github.com/atom.xml" rel="self"/>
   <link href="http://cacoco.github.com/"/>
-  <updated>2013-03-13T07:37:02-07:00</updated>
+  <updated>2013-03-13T19:49:01-07:00</updated>
   <id>http://cacoco.github.com/</id>
   <author>
     <name><![CDATA[Christopher Coco]]></name>
@@ -12,6 +12,20 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Everyone is a moon]]></title>
+    <link href="http://cacoco.github.com/blog/2013/03/12/every-man-is-a-moon/"/>
+    <updated>2013-03-12T21:03:00-07:00</updated>
+    <id>http://cacoco.github.com/blog/2013/03/12/every-man-is-a-moon</id>
+    <content type="html"><![CDATA[<p>&#8220;Everyone is a moon, and has a dark side which he never shows to anybody.&#8221; - Mark Twain</p>
+
+<!-- more -->
+
+
+<p><img src="http://1.bp.blogspot.com/_9W3fkyH4VJk/Rx2NaGiFygI/AAAAAAAAAGg/mO3X9Kygugc/s1600/moonhi.jpg" alt="moon" /></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Some sensible TMUX defaults]]></title>
