@@ -6,4 +6,9 @@ comments: false
 categories:
 ---
 
-<script src="https://gist.github.com/cacoco/4033534.js"></script>
+<div class="row">
+	<div class="span8">
+		<script src="https://gist.github.com/cacoco/4033534.js"></script>
+	</div>
+</div>
+

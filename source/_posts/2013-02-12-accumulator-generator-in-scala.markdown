@@ -9,4 +9,8 @@ categories:
 [http://www.paulgraham.com/accgen.html](http://www.paulgraham.com/accgen.html)
 
 <!-- more -->
-<script src="https://gist.github.com/cacoco/4757252.js"></script>
+<div class="row">
+	<div class="span8">
+		<script src="https://gist.github.com/cacoco/4757252.js"></script>
+	</div>
+</div>

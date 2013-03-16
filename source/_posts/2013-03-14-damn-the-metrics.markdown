@@ -6,4 +6,10 @@ comments: false
 categories:
 ---
 <!-- more -->
-![damn](/images/damn.png)
+<div class="container-fluid">
+	<div class="row">
+		<div class="span8">
+			<img alt="Damn the Metrics, Full Speed Ahead." src="/images/damn.png">
+		</div>
+	</div>
+</div>
