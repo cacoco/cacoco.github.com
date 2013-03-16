@@ -8,8 +8,7 @@ categories:
 
 [http://www.paulgraham.com/accgen.html](http://www.paulgraham.com/accgen.html)
 
-<!-- more -->
-<div class="row">
+<div class="row-fluid">
 	<div class="span8">
 		<script src="https://gist.github.com/cacoco/4757252.js"></script>
 	</div>
