@@ -6,4 +6,10 @@ comments: false
 categories: 
 ---
 
-![Seven Deadly Sins](http://1.bp.blogspot.com/_9W3fkyH4VJk/RvBtohakgqI/AAAAAAAAAFA/Z3CAmzf8vwg/s1600/seven-deadly-sins.gif)
+<div class="container-fluid">
+	<div class="row-fluid">
+		<div class="span8">
+			<img alt="Seven Deadly Sins Geometry" src="http://1.bp.blogspot.com/_9W3fkyH4VJk/RvBtohakgqI/AAAAAAAAAFA/Z3CAmzf8vwg/s1600/seven-deadly-sins.gif">
+		</div>
+	</div>
+</div>
