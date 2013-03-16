@@ -1,24 +1,28 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
+        <loc>http://cacoco.github.com/blog/2012/10/27/childhood/</loc>
+        <lastmod>2013-03-16T08:11:38-07:00</lastmod>
+    </url>
+    <url>
         <loc>http://cacoco.github.com/blog/2013/01/12/seven-deadly-sins-geometry/</loc>
         <lastmod>2013-03-15T21:33:22-07:00</lastmod>
     </url>
     <url>
         <loc>http://cacoco.github.com/blog/2013/02/12/accumulator-generator-in-scala/</loc>
-        <lastmod>2013-03-15T21:33:22-07:00</lastmod>
+        <lastmod>2013-03-16T08:03:32-07:00</lastmod>
     </url>
     <url>
         <loc>http://cacoco.github.com/blog/2013/03/10/sensible-tmux-defaults/</loc>
-        <lastmod>2013-03-15T21:33:22-07:00</lastmod>
+        <lastmod>2013-03-16T08:03:10-07:00</lastmod>
     </url>
     <url>
         <loc>http://cacoco.github.com/blog/2013/03/12/every-man-is-a-moon/</loc>
-        <lastmod>2013-03-15T21:33:22-07:00</lastmod>
+        <lastmod>2013-03-16T08:13:28-07:00</lastmod>
     </url>
     <url>
         <loc>http://cacoco.github.com/blog/2013/03/14/damn-the-metrics/</loc>
-        <lastmod>2013-03-15T21:56:52-07:00</lastmod>
+        <lastmod>2013-03-16T08:07:31-07:00</lastmod>
     </url>
     <url>
         <loc>http://cacoco.github.com/about/</loc>
@@ -26,11 +30,11 @@
     </url>
     <url>
         <loc>http://cacoco.github.com/blog/archives/</loc>
-        <lastmod>2013-03-15T21:56:52-07:00</lastmod>
+        <lastmod>2013-03-16T08:13:28-07:00</lastmod>
     </url>
     <url>
         <loc>http://cacoco.github.com/</loc>
-        <lastmod>2013-03-15T21:56:52-07:00</lastmod>
+        <lastmod>2013-03-16T08:13:28-07:00</lastmod>
     </url>
     <url>
         <loc>http://cacoco.github.com/robots.txt</loc>

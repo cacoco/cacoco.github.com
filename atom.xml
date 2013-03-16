@@ -4,7 +4,7 @@
   <title><![CDATA[angstrom.io]]></title>
   <link href="http://cacoco.github.com/atom.xml" rel="self"/>
   <link href="http://cacoco.github.com/"/>
-  <updated>2013-03-15T21:59:29-07:00</updated>
+  <updated>2013-03-16T08:15:56-07:00</updated>
   <id>http://cacoco.github.com/</id>
   <author>
     <name><![CDATA[Christopher Coco]]></name>
@@ -21,7 +21,14 @@
     <content type="html"><![CDATA[<!-- more -->
 
 
-<p><img src="http://cacoco.github.com/images/damn.png" alt="damn" /></p>
+<div class="container-fluid">
+    <div class="row">
+        <div class="span8">
+            <img alt="Damn the Metrics, Full Speed Ahead." src="http://cacoco.github.com/images/damn.png">
+        </div>
+    </div>
+</div>
+
 ]]></content>
   </entry>
   
@@ -44,7 +51,13 @@
     <link href="http://cacoco.github.com/blog/2013/03/10/sensible-tmux-defaults/"/>
     <updated>2013-03-10T21:20:00-07:00</updated>
     <id>http://cacoco.github.com/blog/2013/03/10/sensible-tmux-defaults</id>
-    <content type="html"><![CDATA[<script src="https://gist.github.com/cacoco/4033534.js"></script>
+    <content type="html"><![CDATA[<div class="row">
+    <div class="span8">
+        <script src="https://gist.github.com/cacoco/4033534.js"></script>
+    </div>
+</div>
+
+
 
 ]]></content>
   </entry>
@@ -59,7 +72,11 @@
 <!-- more -->
 
 
-<script src="https://gist.github.com/cacoco/4757252.js"></script>
+<div class="row">
+    <div class="span8">
+        <script src="https://gist.github.com/cacoco/4757252.js"></script>
+    </div>
+</div>
 
 ]]></content>
   </entry>
@@ -70,6 +87,31 @@
     <updated>2013-01-12T21:18:00-08:00</updated>
     <id>http://cacoco.github.com/blog/2013/01/12/seven-deadly-sins-geometry</id>
     <content type="html"><![CDATA[<p><img src="http://1.bp.blogspot.com/_9W3fkyH4VJk/RvBtohakgqI/AAAAAAAAAFA/Z3CAmzf8vwg/s1600/seven-deadly-sins.gif" alt="Seven Deadly Sins" /></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Childhood]]></title>
+    <link href="http://cacoco.github.com/blog/2012/10/27/childhood/"/>
+    <updated>2012-10-27T21:32:00-07:00</updated>
+    <id>http://cacoco.github.com/blog/2012/10/27/childhood</id>
+    <content type="html"><![CDATA[<p>Childhood Flow Chart</p>
+
+<!-- more -->
+
+
+
+
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="span8">
+            <img alt="Childhood Flow Chart" src="http://cacoco.github.com/images/09opart.large.gif">
+            <p />
+            <span style="font-size: -2;"><a href="http://www.nytimes.com/ref/membercenter/help/copyright.html">Copyright 2008</a>&nbsp;&middot;&nbsp;<a class="footer" href="http://www.nytco.com/">The New York Times Company</a></span>
+        </div>
+    </div>
+</div>
+
 ]]></content>
   </entry>
   
