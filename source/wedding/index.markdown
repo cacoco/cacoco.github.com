@@ -7,7 +7,7 @@ sharing: false
 footer: true
 ---
 
-In February of 2012, my wife and I attended the DIY Wedding ring workshop at [Scintillant Studio​](http://www.diyweddingrings.com/) to make our bands for our wedding in July of the same year.<br />
+In April of 2012, my wife and I attended the DIY Wedding ring workshop at [Scintillant Studio​](http://www.diyweddingrings.com/) to make our bands for our wedding in July of the same year.<br />
 <p /> 
 Here's a collage of the pictures we took:
 <p />
