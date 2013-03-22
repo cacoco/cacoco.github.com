@@ -4,7 +4,7 @@
   <title><![CDATA[angstrom.io]]></title>
   <link href="http://cacoco.github.com/atom.xml" rel="self"/>
   <link href="http://cacoco.github.com/"/>
-  <updated>2013-03-17T19:28:25-07:00</updated>
+  <updated>2013-03-21T22:28:51-07:00</updated>
   <id>http://cacoco.github.com/</id>
   <author>
     <name><![CDATA[Christopher Coco]]></name>
@@ -12,6 +12,25 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Bikes of San Francisco]]></title>
+    <link href="http://cacoco.github.com/blog/2013/03/16/bikes-of-san-francisco/"/>
+    <updated>2013-03-16T07:55:00-07:00</updated>
+    <id>http://cacoco.github.com/blog/2013/03/16/bikes-of-san-francisco</id>
+    <content type="html"><![CDATA[<!-- more -->
+
+
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="span8">
+            <img alt="Bikes Of San Francisco" src="http://cacoco.github.com/images/5112789301_6721e579be_o.jpg">
+        </div>
+    </div>
+</div>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Damn the Metrics...]]></title>
