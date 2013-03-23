@@ -4,7 +4,7 @@
   <title><![CDATA[angstrom.io]]></title>
   <link href="http://cacoco.github.com/atom.xml" rel="self"/>
   <link href="http://cacoco.github.com/"/>
-  <updated>2013-03-21T22:28:51-07:00</updated>
+  <updated>2013-03-23T11:08:51-07:00</updated>
   <id>http://cacoco.github.com/</id>
   <author>
     <name><![CDATA[Christopher Coco]]></name>
@@ -111,6 +111,25 @@
     <div class="row-fluid">
         <div class="span8">
             <img alt="Seven Deadly Sins Geometry" src="http://1.bp.blogspot.com/_9W3fkyH4VJk/RvBtohakgqI/AAAAAAAAAFA/Z3CAmzf8vwg/s1600/seven-deadly-sins.gif">
+        </div>
+    </div>
+</div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Cartooning Workshop]]></title>
+    <link href="http://cacoco.github.com/blog/2012/11/10/cartooning-workshop/"/>
+    <updated>2012-11-10T10:53:00-08:00</updated>
+    <id>http://cacoco.github.com/blog/2012/11/10/cartooning-workshop</id>
+    <content type="html"><![CDATA[<!-- more -->
+
+
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="span8">
+            <img alt="Cartonning Workshop" src="http://cacoco.github.com/images/A7Y174CCIAAuAxd.jpg">
         </div>
     </div>
 </div>
