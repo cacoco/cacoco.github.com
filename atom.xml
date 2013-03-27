@@ -4,7 +4,7 @@
   <title><![CDATA[angstrom.io]]></title>
   <link href="http://cacoco.github.com/atom.xml" rel="self"/>
   <link href="http://cacoco.github.com/"/>
-  <updated>2013-03-24T18:24:26-07:00</updated>
+  <updated>2013-03-26T21:26:25-07:00</updated>
   <id>http://cacoco.github.com/</id>
   <author>
     <name><![CDATA[Christopher Coco]]></name>
@@ -12,6 +12,27 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Out of Sorts]]></title>
+    <link href="http://cacoco.github.com/blog/2013/03/22/out-of-sorts/"/>
+    <updated>2013-03-22T22:48:00-07:00</updated>
+    <id>http://cacoco.github.com/blog/2013/03/22/out-of-sorts</id>
+    <content type="html"><![CDATA[<!-- more -->
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="span8">
+            <img alt="Ineffective Sorts" src="http://imgs.xkcd.com/comics/ineffective_sorts.png">
+            <br />
+            <span class="credit center">via <a href="http://xkcd.com/">xkcd.com</a></span>
+        </div>
+    </div>
+</div>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Bikes of San Francisco]]></title>
