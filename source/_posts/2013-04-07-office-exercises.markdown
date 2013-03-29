@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Be A Warning"
-date: 2013-03-26 21:19
+title: "Office Exercises"
+date: 2013-04-07 19:48
 comments: false
 categories: 
 published: false
@@ -11,7 +11,7 @@ published: false
 <div class="container-fluid">
 	<div class="row">
 		<div class="span8">
-			<img alt="If you can't be an example, be a warning." src="/images/warning.png">
+			<img alt="Office Exercises." src="http://eyeprotectorpro.com/officeexercises.png">
 		</div>
 	</div>
 </div>
