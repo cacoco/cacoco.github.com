@@ -4,7 +4,6 @@ title: "Hibi No Neiro"
 date: 2013-04-01 19:52
 comments: false
 categories: 
-published: false
 ---
 SOUR '日々の音色 (Hibi no neiro)'
 <!-- more -->
