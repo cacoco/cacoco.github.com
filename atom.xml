@@ -4,7 +4,7 @@
   <title><![CDATA[angstrom.io]]></title>
   <link href="http://cacoco.github.com/atom.xml" rel="self"/>
   <link href="http://cacoco.github.com/"/>
-  <updated>2013-03-29T21:34:09-07:00</updated>
+  <updated>2013-03-31T21:12:27-07:00</updated>
   <id>http://cacoco.github.com/</id>
   <author>
     <name><![CDATA[Christopher Coco]]></name>
@@ -12,6 +12,27 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Hibi No Neiro]]></title>
+    <link href="http://cacoco.github.com/blog/2013/04/01/hibi-no-neiro/"/>
+    <updated>2013-04-01T19:52:00-07:00</updated>
+    <id>http://cacoco.github.com/blog/2013/04/01/hibi-no-neiro</id>
+    <content type="html"><![CDATA[<p>SOUR &#8216;日々の音色 (Hibi no neiro)&#8217;</p>
+
+<!-- more -->
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="span8">
+            <iframe width="420" height="315" src="https://www.youtube-nocookie.com/embed/WfBlUQguvyw?rel=0" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Out of Sorts]]></title>
