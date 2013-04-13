@@ -4,7 +4,7 @@
   <title><![CDATA[angstrom.io]]></title>
   <link href="http://cacoco.github.com/atom.xml" rel="self"/>
   <link href="http://cacoco.github.com/"/>
-  <updated>2013-03-31T21:12:27-07:00</updated>
+  <updated>2013-04-12T19:27:16-07:00</updated>
   <id>http://cacoco.github.com/</id>
   <author>
     <name><![CDATA[Christopher Coco]]></name>
@@ -12,6 +12,44 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Be A Warning]]></title>
+    <link href="http://cacoco.github.com/blog/2013/04/12/be-a-warning/"/>
+    <updated>2013-04-12T21:19:00-07:00</updated>
+    <id>http://cacoco.github.com/blog/2013/04/12/be-a-warning</id>
+    <content type="html"><![CDATA[<!-- more -->
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="span8">
+            <img alt="If you can't be an example, be a warning." src="http://cacoco.github.com/images/warning.png">
+        </div>
+    </div>
+</div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Office Exercises]]></title>
+    <link href="http://cacoco.github.com/blog/2013/04/07/office-exercises/"/>
+    <updated>2013-04-07T19:48:00-07:00</updated>
+    <id>http://cacoco.github.com/blog/2013/04/07/office-exercises</id>
+    <content type="html"><![CDATA[<!-- more -->
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="span8">
+            <img alt="Office Exercises." src="http://eyeprotectorpro.com/officeexercises.png">
+        </div>
+    </div>
+</div>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Hibi No Neiro]]></title>
