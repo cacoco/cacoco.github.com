@@ -35,5 +35,6 @@ I think it looks like this.
 
 links:
 http://www.success.com/articles/1024-jim-collins-hedgehog-concept
+http://www.jimcollins.com/media_topics/hedgehog-concept.html#audio=79
 
 
