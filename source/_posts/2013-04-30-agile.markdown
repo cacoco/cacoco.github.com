@@ -1,0 +1,20 @@
+---
+layout: post
+title: "Agile"
+date: 2013-04-30 20:22
+comments: false
+categories: 
+published: false
+---
+
+_"It's not done until it's done."_
+
+<!-- more -->
+
+Tasking/sizing.
+
+Speaking to the board. Having stakeholders in scrum.
+
+Tracking velocity.
+
+Feedback loop.
