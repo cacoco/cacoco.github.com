@@ -4,7 +4,7 @@
   <title><![CDATA[angstrom.io]]></title>
   <link href="http://cacoco.github.com/atom.xml" rel="self"/>
   <link href="http://cacoco.github.com/"/>
-  <updated>2013-04-29T18:25:58-07:00</updated>
+  <updated>2013-04-30T21:02:45-07:00</updated>
   <id>http://cacoco.github.com/</id>
   <author>
     <name><![CDATA[Christopher Coco]]></name>
@@ -234,6 +234,29 @@
             <p />
             <span style="font-size: -2;"><a href="http://www.nytimes.com/ref/membercenter/help/copyright.html">Copyright 2008</a>&nbsp;&middot;&nbsp;<a class="footer" href="http://www.nytco.com/">The New York Times Company</a></span>
         </div>
+    </div>
+</div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Apache Buildr and Annotation Processing for AWS Simple Workflow]]></title>
+    <link href="http://cacoco.github.com/blog/2012/08/01/apache-buildr-and-annotation-processing-for-aws-simple-workflow/"/>
+    <updated>2012-08-01T20:44:00-07:00</updated>
+    <id>http://cacoco.github.com/blog/2012/08/01/apache-buildr-and-annotation-processing-for-aws-simple-workflow</id>
+    <content type="html"><![CDATA[<!-- more -->
+
+
+<p>I recently wrote <a href="http://mechanics.flite.com/blog/2012/07/26/using-apache-buildr-for-annotation-processing-for-amazon-simple-workflow/">an article</a> about how to use <a href="http://buildr.apache.org">Apache Buildr</a> to process Amazon&#8217;s custom annotations via <a href="http://docs.oracle.com/javase/6/docs/technotes/guides/apt/">APT</a> specifically for working with the <a href="http://docs.aws.amazon.com/amazonswf/2012-01-25/developerguide/swf-welcome.html">AWS Simple Workflow Service</a> &#8211; check it out.</p>
+
+<h4>TL;DR</h4>
+
+<p>You can use the following gist to generate Java sources using <a href="http://docs.oracle.com/javase/6/docs/technotes/guides/apt/">APT</a> in Apache Buildr:</p>
+
+<div class="row-fluid">
+    <div class="span12">
+        <script src="https://gist.github.com/cacoco/3137530.js"></script>
     </div>
 </div>
 

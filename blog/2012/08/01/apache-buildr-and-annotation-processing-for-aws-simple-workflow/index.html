@@ -5,10 +5,10 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
 	<meta charset="utf-8">
-	<title>life and code &middot; in small doses</title>
+	<title>Apache Buildr and Annotation Processing for AWS Simple Workflow - life and code &middot; in small doses</title>
 	<meta name="author" content="Christopher Coco">
 	
-	<meta name="description" content="">
+	<meta name="description" content="I recently wrote an article about how to use Apache Buildr to process Amazon&#8217;s custom annotations via APT specifically for working with the &hellip;">
 	
 
 	<!-- http://t.co/dKP3o1e -->
@@ -68,7 +68,7 @@
 	</style>
 	<link href="/stylesheets/bootstrap-responsive.css" rel="stylesheet">
 	
-	<link rel="canonical" href="http://cacoco.github.com/blog/page/3">
+	<link rel="canonical" href="http://cacoco.github.com/blog/2012/08/01/apache-buildr-and-annotation-processing-for-aws-simple-workflow">
 	<link href="/favicon.ico" rel="icon">
 	<script src="/javascripts/bootstrap.js" type="text/javascript"></script>
 	<!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
@@ -132,139 +132,12 @@
   <div id="wrap">
     <!-- Begin page content -->
 	 <div class="container-fluid">
-      <div class="row-fluid">
-	<div class="span3">
-		<div class="well sidebar-nav">
-			<ul class="nav nav-list">				
-				<li class="nav-header"><i class="icon-user"></i>&nbsp;Personal</li>
-				<li><a href="/about">About</a></li>
-				<li><a href="http://resume.github.com/?cacoco">Github Resumé</a></li>
-				<li><a href="http://resume.linkedinlabs.com/ik9f748e7">LinkedIn Resumé</a></li>								
-				<li class="nav-header"><i class="icon-globe"></i>&nbsp;On the Internet</li>
-				<li><a href="http://flickr.com/photos/strangerinberkeley/sets" title="see me">Flickr</a></li>
-				<li><a href="http://coderwall.com/cacoco" title="i'm trying">Coderwall</a></li>
-				<li class="nav-header"><i class="icon-list"></i>&nbsp;Blog</li>			
-				
-			    	
-  <li>
-  	<a href="/blog/2013/04/12/be-a-warning/">Be A Warning</a>
-  </li>
-
-  <li>
-  	<a href="/blog/2013/04/07/office-exercises/">Office Exercises</a>
-  </li>
-
-  <li>
-  	<a href="/blog/2013/04/01/hibi-no-neiro/">Hibi No Neiro</a>
-  </li>
-
-  <li>
-  	<a href="/blog/2013/03/22/out-of-sorts/">Out of Sorts</a>
-  </li>
-
-
-			    			
-			</ul>
-		</div><!--/.well -->
-		<span><a href="https://twitter.com/cacoco" class="twitter-follow-button" data-show-count="false">Follow @cacoco</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></span><br /><p>
-		<span><p><iframe src="http://ghbtns.com/github-btn.html?user=cacoco&type=follow" allowtransparency="true" frameborder="0" scrolling="0" width="132" height="20"></iframe></p></span>
-		<span><a href="http://www.linkedin.com/in/ccoco"><img src="http://www.linkedin.com/img/webpromo/btn_liprofile_blue_80x15.png" width="80" height="15" border="0" alt="View Christopher Coco's profile on LinkedIn"></a></span>				
-	</div><!--/span-->
-	<div class="span9">
-		<div class="hero-unit" style="color:white; background-image: url('/images/IMG_2587.JPG')">
-			<h1>life and code <font size="-1">in</font> small doses.</h1>
-			<p class="lead">Writings and code from another programmer.</p>
-		</div>
-		<div class="row-fluid">
-			<div class="span12">
-				
-				  
-				  
-				    <article>
-				      
+      <div>
+<article class="hentry" role="article">
+  
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2012/11/10/cartooning-workshop/">Cartooning Workshop</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-11-10T10:53:00-08:00" pubdate data-updated="true">Nov 10<span>th</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"></div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2012/11/10/cartooning-workshop/">Read on &rarr;</a>
-    </footer>
-  
-
-
-				    </article>
-				  
-				  
-				    <article>
-				      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/10/27/childhood/">Childhood</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-10-27T21:32:00-07:00" pubdate data-updated="true">Oct 27<span>th</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Childhood Flow Chart</p>
-
-</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2012/10/27/childhood/">Read on &rarr;</a>
-    </footer>
-  
-
-
-				    </article>
-				  
-				  
-				    <article>
-				      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/08/01/apache-buildr-and-annotation-processing-for-aws-simple-workflow/">Apache Buildr and Annotation Processing for AWS Simple Workflow</a></h1>
+      <h1 class="entry-title">Apache Buildr and Annotation Processing for AWS Simple Workflow&nbsp;&raquo;</h1>
     
     
       <p class="meta">
@@ -287,29 +160,91 @@
   </header>
 
 
-  <div class="entry-content"></div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2012/08/01/apache-buildr-and-annotation-processing-for-aws-simple-workflow/">Read on &rarr;</a>
-    </footer>
-  
+<div class="entry-content"><!-- more -->
 
 
-				    </article>
-				  
-				  <div class="pagination">
-				    
-				    &nbsp;&nbsp;<a href="/blog/archives">Blog Archives</a>
-				    
-				    &nbsp;&nbsp;<a class="next" href="/blog/page/2/">Newer &rarr;</a>
-				    
-				 </div>
-			</div><!--/span-->			
-		</div><!--/row-->
-	</div><!--/span-->
-</div><!--/row-->
+<p>I recently wrote <a href="http://mechanics.flite.com/blog/2012/07/26/using-apache-buildr-for-annotation-processing-for-amazon-simple-workflow/">an article</a> about how to use <a href="http://buildr.apache.org">Apache Buildr</a> to process Amazon&#8217;s custom annotations via <a href="http://docs.oracle.com/javase/6/docs/technotes/guides/apt/">APT</a> specifically for working with the <a href="http://docs.aws.amazon.com/amazonswf/2012-01-25/developerguide/swf-welcome.html">AWS Simple Workflow Service</a> &#8211; check it out.</p>
+
+<h4>TL;DR</h4>
+
+<p>You can use the following gist to generate Java sources using <a href="http://docs.oracle.com/javase/6/docs/technotes/guides/apt/">APT</a> in Apache Buildr:</p>
+
+<div class="row-fluid">
+    <div class="span12">
+        <script src="https://gist.github.com/cacoco/3137530.js"></script>
+    </div>
 </div>
+
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<p><span class="byline author vcard">Posted by <span class="fn">Christopher Coco</span></span></p>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-08-01T20:44:00-07:00" pubdate data-updated="true">Aug 1<span>st</span>, 2012</time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+      
+        <a class="pull-right" href="/blog/2012/10/27/childhood/" title="Next Post: Childhood">Childhood &raquo;</a>
+      
+    </p>
+    <br />&nbsp;<br />
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    
+  <li>
+  	<a href="/blog/2013/04/12/be-a-warning/">Be A Warning</a>
+  </li>
+
+  <li>
+  	<a href="/blog/2013/04/07/office-exercises/">Office Exercises</a>
+  </li>
+
+  <li>
+  	<a href="/blog/2013/04/01/hibi-no-neiro/">Hibi No Neiro</a>
+  </li>
+
+  <li>
+  	<a href="/blog/2013/03/22/out-of-sorts/">Out of Sorts</a>
+  </li>
+
+
+  
+</aside>
+
 
     </div>
 	<div id="push"></div>
