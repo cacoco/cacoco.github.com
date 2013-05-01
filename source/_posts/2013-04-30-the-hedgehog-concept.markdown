@@ -31,6 +31,9 @@ What has been less successful is the splintering of information and the increase
 
 So what does this concept look like for a team?
 
-I think it looks like this. 
+I think it looks like this.
+
+links:
+http://www.success.com/articles/1024-jim-collins-hedgehog-concept
 
 

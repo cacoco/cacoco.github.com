@@ -18,3 +18,5 @@ Speaking to the board. Having stakeholders in scrum.
 Tracking velocity.
 
 Feedback loop.
+
+Consistency and rhythm.
