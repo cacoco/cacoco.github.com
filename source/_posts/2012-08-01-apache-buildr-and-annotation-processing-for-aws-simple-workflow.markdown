@@ -7,9 +7,9 @@ categories:
 published: true
 ---
 
-<!-- more -->
-
 I recently wrote [an article](http://mechanics.flite.com/blog/2012/07/26/using-apache-buildr-for-annotation-processing-for-amazon-simple-workflow/) about how to use [Apache Buildr](http://buildr.apache.org) to process Amazon's custom annotations via [APT](http://docs.oracle.com/javase/6/docs/technotes/guides/apt/) specifically for working with the [AWS Simple Workflow Service](http://docs.aws.amazon.com/amazonswf/2012-01-25/developerguide/swf-welcome.html) -- check it out. 
+
+<!-- more -->
 
 ####TL;DR 
 
