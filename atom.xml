@@ -4,7 +4,7 @@
   <title><![CDATA[angstrom.io]]></title>
   <link href="http://cacoco.github.com/atom.xml" rel="self"/>
   <link href="http://cacoco.github.com/"/>
-  <updated>2013-05-05T11:18:38-07:00</updated>
+  <updated>2013-05-05T11:29:31-07:00</updated>
   <id>http://cacoco.github.com/</id>
   <author>
     <name><![CDATA[Christopher Coco]]></name>
@@ -49,7 +49,7 @@
 
 <h4>Loading the File</h4>
 
-<p>Most of our applications were written in Java using Spring for dependency injection. We wrapped the <code>com.maxmind.geoip.LookupService</code> in a thin layer of our own code to provide our applications with a simple interface. To do this we made our service inherit from Spring&#8217;s ApplicationContextAware Interface and override the <code>setApplicationContext(..)</code> method like such:</p>
+<p>Most of our applications were written in Java using <a href="http://www.springsource.org/documentation">Spring</a> for dependency injection. We wrapped the <code>com.maxmind.geoip.LookupService</code> in a thin layer of our own code to provide our applications with a simple interface. To do this we made our service inherit from Spring&#8217;s ApplicationContextAware Interface and override the <code>setApplicationContext(..)</code> method like such:</p>
 
 <div class="row-fluid">
   <div class="span10">
