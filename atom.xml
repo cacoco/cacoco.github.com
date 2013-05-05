@@ -4,7 +4,7 @@
   <title><![CDATA[angstrom.io]]></title>
   <link href="http://cacoco.github.com/atom.xml" rel="self"/>
   <link href="http://cacoco.github.com/"/>
-  <updated>2013-04-30T21:08:19-07:00</updated>
+  <updated>2013-05-04T20:44:29-07:00</updated>
   <id>http://cacoco.github.com/</id>
   <author>
     <name><![CDATA[Christopher Coco]]></name>
@@ -12,6 +12,57 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[MaxMind, Maven, and Thor]]></title>
+    <link href="http://cacoco.github.com/blog/2013/05/04/install-latest-maxmind-database-into-maven-repository-using-thor/"/>
+    <updated>2013-05-04T09:36:00-07:00</updated>
+    <id>http://cacoco.github.com/blog/2013/05/04/install-latest-maxmind-database-into-maven-repository-using-thor</id>
+    <content type="html"><![CDATA[<!-- more -->
+
+
+<p>In a previous life, my company used the <a href="http://www.maxmind.com/en/home">MaxMind</a> GeoIP database for geo-location information based on client IP addresses. We packaged the .dat file into a JAR which we included on the classpath for use in instantiating a <a href="https://github.com/maxmind/geoip-api-java/blob/master/source/com/maxmind/geoip/LookupService.java">com.maxmind.geoip.LookupService</a> object.</p>
+
+<p>We generally updated the database once a quarter, so I wrote a <a href="https://github.com/wycats/thor">Thor</a> script to download the .dat file, put it into a JAR, and then upload the JAR as a Maven artifact to a Maven-compatible repository (Nexus or Artifactory). The default download location is <code>~/Downloads</code> but it&#8217;s configurable via the passed in &#8216;temp&#8217; argument: <code>--temp=/tmp</code>.</p>
+
+<h4>Thor File</h4>
+
+<div class="row-fluid">
+  <div class="span10">
+    <script src="https://gist.github.com/cacoco/5518012.js"></script>
+  </div>
+</div>
+
+
+<p>We used an <a href="http://en.wikipedia.org/wiki/ISO_8601">ISO 8601</a> timestamp as the version, i.e., <em>2011-02-25</em></p>
+
+<h4>Including as a Maven dependency</h4>
+
+<div class="row-fluid">
+  <div class="span8">
+    <script src="https://gist.github.com/cacoco/5518076.js"></script>
+  </div>
+</div>
+
+
+<p></p>
+
+<p>where we define: <code>&lt;geocity.version&gt;2011-02-25&lt;/geocity.version&gt;</code> in the <code>&lt;properties/&gt;</code> section of the pom.xml.</p>
+
+<h4>Loading the File</h4>
+
+<p>Most of our applications were written in Java and we used Spring for dependency injection. We wrapped the <code>com.maxmind.geoip.LookupService</code> in a thin layer of our own code to provide our applications with a stable interface. To do this we made our service inherit from Spring&#8217;s ApplicationContextAware Interface and override the <code>setApplicationContext(..)</code> method like such:</p>
+
+<div class="row-fluid">
+  <div class="span10">
+    <script src="https://gist.github.com/cacoco/5518218.js"></script>
+  </div>
+</div>
+
+
+<p></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Be A Warning]]></title>
