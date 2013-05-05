@@ -4,7 +4,7 @@
   <title><![CDATA[angstrom.io]]></title>
   <link href="http://cacoco.github.com/atom.xml" rel="self"/>
   <link href="http://cacoco.github.com/"/>
-  <updated>2013-05-05T11:29:31-07:00</updated>
+  <updated>2013-05-05T15:16:45-07:00</updated>
   <id>http://cacoco.github.com/</id>
   <author>
     <name><![CDATA[Christopher Coco]]></name>
@@ -23,7 +23,7 @@
 <!-- more -->
 
 
-<p>Generally, we updated the database once a quarter so I wrote a <a href="https://github.com/wycats/thor">Thor</a> script to download the .dat file, put it into a JAR, and then upload the JAR as a Maven artifact to a Maven-compatible repository (Nexus or Artifactory). The default download location is <code>~/Downloads</code> but it&#8217;s configurable via the passed in &#8216;temp&#8217; argument: <code>--temp=/tmp</code>.</p>
+<p>Generally, we updated the database once a quarter so I wrote a <a href="https://github.com/wycats/thor">Thor</a> script to download the .dat file, put it into a JAR, and upload the JAR as a Maven artifact to a Maven-compatible repository (we used <a href="http://www.sonatype.org/nexus/">Nexus</a>). The default download location is <code>~/Downloads</code> but it&#8217;s configurable via the passed in &#8216;temp&#8217; argument: <code>--temp=/tmp</code>.</p>
 
 <h4>Thor File</h4>
 
