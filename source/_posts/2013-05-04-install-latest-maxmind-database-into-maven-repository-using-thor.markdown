@@ -11,7 +11,7 @@ In a previous life, my company used the [MaxMind](http://www.maxmind.com/en/home
 
 <!-- more -->
 
-Generally, we updated the database once a quarter so I wrote a [Thor](https://github.com/wycats/thor) script to download the .dat file, put it into a JAR, and then upload the JAR as a Maven artifact to a Maven-compatible repository (Nexus or Artifactory). The default download location is ```~/Downloads``` but it's configurable via the passed in 'temp' argument: ```--temp=/tmp```.
+Generally, we updated the database once a quarter so I wrote a [Thor](https://github.com/wycats/thor) script to download the .dat file, put it into a JAR, and upload the JAR as a Maven artifact to a Maven-compatible repository (we used [Nexus](http://www.sonatype.org/nexus/)). The default download location is ```~/Downloads``` but it's configurable via the passed in 'temp' argument: ```--temp=/tmp```.
 
 ####Thor File
 
