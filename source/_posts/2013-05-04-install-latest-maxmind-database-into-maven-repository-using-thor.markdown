@@ -31,6 +31,8 @@ We used an [ISO 8601](http://en.wikipedia.org/wiki/ISO_8601) timestamp as the ve
   </div>
 </div> 
 
+By including as a Maven dependency the JAR will be on the classpath and access to the .dat file can happen as a classpath resource.
+
 ####Loading the File
 
 Most of our applications were written in Java using [Spring](http://www.springsource.org/documentation) for dependency injection. We wrapped the ```com.maxmind.geoip.LookupService``` in a thin layer of our own code to provide our applications with a simple interface. To do this we made our service inherit from Spring's ApplicationContextAware Interface and override the ```setApplicationContext(..)``` method like such:

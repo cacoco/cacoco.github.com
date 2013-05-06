@@ -29,11 +29,9 @@ I've been thinking a lot about this concept recently. Specifically, how it might
 
 What has been less successful is the splintering of information and the increase in the need for communication between ever more teams. I think we do a good job of expressing high-level focus for our organization within the larger development organization. 
 
-What could this concept look like for a team?
+####What could this concept look like for a team?
 
-I think the idea is that everyone from the engineering manager to the newest person all have a clear understanding of the team's mission and how it impacts the business overall. Ideally, the team should do one thing and do it well. If it finds itself doing multiple things, then it should consider breaking itself up into smaller teams each focused on a singular area.
-
-Though, I do think problems can arise because if a team wants to be agile and practice scrum methodology. This typically means that the scrum team is cross-functional and consists of a product owner, the developers, and a scrum master. People can obviously serve in one or more roles at any given time but it should be clear who is performing what role or roles. In a development organization that is highly fractured there may not be the bandwidth for having the actual product owners attend different all scrums. If so, someone should proxy for them.
+I think the idea is that everyone from the engineering manager to the newest person all have a clear understanding of the team's mission and how it impacts the business overall. Most importantly, I think the concept needs to be constantly brought to the fore in measureable ways. Ways to do this would be by tracking new work against the team mission.
 
 links:
 http://www.success.com/articles/1024-jim-collins-hedgehog-concept
