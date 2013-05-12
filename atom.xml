@@ -4,7 +4,7 @@
   <title><![CDATA[angstrom.io]]></title>
   <link href="http://cacoco.github.com/atom.xml" rel="self"/>
   <link href="http://cacoco.github.com/"/>
-  <updated>2013-05-05T17:05:26-07:00</updated>
+  <updated>2013-05-11T22:26:17-07:00</updated>
   <id>http://cacoco.github.com/</id>
   <author>
     <name><![CDATA[Christopher Coco]]></name>
@@ -311,6 +311,38 @@
     </div>
 </div>
 
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Fizzbuzz]]></title>
+    <link href="http://cacoco.github.com/blog/2012/07/11/fizzbuzz/"/>
+    <updated>2012-07-11T22:07:00-07:00</updated>
+    <id>http://cacoco.github.com/blog/2012/07/11/fizzbuzz</id>
+    <content type="html"><![CDATA[<p><em>Birds do it. Bees do it. Even educated fleas do it. So let&#8217;s do it.</em></p>
+
+<!-- more -->
+
+
+<p>Ask any programmer these days and they&#8217;ve probably heard of it. They&#8217;ve probably have even written it. In multiple languages. <a href="http://weblog.raganwald.com/2007/01/dont-overthink-fizzbuzz.html">Fizzbuzz</a>.</p>
+
+<h4>The Problem</h4>
+
+<p>Write a program that prints the numbers from 1 to 100. But for multiples of 3 print &#8220;Fizz&#8221; instead of the number and for the multiples of 5 print &#8220;Buzz&#8221;.<br/>
+For numbers which are multiples of both three and five print &#8220;FizzBuzz&#8221;.</p>
+
+<p>I came across (probably much later than most everyone else) Jeff Atwood&#8217;s post on <a href="http://www.codinghorror.com/blog/2007/02/why-cant-programmers-program.html">the Fizzbuzz problem</a> as it pertains to interviewing programmers. Naturally, like <a href="http://www.codinghorror.com/blog/2007/02/fizzbuzz-the-programmers-stairway-to-heaven.html">any other progammer</a> I set out to prove to myself that I could indeed write a Fizzbuzz. The challenge was to write it as quickly as possible and to handicap myself I decided to do it in a language that I had only little experience with at the time: <a href="http://clojure.org/">Clojure</a>.</p>
+
+<h4>A Solution in Clojure</h4>
+
+<div class="row-fluid">
+  <div class="span10">
+    <script src="https://gist.github.com/cacoco/5562510.js"></script>
+  </div>
+</div>
+
+
+<p>Full project source available <a href="https://github.com/cacoco/fizzbuzz">on github</a>.</p>
 ]]></content>
   </entry>
   

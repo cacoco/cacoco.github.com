@@ -1,6 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
+        <loc>http://cacoco.github.com/blog/2012/07/11/fizzbuzz/</loc>
+        <lastmod>2013-05-11T22:25:42-07:00</lastmod>
+    </url>
+    <url>
         <loc>
             http://cacoco.github.com/blog/2012/08/01/apache-buildr-and-annotation-processing-for-aws-simple-workflow/
         </loc>
@@ -66,11 +70,11 @@
     </url>
     <url>
         <loc>http://cacoco.github.com/blog/archives/</loc>
-        <lastmod>2013-05-05T17:01:53-07:00</lastmod>
+        <lastmod>2013-05-11T22:25:42-07:00</lastmod>
     </url>
     <url>
         <loc>http://cacoco.github.com/</loc>
-        <lastmod>2013-05-05T17:01:53-07:00</lastmod>
+        <lastmod>2013-05-11T22:25:42-07:00</lastmod>
     </url>
     <url>
         <loc>http://cacoco.github.com/robots.txt</loc>
