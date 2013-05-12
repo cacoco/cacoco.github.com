@@ -11,7 +11,7 @@ _Birds do it. Bees do it. Even educated fleas do it. So let's do it._
 
 <!-- more -->
 
-Ask any programmer these days and they've probably heard of it. They've probably have even written it. In multiple languages. [Fizzbuzz](http://weblog.raganwald.com/2007/01/dont-overthink-fizzbuzz.html).
+Ask any programmer these days and they've probably heard of it. They've probably even written it. In multiple languages. [Fizzbuzz](http://weblog.raganwald.com/2007/01/dont-overthink-fizzbuzz.html).
 
 ####The Problem
 
