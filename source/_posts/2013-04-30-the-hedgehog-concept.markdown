@@ -27,7 +27,7 @@ Collins references the essay as a jump off point to introduce the nature of a he
 
 I've been thinking a lot about this concept recently. Specifically, how it might be applied not to a company as a whole but to a development organization or even to team within a larger development organization within a company. At work we've done a lot to decentralize code; forming new teams around functionality that should be pulled out into separate services and empowering people and teams to control their lifecycles and backlogs. This has been successful in allowing individual teams to innovate and to a large extent own their release cycles.
 
-What has been less successful is the splintering of information and the increase in the need for communication between ever more teams. I think we do a good job of expressing high-level focus for our organization within the larger development organization. 
+What has been less successful is the splintering of information and the increase in the need for communication between ever more teams. I think we do a good job of expressing high-level focus for our organization within the larger development organization. But I think avenues of communication are not yet established or clogged.
 
 ####What could this concept look like for a team?
 

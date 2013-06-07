@@ -11,12 +11,57 @@ _"It's not done until it's done."_
 
 <!-- more -->
 
-Tasking/sizing.
+In my previous company we started life as literally eight people in a room. Most all of us were ex-enterprise developers from a company that coded and shipped (_on disks_) a J2EE portal server. In our enterprise development days iteration cycles were 6 months to a year and customer feedback was incorporated a year or more later (if ever). When we started the new company, the eight of us decided we would do things differently. We were embarking on a new type of company -- a _web_ start-up and in 2006 we decided we would be _AGILE_.
+
+####Starting Out
+
+Our first step was cutting our development and release cycle down from 6+ months to 4 weeks (!). We were amazed with ourselves and proud that we weren't being all enterprise-y. We would spend a week or so designing, then a week or so implementing, then whatever was left testing and doing QA before we released.
+
+Keep in mind, our release was pushing new code to some servers and restarting Tomcat.
+
+After about a year of this and a particularly painful release over a Christmas/New Year's holiday break where our 4-week iteration dragged to more than 6 weeks not including the holidays, we started to realize that we were not being agile at all. We frequently would have doubts or questions about what we were doing but would convince ourselves to "push through" since we'd already "come this far" in development. It didn't matter if new information had come to light or new user issues had surfaced. It was slotted as input to the __next__ sprint. 
+
+Our designs and ideas had to be absolutely perfect. To the point where our fighting over features grew more intense and decisions became harder as we added more people. We had grown to twenty-five and with everyone having more or less a direct voice on the product getting stuff done became agonizingly slow. At this point, my boss and mentor and I had a conversation. He relayed to me the origin of the term ["cargo cult"](http://en.wikipedia.org/wiki/Cargo_cult#First_occurrences). If you haven't read an example or know the origin of the phrase, I dare say you are cargo-culting usage of the term. We realized that we were cargo-culting agile development and in fact employing a "mini-waterfall" approach. We had heard fleeting things about agile and XP and thought, well this is what it's like, right? But we weren't seeing any of the supossed results or benefits. Where were our plane gods? Why had they forsaken us? We were slow to react to changes and it was hard to just drop something when we realized that it just wasn't working.
+
+At this point in early 2008 we embarked on some soul-searching and we did something somewhat crazy. _We decided to educate ourselves about agile_. We held brown-bag sessions during lunch. We brought in agile speakers. We bought and discussed booksas a company. We _made_ a scrum board over the course of a weekend. We then started to formulate a philosophy that we thought could work for our personalities and our style. Agile means different things to different people but the following is what it ended up meaning to us and what I think fueled us to success over the course of the next 4+ years as a growing engineering organization.
+
+####Fast, Good, & Cheap. How Do You Want it?
+
+![triangle](/images/project_dimension_grid.JPG)
+
+In the world of project management there's a model called the [Triple Constraint](http://en.wikipedia.org/wiki/Project_management_triangle). Any undertaken is done under a set of three opposing constraints. Generally, the axes of the triangle are depicted as "Scope", "Cost", and "Time" with the area inside being the derived "Quality" of the project. The idea is that these constraints all pull in different directions with the common wisdom being that if you fix any two points the other side of the triangle is almost unknowable.	
+
+
+####Process & Tooling
+
+IMHO defining/finding your development process should come before determining your tooling. We had decided that we wanted a lightweight scrum board with cards that would force us to decompose projects into smaller tasks, ideally forcing us to put some thought into what those tasks would be. If nothing else we could create small tasks that would denote us _thinking_ about what the tasks should be.
+
+Being a small company we wanted (needed) to be frugal with our tooling choices. We looked for simple (read: cheap) online services that we could use as instruments of our evolving process.
+
+######Scrumy
+
+Since we had a remote employee having an internet accessible scrum board was key. Also having it update in "real-time" was useful. We happened upon a great little tool called: [Scrumy](http://scrumy.com/). The smallness of their post-it notes made it tough to just shove large stories into a given post-it. 
+
+######Tasking & Sizing
+
+In the beginning we played "T-Shirt Poker" and other sizing games.
+
+Scrumy's rule-of-thumb on task size is a maximum of 3 hours for a given task. We interpreted this as "if you create a task that's larger than 3 hours you've probably not thought through the problem enough". Or you better have a good reason.
+
+
+####Issue Tracking
+
+
+######Lighthouse
+
+We decided to use another lightweight online service, [Lighthouse](http://lighthouseapp.com) for issue tracking. 
+
+
+####Tracking Velocity
+
+
+####Feedback Loop
 
 Speaking to the board. Having stakeholders in scrum.
-
-Tracking velocity.
-
-Feedback loop.
 
 Consistency and rhythm (release trains, planes and automobiles).
