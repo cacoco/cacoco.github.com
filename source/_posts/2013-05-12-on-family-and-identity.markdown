@@ -39,7 +39,7 @@ Later on that evening, I remember talking to my wife as she lay in bed. Her fist
 
 My wife's second sister was 6 months pregnant with her second child. She lives in Tunis with her husband and daughter. Near the water, we could walk out of their apartment and stare onto the Mediterranean. My wife's sister's husband once joked that he thought he was marrying an "exotic" American woman. The joke is that she's more "Tunisian" than most Tunisian woman.
 
-I joked to my wife that I thought I was marrying an "exotic" Tunisian woman. At times she's more American than I am.
+I joked to my wife that I thought I was marrying an "exotic" Tunisian woman. At times she's more "American" than I am.
 
 What will our kids be?
 
@@ -47,11 +47,11 @@ During a hectic NYE party at the household of some friends I was cornered by man
 
 That would change.
 
-[^1]: http://www.pbs.org/newshour/rundown/2011/01/wikileaks-reveal-what-made-tunisians-revolt.html
+[^1]: [http://www.pbs.org/newshour/rundown/2011/01/wikileaks-reveal-what-made-tunisians-revolt.html](http://www.pbs.org/newshour/rundown/2011/01/wikileaks-reveal-what-made-tunisians-revolt.html)
 
 It was a day or so after we landed back in that states when we heard that Mohamed Bouazizi[^3] had died from his wounds.
 
-[^3]: http://en.wikipedia.org/wiki/Mohamed_Bouazizi
+[^3]: [Mohamed Bouazizi](http://en.wikipedia.org/wiki/Mohamed_Bouazizi)
 
 
 Even after all of this time, little pilfered money has been recovered[^4].

@@ -11,15 +11,19 @@ _"It's not done until it's done."_
 
 <!-- more -->
 
-In my previous company we started life as literally eight people in a room. Most all of us were ex-enterprise developers from a company that coded and shipped (_on disks_) a J2EE portal server. In our enterprise development days iteration cycles were 6 months to a year and customer feedback was incorporated a year or more later (if ever). When we started the new company, the eight of us decided we would do things differently. We were embarking on a new type of company -- a _web_ start-up and in 2006 we decided we would be _AGILE_.
+Agile methodology isn't magic, or a silver bullet, or even a cure-all but rather a set of processes[^1]. But I think overall, it's about being practical and having _discipline_. After a 5+ year journey from waterfall to agile that is my largest takeaway. Agile methodology is truly about having discipline.
 
-####Starting Out
+[^1]: And maybe even some tooling.
 
-Our first step was cutting our development and release cycle down from 6+ months to 4 weeks (!). We were amazed with ourselves and proud that we weren't being all enterprise-y. We would spend a week or so designing, then a week or so implementing, then whatever was left testing and doing QA before we released.
+In my previous company we started life as literally eight people in a room. Most all of us were ex-enterprise Java developers from a company that coded and shipped (_on disks_) a J2EE portal server. In our enterprise development days, iteration cycles were six months (short) to a year (normal) and customer feedback was incorporated a year or more later -- if ever. When we started our new company, we decided we would do things differently. We were embarking on a new type of company -- a _web_ start-up and in 2006 we decided we would be _agile_.
+
+####Starting Out With Coconuts
+
+Our first step was cutting our development and release cycle down from 6+ months to four weeks -- crazy, I know. We were amazed with ourselves and proud that we weren't being all enterprise-y. We would spend a week or so designing, then a week or so implementing, then whatever was left testing and doing QA before we released.
 
 Keep in mind, our release was pushing new code to some servers and restarting Tomcat.
 
-After about a year of this and a particularly painful release over a Christmas/New Year's holiday break where our 4-week iteration dragged to more than 6 weeks not including the holidays, we started to realize that we were not being agile at all. We frequently would have doubts or questions about what we were doing but would convince ourselves to "push through" since we'd already "come this far" in development. It didn't matter if new information had come to light or new user issues had surfaced. It was slotted as input to the __next__ sprint. 
+After about a year of this and a particularly painful release over a Christmas/New Year's holiday break where our four-week iteration dragged to more than six weeks not including the holidays, we started to realize that we were not really being agile at all. We frequently would have doubts or questions about what path we were taking, if end users would like _this_ or like _that_ but would convince ourselves to "push through" with whatever we had decided weeks ago as we'd already "come this far" in development. It didn't matter if new information had come to light or new user issues had surfaced. It was slotted as input to the __next__ sprint. 
 
 Our designs and ideas had to be absolutely perfect. To the point where our fighting over features grew more intense and decisions became harder as we added more people. We had grown to twenty-five and with everyone having more or less a direct voice on the product getting stuff done became agonizingly slow. At this point, my boss and mentor and I had a conversation. He relayed to me the origin of the term ["cargo cult"](http://en.wikipedia.org/wiki/Cargo_cult#First_occurrences). If you haven't read an example or know the origin of the phrase, I dare say you are cargo-culting usage of the term. We realized that we were cargo-culting agile development and in fact employing a "mini-waterfall" approach. We had heard fleeting things about agile and XP and thought, well this is what it's like, right? But we weren't seeing any of the supossed results or benefits. Where were our plane gods? Why had they forsaken us? We were slow to react to changes and it was hard to just drop something when we realized that it just wasn't working.
 
@@ -29,32 +33,64 @@ At this point in early 2008 we embarked on some soul-searching and we did someth
 
 ![triangle](/images/project_dimension_grid.JPG)
 
-In the world of project management there's a model called the [Triple Constraint](http://en.wikipedia.org/wiki/Project_management_triangle). Any undertaken is done under a set of three opposing constraints. Generally, the axes of the triangle are depicted as "Scope", "Cost", and "Time" with the area inside being the derived "Quality" of the project. The idea is that these constraints all pull in different directions with the common wisdom being that if you fix any two points the other side of the triangle is almost unknowable.	
+In the world of project management there's a model called the [Triple Constraint](http://en.wikipedia.org/wiki/Project_management_triangle). Any project undertaken is done under a set of three opposing constraints; generally, "Scope", "Cost", and "Time" with the area inside being the derived "Quality" of the project. The idea is that these forces pull in different directions with the common wisdom being that if you fix any two points the other side of the triangle is almost unknowable, i.e., "choose two".
 
+One of the first things we did was half our interation cycle. From four weeks to two. Just to see what would happen. It was a great way to re-focus. With 4 weeks, there was definitely a tendency to focus on minutae for too long and to put off making hard decisions until too late in the cycle. We went through two sprints each at two weeks when we decided to be even more daring and cut our iteration to just one week.
 
-####Process & Tooling
+Oh, there was much moaning. "There's no way we can get anything done in a week! It just won't work!" 
 
-IMHO defining/finding your development process should come before determining your tooling. We had decided that we wanted a lightweight scrum board with cards that would force us to decompose projects into smaller tasks, ideally forcing us to put some thought into what those tasks would be. If nothing else we could create small tasks that would denote us _thinking_ about what the tasks should be.
+The a-ha moment came when we realized that we could shift the question around. It wasn't _"how can we get everything done in one week?"_ It was _"what do we think we can honestly finish in four days of development?"_ 
 
-Being a small company we wanted (needed) to be frugal with our tooling choices. We looked for simple (read: cheap) online services that we could use as instruments of our evolving process.
+We would spend the first day in team/group planning sessions followed by four days of development, releasing the fifth day and starting the next sprint's planning session. We realized we seriously needed to automate somethings. We immediately identified two places that where we thought we needed to be smarter and off-load some of the human interaction. Build, release, and testing.
 
+<a id="build_release"></a>
+######Build & Release
+
+We moved from a home-made ant build script to [Maven](http://maven.apache.org). If you stick to the 80% that Maven gives you, you'll be golden. Of course, if you venture into trying to do something in the other 20% you'll become extremely frustrated[^2]. At the same time we set up an internal version of the Sonatype [Nexus](http://www.sonatype.org/nexus/) repository.
+
+[^2]: It took us some time to get there but after four years with Maven, we began investigating alternatives. We had some Rubyists amoung us (myself included) and gave a long hard look at [Apache Buildr](http://buildr.apache.org). Sadly at the critical moment when we were trying to decide if we would move off of Maven, Buildr was adrift as the project fell into seeming unmaintenance. I'm happy to say it is now back in active development but the window was missed and we continued on with Maven.
+
+Additionally and more complicatedly, we needed to better automate our release process. As our infrastructure and team grew we wanted less people spending less time doing the mundane tasks of copying WAR files out to ever more servers around the world, updating CDN origin servers and flushing caches. We had a lofty goal of an HTML page with two big buttons: A green __RELEASE__ button. A red __ROLLBACK__ button.
+
+We didn't quite get there, but we started using a python library called [Fabric](http://docs.fabfile.org/en/1.6/) -- moving away from many sets of hand-written shell scripts. Our release needed to be an easily repeatable process and ideally incur little to no downtime of any of our services. The desire for the buttons was a manifestation of our thinking, "Releasing should be as simple as pushing a button. So should a rollback."
+
+In actuality rollbacks were pretty uncommon. Generally, we were able to either a.) live with a bug for a week, or b.) roll-forward through a "dot-release" sometime during the week. Generally though, we had a pretty good handle on what was being released and if it was functioning as expected[^3].
+
+[^3]: See [Testing](#testing) section
+
+<a id="testing"></a>
+######Testing
+
+We focused a big effort on cleaning up and implementing a new testing structure. We tried to engender a culture of testing. Working without an official QA department, all engineers were held responsible for the quality of their code. Work was not truly "done" until there were tests for it and it was tested. Another boon was setting up a continuous integration (CI) environment: [Hudson](http://jenkins-ci.org/) (and later Jenkins) along with a basic code-quality auditing tool: [Sonar](http://www.sonarsource.org/). 
+
+We ended up with three levels of automated testing.
+
+- Unit testing: This ran as part of the Maven build process. These tests typically tested a single unit or piece of code and mocked or stubbed any interaction with an outside system. The idea is that these tests should run quickly and not make any outside network calls as they were always being run locally by developers and periodically (SCM was polled every few minutes) in CI.
+- Functional/Integration testing: These tests did not run by default in the build process, but were set up in a Maven profile that was run in CI. Using Hudson|Jenkins we ran these hourly to make sure that no regression had been introduced into the system. These tests included all of our DAO testing which performed CRUD operations against a test MySQL database. Memcached, Redis, and Cassandra tests. Third-party service testing like sending/receiving data from the various AWS services we used (EMR, RDS, SimpleDB). Our tests would catch when either the tubes were clogged and our connection to various pieces of AWS was interuppted or slow, or when these and other services were having issues.
+- WebDriver/[Selenium](http://docs.seleniumhq.org/projects/webdriver/) testing: We originally started with SeleniumIDE, then SeleniumRC, and eventually settled on Google's [WebDriver](http://google-opensource.blogspot.com/2009/05/introducing-webdriver.html) project (which eventually merged with Selenium and became Selenium 2.0). Building out a testing scaffold using the [PageObject](https://code.google.com/p/selenium/wiki/PageObjects) model, we developers wrote and maintained these tests in Java.
+
+<a id="scrumy"></a>
 ######Scrumy
 
-Since we had a remote employee having an internet accessible scrum board was key. Also having it update in "real-time" was useful. We happened upon a great little tool called: [Scrumy](http://scrumy.com/). The smallness of their post-it notes made it tough to just shove large stories into a given post-it. 
+Since we had a remote employee, we gave up on the home-made scrumboard and looked for an internet accessible solution. We happened upon a great little tool called: [Scrumy](http://scrumy.com/). The smallness of their post-it notes made it tough to just shove large stories into a given post-it. Being constrained by readable space forced us to decompose large details into smaller ones. And self-policing made it such that we wouldn't let ourselves get away with a task such as "Figure stuff out".
 
 ######Tasking & Sizing
 
-In the beginning we played "T-Shirt Poker" and other sizing games.
+In the beginning we played ["Planning Poker"](http://en.wikipedia.org/wiki/Planning_poker) and other sizing/estimation [games neé techniques](http://www.infoq.com/articles/agile-estimation-techniques). We quickly gave these up as gimmicky and more of a distraction than useful. Instead we decided to _iterate_ on how we size tasks. Being a group with more relatively senior people than not we decided to jump into having each person or team decompose their features into tasks and try to estimate and size them individually. Every day in scrum we would use part of the time as a group to run an eyeball test over what the task stated and if everyone in the team agreed with the estimated size.
 
-Scrumy's rule-of-thumb on task size is a maximum of 3 hours for a given task. We interpreted this as "if you create a task that's larger than 3 hours you've probably not thought through the problem enough". Or you better have a good reason.
+Scrumy's rule-of-thumb on task size is a maximum of 3 hours for a given task. Lots of different tools or processes use different units to measure task size. In my opinion, "hours" are a natural way of thinking about a task. It's easy to conceptualize how much think you think you need to accomplish a goal. We interpreted this as "if you create a task that's larger than 3 hours you've probably not thought through the problem enough". Or you better have a good reason.
 
-
+<a id="issue_tracking"></a>
 ####Issue Tracking
+
+Having come from an enterprise software company, many of us were very familiar with extensive and large issue databases. Known issues since the inception of the product or products. Undead issues that move from iteration to iteration for years being dropped and assigned to new people once sucking the life out of a current host. We would have none of this.
+
+An issue tracking system should have a high signal-to-noise ratio. If there's too much noise the database becomes ignored, unmanageable, or both. We took the philosophy that issues take priority over new tasks/work. If an issue proved to be complicated enough it was spun out into new work (either a task, a set of tasks, or even a new user story) and tracked as such thus removing/closing the issue in the issue-tracking system. If issues moved one or more sprints the question of if we truly intended to fix it was raised. The goal was to always have our list of current issues at or near 0. The mindset of constantly attacking the issue tracking system meant that when those outside the development organization saw an issue in the system, they __knew__ with absolute certainty that it was being worked on or thought about. Training ourselves to do this was not easy and the benefit did not become truly apparent until we were large enough to have multiple groups inside of the organization such that outside views into a team's issue-tracking became common and appreciated.
 
 
 ######Lighthouse
 
-We decided to use another lightweight online service, [Lighthouse](http://lighthouseapp.com) for issue tracking. 
+Rather than going in for a large all-encompassing tool (like JIRA) we instead chose another small lightweight service called: [Lighthouse](http://lighthouseapp.com) for issue-tracking. This, to us, reinforced the idea that issues were not heavyweight things to carry around like baggage from one sprint to the next. But lightweight priorities that should be dug into and addressed. Thus having a tool that __only__ focused on issue-tracking (but with some pretty cool features to boot) was great.
 
 
 ####Tracking Velocity
