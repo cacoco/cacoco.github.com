@@ -7,6 +7,8 @@ categories:
 published: false
 ---
 
+(part 1)
+
 In December of 2010 my now wife and I traveled to her hometown of Tunis, Tunisia to spend Christmas with her family. We stayed for about 12 days flying out on January 4, 2011. That happened to be the day a fruit vendor from [Sidi Bouzid](http://en.wikipedia.org/wiki/Sidi_Bouzid) succumbed to his self-inflicted wounds and died.  
 
 He had set himself on fire.
