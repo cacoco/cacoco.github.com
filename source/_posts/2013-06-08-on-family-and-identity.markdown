@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "On Family and Identity"
-date: 2013-05-12 14:01
+date: 2013-06-08 14:01
 comments: false
 categories: 
 published: false
@@ -15,7 +15,7 @@ He had set himself on fire.
 
 <!-- more -->
 
-In the fall of 2010 a series of classified memos and communiqués from the US State department became public via the site Wikileaks. It had been all over the press with the talking heads hysterical over the information leaked about Afghanistan and Iraq. What was little covered were the pages and pages of information about the ruling family of Tunisia.  
+In the fall of 2010 a series of classified memos and communiqués from the US State department became public via the site Wikileaks. It had been all over the press with the talking heads hysterical over the information leaked about America's positions in Afghanistan and Iraq. What was little covered were the pages and pages of information about the ruling family of Tunisia.  
 
 Talking with friends of my wife's family, everyone wanted to speak to me about WikiLeaks. Specifically, they wanted to know if I had read the passages about [Ben Ali, or his wife, or his son](http://middleeast.about.com/b/2011/01/14/tunisias-and-ben-alis-corruptions-the-wikileaks-revelations.htm). The questions weren't merely asked as gossip but with frustration. People were angry.
 
@@ -35,11 +35,11 @@ This is a punishable offence.
 
 The officer began to threaten him with jail time. My wife's sister's fiancé is a great guy. He's genial and loves people. He tries to smooth-talk the officer. The officer began accusing him of being drunk (he wasn't) and said that he'd drag him into the station. My wife's sister got out of car. I got out of the car. I was immediately instructed in Arabic to get back into the car. To me, it seemed that they didn't want the American to see what was going on.
 
-In a heated conversation in a mix of French and Arabic my wife's sister's fiancé has a cigarette with the officer. My wife's sister slips the cop some money. Actually, a lot of money. The heated discussion dies down, they both get back into the car. We drive off and I could tell everyone was shaken as they relayed to me what had transpired. My French is horrible and my Arabic non-existent.
+A heated conversation ensued in a mix of French and Arabic as my wife's sister's fiancé has a cigarette with the officer. My wife's sister slips the cop some money -- actually, a lot of money. The heated discussion dies down and they both get back into the car. We drive off and I could tell everyone was shaken as they relayed to me what had happened. My French is horrible and my Arabic non-existent. The officer has accused my wife's sister's fiancé of being drunk and said that he would take him to jail. He asked if he had done his military service yet (another common bullying tactic). The cop was adamant that he was going to take him to the station. Unless...
 
-Later on that evening, I remember talking to my wife as she lay in bed. Her fists were clenched and tears at the corners of her eyes. Angry at the oppressiveness. Angry at the feeling of helplessness. "This is why I hate this place," she said.
+Later on that evening, I remember talking with my wife as she lay in bed. Her fists were clenched and tears at the corners of her eyes. Her breathing was slow but ragged as though a heavy weight laid on her chest. She was angry at the oppressiveness. Angry at the feeling of helplessness. "This is why I hate this place," she said.
 
-My wife's second sister was 6 months pregnant with her second child. She lives in Tunis with her husband and daughter. Near the water, we could walk out of their apartment and stare onto the Mediterranean. My wife's sister's husband once joked that he thought he was marrying an "exotic" American woman. The joke is that she's more "Tunisian" than most Tunisian woman.
+My wife's second sister was 6 months pregnant with her second child at the time. She lives in Tunis with her husband and daughter. They rent an apartment near the water where we could walk out and stare onto the Mediterranean. My wife's sister's husband once joked that he thought he was marrying an "exotic" American woman. The joke is that she's more "Tunisian" than most Tunisian woman.
 
 I joked to my wife that I thought I was marrying an "exotic" Tunisian woman. At times she's more "American" than I am.
 
@@ -49,11 +49,21 @@ During a hectic NYE party at the household of some friends I was cornered by man
 
 That would change.
 
+We had heard whisperings of protests in the southern part of the country. No one would say anything specifically but then news came that President Ben Ali would be giving a televised speech. This was unsual. The President was not known for his speeches. Typically, public speeches are given in more traditional Arabic (the language of the Qu'ran) and Ben Ali's wasn't that great. This was appointment TV. My wife and her family huddled around the television as the speech began. The President appeared sitting behind a large desk. To his left was a telephone. His speech began. Of course, I understood none of it and got bits and pieces translated to me by the family. One part in particular invited lots of snickers. Turns out the President had said that he respected the people's voice and the right to democrcy (this is what invited the laughs as it was not true) but that "those who wished to create discord would be punished."
+
+And then telephone the desk began to rang.
+
+The President continued as if he had not heard what was happening. We started to look around at each other. Was this really happening? Maybe it wasn't the phone on the desk that was ringing. Maybe it was a phone just off-screen. In any case, it kept ringing. And ringing. We started to laugh. And joking that someone was really trying to reach the President to let him know that he speech wasn't going well. That the people weren't buying it. That maybe his formal Arabic wasn't really being understood.
+
+We didn't know what to make of the event. But it started to dawn on us that something big was going on if he felt the need to go in front of the coutnry to address the situation.
+
 [^1]: [http://www.pbs.org/newshour/rundown/2011/01/wikileaks-reveal-what-made-tunisians-revolt.html](http://www.pbs.org/newshour/rundown/2011/01/wikileaks-reveal-what-made-tunisians-revolt.html)
 
 It was a day or so after we landed back in that states when we heard that Mohamed Bouazizi[^3] had died from his wounds.
 
 [^3]: [Mohamed Bouazizi](http://en.wikipedia.org/wiki/Mohamed_Bouazizi)
+
+A few months later in March my wife's sister gave birth to a bouncing baby boy. A child of post-revolution Tunisia. What the country will ultimately become will depend on he and his older sister and all the other children of Tunisia. The future is theirs just as the country is now the people's. Things are chaotic, but the world has moved on.
 
 
 Even after all of this time, little pilfered money has been recovered[^4].
