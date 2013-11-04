@@ -49,11 +49,11 @@ During a hectic NYE party at the household of some friends I was cornered by man
 
 That would change.
 
-We had heard whisperings of protests in the southern part of the country. No one would say anything specifically but then news came that President Ben Ali would be giving a televised speech. This was unsual. The President was not known for his speeches. Typically, public speeches are given in more traditional Arabic (the language of the Qu'ran) and Ben Ali's wasn't that great. This was appointment TV. My wife and her family huddled around the television as the speech began. The President appeared sitting behind a large desk. To his left was a telephone. His speech began. Of course, I understood none of it and got bits and pieces translated to me by the family. One part in particular invited lots of snickers. Turns out the President had said that he respected the people's voice and the right to democrcy (this is what invited the laughs as it was not true) but that "those who wished to create discord would be punished."
+We had heard whisperings of protests in the southern part of the country but no one talked of anything specific. So it wasn't all that surprising when the news came that President Ben Ali would be giving a televised speech, though it was unsual. The President was not known for his speeches. Typically, public speeches are given in more traditional (formal sounding) Arabic (the language of the Qu'ran -- as opposed to Tunisian Arabic) and Ben Ali's wasn't great. This was appointment TV. My wife and her family huddled around the television as the speech began. The President appeared sitting behind a large desk; to his left was a telephone. His speech began. Of course, I understood none of it and got bits and pieces translated to me by the family. One part in particular invited lots of snickers. Turns out the President had said that he respected the people's voice and the right of free-speach (no one really believed this) but that "those who wished to create discord would be punished."
 
-And then telephone the desk began to rang.
+Then the telephone on his desk began to rang.
 
-The President continued as if he had not heard what was happening. We started to look around at each other. Was this really happening? Maybe it wasn't the phone on the desk that was ringing. Maybe it was a phone just off-screen. In any case, it kept ringing. And ringing. We started to laugh. And joking that someone was really trying to reach the President to let him know that he speech wasn't going well. That the people weren't buying it. That maybe his formal Arabic wasn't really being understood.
+We started to look around at each other. Was this really happening? Maybe it wasn't the phone on the desk that was ringing, maybe it was a phone just off-screen. Ben Ali continued as if he had not heard anything. It kept ringing. And ringing. We knew Ben Ali could hear it. We started to laugh. We started joking that someone was really trying to reach the President to let him know that he speech wasn't going well. That the people weren't buying it. That maybe his formal Arabic wasn't really being understood.
 
 We didn't know what to make of the event. But it started to dawn on us that something big was going on if he felt the need to go in front of the coutnry to address the situation.
 
@@ -64,8 +64,3 @@ It was a day or so after we landed back in that states when we heard that Mohame
 [^3]: [Mohamed Bouazizi](http://en.wikipedia.org/wiki/Mohamed_Bouazizi)
 
 A few months later in March my wife's sister gave birth to a bouncing baby boy. A child of post-revolution Tunisia. What the country will ultimately become will depend on he and his older sister and all the other children of Tunisia. The future is theirs just as the country is now the people's. Things are chaotic, but the world has moved on.
-
-
-Even after all of this time, little pilfered money has been recovered[^4].
-
-[^4]: http://www.economist.com/news/international/21577368-why-have-arab-countries-recovered-so-little-money-thought-have-been-nabbed
