@@ -64,3 +64,9 @@ It was a day or so after we landed back in that states when we heard that Mohame
 [^3]: [Mohamed Bouazizi](http://en.wikipedia.org/wiki/Mohamed_Bouazizi)
 
 A few months later in March my wife's sister gave birth to a bouncing baby boy. A child of post-revolution Tunisia. What the country will ultimately become will depend on he and his older sister and all the other children of Tunisia. The future is theirs just as the country is now the people's. Things are chaotic, but the world has moved on.
+
+(part 2)
+
+Even after all of this time, little pilfered money has been recovered[^4].
+
+[^4]: http://www.economist.com/news/international/21577368-why-have-arab-countries-recovered-so-little-money-thought-have-been-nabbed
