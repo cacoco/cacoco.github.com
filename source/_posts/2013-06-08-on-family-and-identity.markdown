@@ -7,7 +7,7 @@ categories:
 published: false
 ---
 
-(part 1)
+###Part 1
 
 In December of 2010 my now wife and I traveled to her hometown of [Tunis](http://en.wikipedia.org/wiki/Tunis), Tunisia to spend Christmas with her family. We stayed for about 12 days flying out on January 4, 2011. That happened to be the day a fruit vendor from [Sidi Bouzid](http://en.wikipedia.org/wiki/Sidi_Bouzid) succumbed to his self-inflicted wounds and died.  
 
@@ -39,7 +39,7 @@ A heated conversation ensued in a mix of French and Arabic as my wife's sister's
 
 Later on that evening, I remember talking with my wife as she lay in bed. Her fists were clenched and tears at the corners of her eyes. Her breathing was slow but ragged as though a heavy weight laid on her chest. She was angry at the oppressiveness. Angry at the feeling of helplessness. "This is why I hate this place," she said.
 
-My wife's second sister was 6 months pregnant with her second child at the time. She lives in Tunis with her husband and young daughter. They rent an apartment near the water where we could walk out and stare onto the Mediterranean. My wife's sister's husband once joked that he thought he was marrying an "exotic" American woman. The joke is that she's more "Tunisian" than most Tunisian woman.
+My wife's second sister was 6 months pregnant with her second child at the time. She lives in Tunis with her husband and young daughter. They rent an apartment in Gammarth near the water where we could walk out and stare onto the Mediterranean. My wife's sister's husband once joked that he thought he was marrying an "exotic" American woman. The joke is that she's more "Tunisian" than most Tunisian woman.
 
 I joked to my wife that I thought I was marrying an "exotic" Tunisian woman. At times she's more "American" than I am.
 
@@ -68,9 +68,3 @@ The next few weeks proved to be hectic and unnerving. We lost contact with my wi
 [^4]: [DISPATCH #7: THE BOMBED-OUT MANSIONS OF LA MARSA](http://www.mcsweeneys.net/articles/dispatch-7-the-bombed-out-mansions-of-la-marsa) (www.mcsweeneys.net)
 
 A few months later in March my wife's sister gave birth to a bouncing baby boy. A child of post-revolution Tunisia. What the country will ultimately become will depend on he and his older sister and all the other children of Tunisia. The future is theirs just as the country is now the people's. Things are chaotic, but the world has moved on.
-
-(part 2)
-
-Even after all of this time, little pilfered money has been recovered[^5].
-
-[^5]: [Making a hash of finding the cash](http://www.economist.com/news/international/21577368-why-have-arab-countries-recovered-so-little-money-thought-have-been-nabbed) (www.economist.com)
