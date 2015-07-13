@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>life and code &amp;middot; in small doses</title>
+    <description></description>
+    <link>http://angstrom.io/</link>
+    <atom:link href="http://angstrom.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 12 Jul 2015 21:52:26 -0700</pubDate>
+    <lastBuildDate>Sun, 12 Jul 2015 21:52:26 -0700</lastBuildDate>
+    <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>A Simple Finatra Example Project</title>
+        <description>&lt;p&gt;Over the past year-and-a-half I've helped to develop a &lt;a href=&quot;http://www.scala-lang.org/&quot;&gt;Scala&lt;/a&gt; framework for writing services on-top of parts of the Twitter stack, namely &lt;a href=&quot;https://github.com/twitter/twitter-server&quot;&gt;twitter-server&lt;/a&gt; and &lt;a href=&quot;https://github.com/twitter/finagle&quot;&gt;Finagle&lt;/a&gt;. This framework is called &lt;a href=&quot;https://github.com/twitter/finatra&quot;&gt;Finatra&lt;/a&gt; and we've recently published a &lt;a href=&quot;https://oss.sonatype.org/#nexus-search;gav~com.twitter.finatra~~2.0.0.M2~~&quot;&gt;second milestone release&lt;/a&gt; of the completely-rebuilt-from-the-ground-up version 2.x.&lt;/p&gt;
+
+&lt;p&gt;I recently wrote a small &lt;a href=&quot;https://github.com/twitter/finatra&quot;&gt;Finatra&lt;/a&gt; example service that is a &lt;a href=&quot;https://github.com/cacoco/smally-finatra&quot;&gt;simple URL-shortener&lt;/a&gt; using &lt;a href=&quot;http://redis.io/&quot;&gt;Redis&lt;/a&gt;. The example builds with &lt;a href=&quot;http://www.scala-sbt.org/&quot;&gt;sbt&lt;/a&gt; and can be easily deployed to &lt;a href=&quot;https://heroku.com&quot;&gt;Heroku&lt;/a&gt;.&lt;/p&gt;
+
+&lt;!-- more --&gt;
+
+
+&lt;p&gt;&lt;p/&gt;&lt;p/&gt;&lt;/p&gt;
+
+&lt;h4&gt;The &lt;a href=&quot;https://github.com/cacoco/smally-finatra&quot;&gt;&lt;code&gt;smally-finatra&lt;/code&gt;&lt;/a&gt; service.&lt;p/&gt;&lt;/h4&gt;
+
+&lt;p&gt;At a high-level, the service accepts JSON input through a POST endpoint that represents the URL to be shortened. It then returns a JSON response with the shortened representation of the URL. The service also then supports GET requests to a shortened URL returning a 301 response to the expanded URL. Browsers will generally follow this redirect by default, thus it's simplest to just hit the shortened URL in a browser window.&lt;/p&gt;
+
+&lt;p&gt;The service uses &lt;a href=&quot;https://github.com/xetorthio/jedis&quot;&gt;Jedis&lt;/a&gt; as a client to Redis. We set up a server that looks like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;script src=&quot;https://gist.github.com/cacoco/e6b93886631988350abb.js&quot;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;You'll notice we configure a few &lt;a href=&quot;https://github.com/twitter/finatra/blob/master/inject/inject-core/src/main/scala/com/twitter/inject/TwitterModule.scala&quot;&gt;modules&lt;/a&gt; here. The Finatra &lt;code&gt;LogbackModule&lt;/code&gt; which sets &lt;a href=&quot;http://logback.qos.ch/&quot;&gt;&lt;code&gt;logback&lt;/code&gt;&lt;/a&gt; as our logging implementation for &lt;a href=&quot;http://www.slf4j.org/&quot;&gt;slf4j&lt;/a&gt;. A &lt;code&gt;JedisClientModule&lt;/code&gt; which configures the Jedis client to talk to a Redis server. And a generic sounding, &lt;code&gt;SmallyModule&lt;/code&gt;. The last module defines business-logic configuration for the service. In this case, you can choose to always return &lt;code&gt;https&lt;/code&gt; protocol shortened URLs. The &lt;code&gt;SmallyModule&lt;/code&gt; defines a flag which you can set on the command line to toggle this behavior. The default is false.&lt;/p&gt;
+
+&lt;p&gt;We then configure the &lt;a href=&quot;https://github.com/twitter/finatra/blob/master/http/src/main/scala/com/twitter/finatra/http/routing/HttpRouter.scala&quot;&gt;&lt;code&gt;HttpRouter&lt;/code&gt;&lt;/a&gt;, setting up a few filters including the Finatra &lt;a href=&quot;https://github.com/twitter/finatra/blob/master/http/src/main/scala/com/twitter/finatra/http/filters/CommonFilters.scala&quot;&gt;&lt;code&gt;CommonFilters&lt;/code&gt;&lt;/a&gt;. We then add the &lt;code&gt;SmallyController&lt;/code&gt; and a custom &lt;a href=&quot;https://github.com/twitter/finatra/blob/master/http/src/main/scala/com/twitter/finatra/http/exceptions/ExceptionMapper.scala&quot;&gt;&lt;code&gt;ExceptionMapper&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Now, let's look at the controller:&lt;/p&gt;
+
+&lt;p&gt;&lt;script src=&quot;https://gist.github.com/cacoco/4abd49ac71e7a2bd3b23.js&quot;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;The controller defines two endpoints: &lt;code&gt;POST(/url)&lt;/code&gt; and a &lt;code&gt;GET(/:id)&lt;/code&gt;. The &lt;code&gt;POST&lt;/code&gt; endpoint accepts JSON input in the form of a &lt;a href=&quot;https://github.com/cacoco/smally-finatra/blob/master/src/main/scala/io/angstrom/smally/domain/http/PostUrlRequest.scala&quot;&gt;&lt;code&gt;PostUrlRequest&lt;/code&gt;&lt;/a&gt; case class:&lt;/p&gt;
+
+&lt;p&gt;&lt;figure class='code-highlight-figure'&gt;&lt;div class='code-highlight'&gt;&lt;pre class='code-highlight-pre'&gt;&lt;div data-line='1' class='code-highlight-row numbered'&gt;&lt;div class='code-highlight-line'&gt;&amp;#x7b;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line='2' class='code-highlight-row numbered'&gt;&lt;div class='code-highlight-line'&gt;  &quot;url&quot; : &quot;http://www.google.com&quot;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line='3' class='code-highlight-row numbered'&gt;&lt;div class='code-highlight-line'&gt;&amp;#x7d;&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;&lt;/p&gt;
+
+&lt;p&gt;This endpoint captures the URL posted to the service, storing it in Redis keyed by an atomically increasing Long value. This long value is then converted into a 32-radix String and returned as the path of the shortened URL. The response is an &lt;code&gt;HTTP/1.1 201 Created&lt;/code&gt; with a  &lt;a href=&quot;https://github.com/cacoco/smally-finatra/blob/master/src/main/scala/io/angstrom/smally/domain/http/PostUrlResponse.scala&quot;&gt;&lt;code&gt;PostUrlResponse&lt;/code&gt;&lt;/a&gt; body:&lt;/p&gt;
+
+&lt;p&gt;&lt;figure class='code-highlight-figure'&gt;&lt;div class='code-highlight'&gt;&lt;pre class='code-highlight-pre'&gt;&lt;div data-line='1' class='code-highlight-row numbered'&gt;&lt;div class='code-highlight-line'&gt;&amp;#x7b;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line='2' class='code-highlight-row numbered'&gt;&lt;div class='code-highlight-line'&gt;  &quot;smally_url&quot; : &quot;http://127.0.0.1:8080/9h5k4&quot;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line='3' class='code-highlight-row numbered'&gt;&lt;div class='code-highlight-line'&gt;&amp;#x7d;&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;&lt;/p&gt;
+
+&lt;p&gt;The &lt;code&gt;GET&lt;/code&gt; endpoint deferences the id given in the path, looking up the corresponding expanded URL that maps to the Long value represented by the given id. If a mapped URL is found an &lt;code&gt;HTTP 301 Moved Permanently&lt;/code&gt; is returned with the expanded URL set in the &lt;code&gt;Location&lt;/code&gt; header. Otherwise an &lt;code&gt;HTTP/1.1 404 Not Found&lt;/code&gt; is returned for an id that cannot be properly expanded. You can see the various test cases &lt;a href=&quot;https://github.com/cacoco/smally-finatra/blob/master/src/test/scala/io/angstrom/smally/SmallyServerFeatureTest.scala&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;p/&gt;&lt;p/&gt;&lt;/p&gt;
+
+&lt;h4&gt;Deploying to &lt;a href=&quot;https://heroku.com&quot;&gt;Heroku&lt;/a&gt;.&lt;/h4&gt;
+
+&lt;p&gt;You'll need to have the &lt;a href=&quot;https://toolbelt.heroku.com/&quot;&gt;Heroku Toolbelt&lt;/a&gt; &lt;a href=&quot;https://devcenter.heroku.com/articles/getting-started-with-scala#set-up&quot;&gt;installed&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Clone the &lt;a href=&quot;https://github.com/cacoco/smally-finatra&quot;&gt;&lt;code&gt;smally-finatra&lt;/code&gt;&lt;/a&gt; service locally, and change into the directory, e.g.,&lt;/p&gt;
+
+&lt;p&gt;&lt;figure class='code-highlight-figure'&gt;&lt;div class='code-highlight'&gt;&lt;pre class='code-highlight-pre'&gt;&lt;div data-line='1' class='code-highlight-row numbered'&gt;&lt;div class='code-highlight-line'&gt;$ git clone https://github.com/cacoco/smally-finatra.git
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line='2' class='code-highlight-row numbered'&gt;&lt;div class='code-highlight-line'&gt;$ cd smally-finatra&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;&lt;/p&gt;
+
+&lt;p&gt;Create a new app in Heroku:&lt;/p&gt;
+
+&lt;p&gt;&lt;figure class='code-highlight-figure'&gt;&lt;div class='code-highlight'&gt;&lt;pre class='code-highlight-pre'&gt;&lt;div data-line='1' class='code-highlight-row numbered'&gt;&lt;div class='code-highlight-line'&gt;$ heroku create
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line='2' class='code-highlight-row numbered'&gt;&lt;div class='code-highlight-line'&gt;Creating nameless-lake-8055 in organization heroku... done, stack is cedar-14
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line='3' class='code-highlight-row numbered'&gt;&lt;div class='code-highlight-line'&gt;http://nameless-lake-8055.herokuapp.com/ | https://git.heroku.com/nameless-lake-8055.git
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line='4' class='code-highlight-row numbered'&gt;&lt;div class='code-highlight-line'&gt;Git remote heroku added&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;&lt;/p&gt;
+
+&lt;p&gt;Create a Redis add-on:&lt;/p&gt;
+
+&lt;p&gt;&lt;figure class='code-highlight-figure'&gt;&lt;div class='code-highlight'&gt;&lt;pre class='code-highlight-pre'&gt;&lt;div data-line='1' class='code-highlight-row numbered'&gt;&lt;div class='code-highlight-line'&gt;$ heroku addons:create heroku-redis:hobby-dev&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;&lt;/p&gt;
+
+&lt;p&gt;You can then deploy application to Heroku:&lt;/p&gt;
+
+&lt;p&gt;&lt;figure class='code-highlight-figure'&gt;&lt;div class='code-highlight'&gt;&lt;pre class='code-highlight-pre'&gt;&lt;div data-line='1' class='code-highlight-row numbered'&gt;&lt;div class='code-highlight-line'&gt;$ git push heroku master
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line='2' class='code-highlight-row numbered'&gt;&lt;div class='code-highlight-line'&gt;Counting objects: 480, done.
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line='3' class='code-highlight-row numbered'&gt;&lt;div class='code-highlight-line'&gt;Delta compression using up to 4 threads.
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line='4' class='code-highlight-row numbered'&gt;&lt;div class='code-highlight-line'&gt;Compressing objects: 100% (376/376), done.
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line='5' class='code-highlight-row numbered'&gt;&lt;div class='code-highlight-line'&gt;Writing objects: 100% (480/480), 27.68 MiB | 16.24 MiB/s, done.
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line='6' class='code-highlight-row numbered'&gt;&lt;div class='code-highlight-line'&gt;Total 480 (delta 101), reused 0 (delta 0)
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line='7' class='code-highlight-row numbered'&gt;&lt;div class='code-highlight-line'&gt;remote: Compressing source files... done.
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line='8' class='code-highlight-row numbered'&gt;&lt;div class='code-highlight-line'&gt;remote: Building source:
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line='9' class='code-highlight-row numbered'&gt;&lt;div class='code-highlight-line'&gt;...&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;&lt;/p&gt;
+
+&lt;p&gt;Tail the Heroku logs:&lt;/p&gt;
+
+&lt;p&gt;&lt;figure class='code-highlight-figure'&gt;&lt;div class='code-highlight'&gt;&lt;pre class='code-highlight-pre'&gt;&lt;div data-line='1' class='code-highlight-row numbered'&gt;&lt;div class='code-highlight-line'&gt;$ heroku logs -t&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;&lt;/p&gt;
+
+&lt;p&gt;Then curl the service to create a shortened URL. Once created, paste the returned URL in a browser to be redirected to the expanded URL. To create with curl:&lt;/p&gt;
+
+&lt;p&gt;&lt;figure class='code-highlight-figure'&gt;&lt;div class='code-highlight'&gt;&lt;pre class='code-highlight-pre'&gt;&lt;div data-line='1' class='code-highlight-row numbered'&gt;&lt;div class='code-highlight-line'&gt;$ curl -i -H &quot;Content-Type: application/json&quot; \
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line='2' class='code-highlight-row numbered'&gt;&lt;div class='code-highlight-line'&gt;  -X POST -d '&amp;#x7b;&quot;url&quot;:&quot;http://www.nytimes.com/2012/05/06/travel/36-hours-in-barcelona-spain.html&quot;&amp;#x7d;' \
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line='3' class='code-highlight-row numbered'&gt;&lt;div class='code-highlight-line'&gt;  http://nameless-lake-8055.herokuapp.com/url
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line='4' class='code-highlight-row numbered'&gt;&lt;div class='code-highlight-line'&gt;HTTP/1.1 201 Created
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line='5' class='code-highlight-row numbered'&gt;&lt;div class='code-highlight-line'&gt;Content-Type: application/json; charset=utf-8
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line='6' class='code-highlight-row numbered'&gt;&lt;div class='code-highlight-line'&gt;Content-Length: 44
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line='7' class='code-highlight-row numbered'&gt;&lt;div class='code-highlight-line'&gt; &lt;/div&gt;&lt;/div&gt;&lt;div data-line='8' class='code-highlight-row numbered'&gt;&lt;div class='code-highlight-line'&gt;&amp;#x7b;&quot;smally_url&quot;:&quot;http://nameless-lake-8055.herokuapp.com/9h5k4&quot;&amp;#x7d;&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sun, 12 Jul 2015 21:50:36 -0700</pubDate>
+        <link>http://angstrom.io/blog/2015/07/12/a-simple-finatra-example-project/</link>
+        <guid isPermaLink="true">http://angstrom.io/blog/2015/07/12/a-simple-finatra-example-project/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Devil's Dictionary of Programming</title>
+        <description>&lt;p&gt;&lt;br/&gt;
+&lt;a href=&quot;http://programmingisterrible.com/post/65781074112/devils-dictionary-of-programming&quot;&gt;Devil's Dictionary of Programming&lt;/a&gt; courtesy of &lt;a href=&quot;http://programmingisterrible.com/&quot;&gt;http://programmingisterrible.com&lt;/a&gt;&lt;/p&gt;
+
+&lt;!-- more --&gt;
+
+</description>
+        <pubDate>Sun, 03 Nov 2013 16:36:00 -0800</pubDate>
+        <link>http://angstrom.io/blog/2013/11/03/devils-dictionary-of-programming/</link>
+        <guid isPermaLink="true">http://angstrom.io/blog/2013/11/03/devils-dictionary-of-programming/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>MaxMind, Maven, and Thor</title>
+        <description>&lt;p&gt;In a previous life, my company used the &lt;a href=&quot;http://www.maxmind.com/en/home&quot;&gt;MaxMind&lt;/a&gt; GeoIP database for geo-location information based on client IP addresses. We packaged the .dat as a JAR included on the classpath for use in instantiating a &lt;a href=&quot;https://github.com/maxmind/geoip-api-java/blob/master/source/com/maxmind/geoip/LookupService.java&quot;&gt;com.maxmind.geoip.LookupService&lt;/a&gt; object which we wrapped with a custom service.&lt;/p&gt;
+
+&lt;!-- more --&gt;
+
+
+&lt;p&gt;Generally, we updated the database once a quarter so I wrote a &lt;a href=&quot;https://github.com/wycats/thor&quot;&gt;Thor&lt;/a&gt; script to download the .dat file, put it into a JAR, and upload the JAR as a Maven artifact to a Maven-compatible repository (we used &lt;a href=&quot;http://www.sonatype.org/nexus/&quot;&gt;Nexus&lt;/a&gt;). The default download location is &lt;code&gt;~/Downloads&lt;/code&gt; but it's configurable via the passed in 'temp' argument: &lt;code&gt;--temp=/tmp&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h4&gt;Thor File&lt;/h4&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-md-10&quot;&gt;
+    &lt;script src=&quot;https://gist.github.com/cacoco/5518012.js&quot;&gt;&lt;/script&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;We used an &lt;a href=&quot;http://en.wikipedia.org/wiki/ISO_8601&quot;&gt;ISO 8601&lt;/a&gt; timestamp as the version, i.e., &lt;em&gt;2011-02-25&lt;/em&gt;.&lt;/p&gt;
+
+&lt;h4&gt;Including as a Maven dependency&lt;/h4&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-md-8&quot;&gt;
+    &lt;script src=&quot;https://gist.github.com/cacoco/5518076.js&quot;&gt;&lt;/script&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;By including as a Maven dependency the JAR will be on the classpath and access to the .dat file can happen as a classpath resource.&lt;/p&gt;
+
+&lt;h4&gt;Loading the File&lt;/h4&gt;
+
+&lt;p&gt;Most of our applications were written in Java using &lt;a href=&quot;http://www.springsource.org/documentation&quot;&gt;Spring&lt;/a&gt; for dependency injection. We wrapped the &lt;code&gt;com.maxmind.geoip.LookupService&lt;/code&gt; in a thin layer of our own code to provide our applications with a simple interface. To do this we made our service inherit from Spring's ApplicationContextAware Interface and override the &lt;code&gt;setApplicationContext(..)&lt;/code&gt; method like such:&lt;/p&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-md-10&quot;&gt;
+    &lt;script src=&quot;https://gist.github.com/cacoco/5518218.js&quot;&gt;&lt;/script&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+</description>
+        <pubDate>Sat, 04 May 2013 09:36:00 -0700</pubDate>
+        <link>http://angstrom.io/blog/2013/05/04/install-latest-maxmind-database-into-maven-repository-using-thor/</link>
+        <guid isPermaLink="true">http://angstrom.io/blog/2013/05/04/install-latest-maxmind-database-into-maven-repository-using-thor/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Be a Warning</title>
+        <description>&lt;div class=&quot;container-fluid&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;img class=&quot;img-responsive&quot; alt=&quot;If you can't be an example, be a warning.&quot; src=&quot;/images/warning.png&quot;&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+</description>
+        <pubDate>Fri, 12 Apr 2013 21:19:00 -0700</pubDate>
+        <link>http://angstrom.io/blog/2013/04/12/be-a-warning/</link>
+        <guid isPermaLink="true">http://angstrom.io/blog/2013/04/12/be-a-warning/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Office Exercises</title>
+        <description>&lt;!-- more --&gt;
+
+
+&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+
+&lt;div class=&quot;container-fluid&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;img class=&quot;img-responsive&quot; alt=&quot;Office Exercises.&quot; src=&quot;http://eyeprotectorpro.com/officeexercises.png&quot;&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+</description>
+        <pubDate>Sun, 07 Apr 2013 19:48:00 -0700</pubDate>
+        <link>http://angstrom.io/blog/2013/04/07/office-exercises/</link>
+        <guid isPermaLink="true">http://angstrom.io/blog/2013/04/07/office-exercises/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Hibi No Neiro</title>
+        <description>&lt;p&gt;SOUR '日々の音色 (Hibi no neiro)'&lt;/p&gt;
+
+&lt;!-- more --&gt;
+
+
+&lt;div class=&quot;container-fluid&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;embed-responsive embed-responsive-4by3&quot;&gt;
+            &lt;iframe class=&quot;embed-responsive-item&quot; width=&quot;420&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/WfBlUQguvyw?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+</description>
+        <pubDate>Mon, 01 Apr 2013 19:52:00 -0700</pubDate>
+        <link>http://angstrom.io/blog/2013/04/01/hibi-no-neiro/</link>
+        <guid isPermaLink="true">http://angstrom.io/blog/2013/04/01/hibi-no-neiro/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Out of Sorts</title>
+        <description>&lt;!-- more --&gt;
+
+
+&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+
+&lt;div class=&quot;container-fluid&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;img class=&quot;img-responsive&quot; alt=&quot;Ineffective Sorts&quot; src=&quot;http://imgs.xkcd.com/comics/ineffective_sorts.png&quot;&gt;
+        &lt;br /&gt;
+        &lt;span class=&quot;credit center&quot;&gt;via &lt;a href=&quot;http://xkcd.com/&quot;&gt;xkcd.com&lt;/a&gt;&lt;/span&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+</description>
+        <pubDate>Fri, 22 Mar 2013 22:48:00 -0700</pubDate>
+        <link>http://angstrom.io/blog/2013/03/22/out-of-sorts/</link>
+        <guid isPermaLink="true">http://angstrom.io/blog/2013/03/22/out-of-sorts/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Bikes of San Francisco</title>
+        <description>&lt;!-- more --&gt;
+
+
+&lt;div class=&quot;container-fluid&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;img class=&quot;img-responsive&quot; alt=&quot;Bikes Of San Francisco&quot; src=&quot;/images/5112789301_6721e579be_o.jpg&quot;&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+</description>
+        <pubDate>Sat, 16 Mar 2013 07:55:00 -0700</pubDate>
+        <link>http://angstrom.io/blog/2013/03/16/bikes-of-san-francisco/</link>
+        <guid isPermaLink="true">http://angstrom.io/blog/2013/03/16/bikes-of-san-francisco/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Damn the Metrics...</title>
+        <description>&lt;!-- more --&gt;
+
+
+&lt;div class=&quot;container-fluid&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;img class=&quot;img-responsive&quot; alt=&quot;Damn the Metrics, Full Speed Ahead.&quot; src=&quot;/images/damn.png&quot;&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+</description>
+        <pubDate>Thu, 14 Mar 2013 21:22:00 -0700</pubDate>
+        <link>http://angstrom.io/blog/2013/03/14/damn-the-metrics/</link>
+        <guid isPermaLink="true">http://angstrom.io/blog/2013/03/14/damn-the-metrics/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Everyone Is a Moon</title>
+        <description>&lt;p&gt;&quot;Everyone is a moon, and has a dark side which he never shows to anybody.&quot; - Mark Twain&lt;/p&gt;
+
+&lt;!-- more --&gt;
+
+
+&lt;div class=&quot;container-fluid&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+    &lt;img class=&quot;img-responsive&quot; alt=&quot;moon&quot; src=&quot;http://1.bp.blogspot.com/_9W3fkyH4VJk/Rx2NaGiFygI/AAAAAAAAAGg/mO3X9Kygugc/s1600/moonhi.jpg&quot;&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+</description>
+        <pubDate>Tue, 12 Mar 2013 21:03:00 -0700</pubDate>
+        <link>http://angstrom.io/blog/2013/03/12/every-man-is-a-moon/</link>
+        <guid isPermaLink="true">http://angstrom.io/blog/2013/03/12/every-man-is-a-moon/</guid>
+        
+        
+      </item>
+    
+  </channel>
+</rss>

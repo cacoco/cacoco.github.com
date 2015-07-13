@@ -1,145 +1,181 @@
-
 <!DOCTYPE html>
-<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
-<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
-<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
-<head>
-	<meta charset="utf-8">
-	<title>MaxMind, Maven, and Thor - life and code &middot; in small doses</title>
-	<meta name="author" content="Christopher Coco">
-	
-	<meta name="description" content="In a previous life, my company used the MaxMind GeoIP database for geo-location information based on client IP addresses. We packaged the .dat as a &hellip;">
-	
+<html>
 
-	<!-- http://t.co/dKP3o1e -->
-	<meta name="HandheldFriendly" content="True">
-	<meta name="MobileOptimized" content="320">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- Bootstrap -->
-	<link href="/stylesheets/bootstrap.css" rel="stylesheet">
-	<style type="text/css">
-	/* Sticky footer styles
-	-------------------------------------------------- */
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	html,
-	body {
-		height: 100%;
-		padding-top: 30px;
-		padding-bottom: 40px;
-	}
-	.sidebar-nav {
-		padding: 9px 0;
-	}
+  <title>MaxMind, Maven, and Thor</title>
+  <meta name="description" content="In a previous life, my company used the MaxMind GeoIP database for geo-location information based on client IP addresses. We packaged the .dat as a JAR inclu...">
+  <link rel="icon" href="/favicon.ico">
 
-	/* Wrapper for page content to push down footer */
-	#wrap {
-		min-height: 100%;
-		height: auto !important;
-		height: 100%;
-		/* Negative indent footer by it's height */
-		margin: 0 auto -60px;
-	}
+  <style type="text/css">
 
-	/* Set the fixed height of the footer here */
-	#push,
-	#footer {
-		height: 60px;
-	}
-	#footer {
-		background-color: #f5f5f5;
-	}
+  	html,
+  	body {
+  		height: 100%;
+  		padding-top: 30px;
+  		padding-bottom: 40px;
+  	}
+  	.sidebar-nav {
+  		padding: 9px 0;
+  	}
+    .navbar-right {
+      padding-right: 18px;
+    }
 
-	/* Lastly, apply responsive CSS fixes as necessary */
-	@media (max-width: 767px) {
-		#footer {
-			margin-left: -20px;
-			margin-right: -20px;
-			padding-left: 20px;
-			padding-right: 20px;
-		}
-	}	
-	.container {
-		width: auto;
-		max-width: 680px;
-	}
-	.container .credit {
-		margin: 20px 0;
-	}
+    /* Sticky footer styles
+    -------------------------------------------------- */
+  	/* Wrapper for page content to push down footer */
+  	#wrap {
+  		min-height: 100%;
+  		height: auto !important;
+  		height: 100%;
+  		/* Negative indent footer by it's height */
+  		/*margin: 0 auto 0px;*/
+  	}
+
+  	/* Set the fixed height of the footer here */
+  	#push,
+  	#footer {
+  		height: 60px;
+  	}
+  	#footer {
+  		background-color: #f5f5f5;
+  	}
+
+  	.container {
+  		width: auto;
+  		max-width: 680px;
+  	}
+  	.container .credit {
+  		margin: 20px 0;
+  	}
+  	.white, .white a {
+  	  color: #fff;
+  	}
 	</style>
-	<link href="/stylesheets/bootstrap-responsive.css" rel="stylesheet">
-	
-	<link rel="canonical" href="http://cacoco.github.com/blog/2013/05/04/install-latest-maxmind-database-into-maven-repository-using-thor">
-	<link href="/favicon.ico" rel="icon">
-	<script src="/javascripts/bootstrap.js" type="text/javascript"></script>
-	<!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
-<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
-	
-  <script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-39854113-1']);
-    _gaq.push(['_trackPageview']);
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-  </script>
-
-
+  <link rel="canonical" href="http://angstrom.io/blog/2013/05/04/install-latest-maxmind-database-into-maven-repository-using-thor/">
+  <link rel="alternate" type="application/rss+xml" title="life and code &middot; in small doses" href="http://angstrom.io/feed.xml" />
 </head>
-<body   >
-  <header role="banner"><div class="navbar navbar-inverse navbar-fixed-top">
-	<div class="navbar-inner">
-		<div class="container-fluid">
-			<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
-			<div class="nav-collapse collapse">
-				<p class="navbar-text pull-right">
-				  <i class="icon-asterisk icon-white"></i>&nbsp;1 angstrom = 1.0 × 10<sup>-10</sup> meters
-				</p>
-				<ul class="nav">
-					<li><a href="/"><i class="icon-home icon-white"></i>&nbsp;Home</a></li>
-					<li><a href="/blog/archives"><i class="icon-list icon-white"></i>&nbsp;Blog</a></li>
-				</ul>
-			</div><!--/.nav-collapse -->
-		</div>
-	</div>
-</div></header>
-  <!-- <nav role="navigation"><ul class="subscription" data-subscription="rss">
-  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
-  
-</ul>
-  
-<form action="http://google.com/search" method="get">
-  <fieldset role="search">
-    <input type="hidden" name="q" value="site:cacoco.github.com" />
-    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
-  </fieldset>
-</form>
-  
-<ul class="main-navigation">
-  <li><a href="/">Blog</a></li>
-  <li><a href="/blog/archives">Archives</a></li>
-</ul>
 
-</nav> -->
-  <div id="wrap">
-    <!-- Begin page content -->
-	 <div class="container-fluid">
-      <div>
-<article class="hentry" role="article">
-  
+
+  <body   >
+
+    <header role="banner">
+
+  <div class="wrapper">
+
+    <nav class="navbar navbar-fixed-top navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- <a class="navbar-brand" href="#">Project name</a> -->
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <p class="navbar-text navbar-right">
+  			    <span class="glyphicon glyphicon-asterisk white" aria-hidden="true"></span>&nbsp;1 angstrom = 1.0 × 10<sup>-10</sup> meters
+  				</p>
+          <ul class="nav navbar-nav">
+            <li><a href="/"><span class="glyphicon glyphicon-home white" aria-hidden="true"></span>&nbsp;Home</a></li>
+            <li><a href="/blog/archives"><span class="glyphicon glyphicon-list white" aria-hidden="true"></span>&nbsp;Blog</a></li>
+          </ul>
+        </div><!-- /.nav-collapse -->
+      </div><!-- /.container -->
+    </nav><!-- /.navbar -->
+
+  </div>
+
+</header>
+
+
+    <div id="wrap">
+      <div class="container-fluid">
+        <div class="post">
+
+  <article class="hentry" role="article">
+    
   <header>
     
       <h1 class="entry-title">MaxMind, Maven, and Thor&nbsp;&raquo;</h1>
     
-    
+      <p class="meta">
+        <span class="byline author vcard">Posted by <span class="fn">@cacoco</span></span>
+ on 
+
+
+
+
+
+
+
+
+  
+
+
+
+<time datetime="2013-05-04T09:36:00-07:00" pubdate data-updated="true">Saturday, May 4 2013</time>
+      </p>
+  </header>
+
+
+<div class="entry-content"><p>In a previous life, my company used the <a href="http://www.maxmind.com/en/home">MaxMind</a> GeoIP database for geo-location information based on client IP addresses. We packaged the .dat as a JAR included on the classpath for use in instantiating a <a href="https://github.com/maxmind/geoip-api-java/blob/master/source/com/maxmind/geoip/LookupService.java">com.maxmind.geoip.LookupService</a> object which we wrapped with a custom service.</p>
+
+<!-- more -->
+
+
+<p>Generally, we updated the database once a quarter so I wrote a <a href="https://github.com/wycats/thor">Thor</a> script to download the .dat file, put it into a JAR, and upload the JAR as a Maven artifact to a Maven-compatible repository (we used <a href="http://www.sonatype.org/nexus/">Nexus</a>). The default download location is <code>~/Downloads</code> but it's configurable via the passed in 'temp' argument: <code>--temp=/tmp</code>.</p>
+
+<h4>Thor File</h4>
+
+<div class="row">
+  <div class="col-md-10">
+    <script src="https://gist.github.com/cacoco/5518012.js"></script>
+  </div>
+</div>
+
+
+<p>We used an <a href="http://en.wikipedia.org/wiki/ISO_8601">ISO 8601</a> timestamp as the version, i.e., <em>2011-02-25</em>.</p>
+
+<h4>Including as a Maven dependency</h4>
+
+<div class="row">
+  <div class="col-md-8">
+    <script src="https://gist.github.com/cacoco/5518076.js"></script>
+  </div>
+</div>
+
+
+<p>By including as a Maven dependency the JAR will be on the classpath and access to the .dat file can happen as a classpath resource.</p>
+
+<h4>Loading the File</h4>
+
+<p>Most of our applications were written in Java using <a href="http://www.springsource.org/documentation">Spring</a> for dependency injection. We wrapped the <code>com.maxmind.geoip.LookupService</code> in a thin layer of our own code to provide our applications with a simple interface. To do this we made our service inherit from Spring's ApplicationContextAware Interface and override the <code>setApplicationContext(..)</code> method like such:</p>
+
+<div class="row">
+  <div class="col-md-10">
+    <script src="https://gist.github.com/cacoco/5518218.js"></script>
+  </div>
+</div>
+
+</div>
+
+
+    <div id="push"></div>
+    <div id="push"></div>
+    <footer>
       <p class="meta">
         
 
@@ -153,154 +189,49 @@
   
 
 
-<time datetime="2013-05-04T09:36:00-07:00" pubdate data-updated="true">May 4<span>th</span>, 2013</time>
+
+<time datetime="2013-05-04T09:36:00-07:00" pubdate data-updated="true">Saturday, May 4 2013</time>
+        
+
+
+      </p>
+      <p class="meta">
+        
+          <a class="pull-left" href="/blog/2013/04/12/be-a-warning/" title="Previous Post: Be a Warning">&laquo; Be a Warning</a>
+        
+        
+          <a class="pull-right" href="/blog/2013/11/03/devils-dictionary-of-programming/" title="Next Post: Devil's Dictionary of Programming">Devil's Dictionary of Programming &raquo;</a>
         
       </p>
-    
-  </header>
-
-
-<div class="entry-content"><p>In a previous life, my company used the <a href="http://www.maxmind.com/en/home">MaxMind</a> GeoIP database for geo-location information based on client IP addresses. We packaged the .dat as a JAR included on the classpath for use in instantiating a <a href="https://github.com/maxmind/geoip-api-java/blob/master/source/com/maxmind/geoip/LookupService.java">com.maxmind.geoip.LookupService</a> object which we wrapped with a custom service.</p>
-
-<!-- more -->
-
-
-<p>Generally, we updated the database once a quarter so I wrote a <a href="https://github.com/wycats/thor">Thor</a> script to download the .dat file, put it into a JAR, and upload the JAR as a Maven artifact to a Maven-compatible repository (we used <a href="http://www.sonatype.org/nexus/">Nexus</a>). The default download location is <code>~/Downloads</code> but it&#8217;s configurable via the passed in &#8216;temp&#8217; argument: <code>--temp=/tmp</code>.</p>
-
-<h4>Thor File</h4>
-
-<div class="row-fluid">
-  <div class="span10">
-    <script src="https://gist.github.com/cacoco/5518012.js"></script>
-  </div>
+      <br/>&nbsp;<br/>
+    </footer>
+  </article>
 </div>
 
-
-<p>We used an <a href="http://en.wikipedia.org/wiki/ISO_8601">ISO 8601</a> timestamp as the version, i.e., <em>2011-02-25</em>.</p>
-
-<h4>Including as a Maven dependency</h4>
-
-<div class="row-fluid">
-  <div class="span8">
-    <script src="https://gist.github.com/cacoco/5518076.js"></script>
-  </div>
-</div>
-
-
-<p></p>
-
-<p>By including as a Maven dependency the JAR will be on the classpath and access to the .dat file can happen as a classpath resource.</p>
-
-<h4>Loading the File</h4>
-
-<p>Most of our applications were written in Java using <a href="http://www.springsource.org/documentation">Spring</a> for dependency injection. We wrapped the <code>com.maxmind.geoip.LookupService</code> in a thin layer of our own code to provide our applications with a simple interface. To do this we made our service inherit from Spring&#8217;s ApplicationContextAware Interface and override the <code>setApplicationContext(..)</code> method like such:</p>
-
-<div class="row-fluid">
-  <div class="span10">
-    <script src="https://gist.github.com/cacoco/5518218.js"></script>
-  </div>
-</div>
-
-
-<p></p>
-</div>
-
-
-  <footer>
-    <p class="meta">
-      
-  
-
-<p><span class="byline author vcard">Posted by <span class="fn">Christopher Coco</span></span></p>
-
-      
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-05-04T09:36:00-07:00" pubdate data-updated="true">May 4<span>th</span>, 2013</time>
-      
-
-
-    </p>
-    
-      <div class="sharing">
-  
-  
-  
-</div>
-
-    
-    <p class="meta">
-      
-        <a class="pull-left" href="/blog/2013/04/12/be-a-warning/" title="Previous Post: Be A Warning">&laquo; Be A Warning</a>
-      
-      
-        <a class="pull-right" href="/blog/2013/11/03/devils-dictionary-of-programming/" title="Next Post: Devil's Dictionary of Programming">Devil's Dictionary of Programming &raquo;</a>
-      
-    </p>
-    <br />&nbsp;<br />
-  </footer>
-</article>
-
-</div>
-
-<aside class="sidebar">
-  
-    
-  <li>
-  	<a href="/blog/2013/11/03/devils-dictionary-of-programming/">Devil's Dictionary of Programming</a>
-  </li>
-
-  <li>
-  	<a href="/blog/2013/05/04/install-latest-maxmind-database-into-maven-repository-using-thor/">MaxMind, Maven, and Thor</a>
-  </li>
-
-  <li>
-  	<a href="/blog/2013/04/12/be-a-warning/">Be A Warning</a>
-  </li>
-
-  <li>
-  	<a href="/blog/2013/04/07/office-exercises/">Office Exercises</a>
-  </li>
-
-
-  
-</aside>
-
-
+      </div>
+      <div id="push"></div>
     </div>
-	<div id="push"></div>
+
+    <div id="footer">
+
+  <div class="container" style="text-align: center;">
+
+    <p class="muted credit">
+      <span class="credit">Copyright &copy; 2015</span>&nbsp; -
+      <span class="credit">Powered by <a href="https://github.com/octopress/octopress">Octopress</a>&nbsp;&&nbsp;<a href="http://glyphicons.com/">Glyphicons</a></span>&nbsp;&nbsp;&nbsp;
+      <span class="pull-right">
+        <a href="https://github.com/cacoco/Feedback/issues/new" title="Leave cacoco feedback using GitHub" target="_blank">
+          <button type="button" class="btn btn-info btn-sm">
+            <span class="glyphicon glyphicon-comment white"></span>&nbsp;Leave&nbsp;feedback
+          </button>
+        </a>
+    </p>
+
   </div>
-  <div id="footer">
-    <div class="container">
-      <p class="muted credit">
-  <span class="credit">Copyright &copy; 2013</span>&nbsp; -
-  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a>&nbsp;&&nbsp;<a href="http://glyphicons.com/">Glyphicons</a></span>&nbsp;&nbsp;&nbsp;
-  <span class="pull-right"><a class="btn btn-mini btn-info" href="https://github.com/cacoco/Feedback/issues/new" title="Leave cacoco feedback using GitHub" target="_blank"><i class="icon-comment icon-white"></i> Leave me feedback</a></span>
-</p>
+
+</div>
 
 
-	</div>
-  </div>
-  
+  </body>
 
-
-
-
-
-
-
-
-
-
-
-</body>
 </html>
