@@ -5,8 +5,8 @@
     <description></description>
     <link>http://angstrom.io/</link>
     <atom:link href="http://angstrom.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 12 Jul 2015 21:56:17 -0700</pubDate>
-    <lastBuildDate>Sun, 12 Jul 2015 21:56:17 -0700</lastBuildDate>
+    <pubDate>Sun, 12 Jul 2015 21:57:55 -0700</pubDate>
+    <lastBuildDate>Sun, 12 Jul 2015 21:57:55 -0700</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -98,7 +98,9 @@
 &lt;/div&gt;&lt;/div&gt;&lt;div data-line='6' class='code-highlight-row numbered'&gt;&lt;div class='code-highlight-line'&gt;Content-Length: 44
 &lt;/div&gt;&lt;/div&gt;&lt;div data-line='7' class='code-highlight-row numbered'&gt;&lt;div class='code-highlight-line'&gt; &lt;/div&gt;&lt;/div&gt;&lt;div data-line='8' class='code-highlight-row numbered'&gt;&lt;div class='code-highlight-line'&gt;&amp;#x7b;&quot;smally_url&quot;:&quot;http://nameless-lake-8055.herokuapp.com/9h5k4&quot;&amp;#x7d;&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;&lt;/p&gt;
 
-&lt;p&gt;Full project source available &lt;a href=&quot;https://github.com/cacoco/smally-finatra&quot;&gt;on github&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;&lt;br/&gt;
+&lt;br/&gt;
+Full project source available &lt;a href=&quot;https://github.com/cacoco/smally-finatra&quot;&gt;on github&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Sun, 12 Jul 2015 21:50:36 -0700</pubDate>
         <link>http://angstrom.io/blog/2015/07/12/a-simple-finatra-example-project/</link>
