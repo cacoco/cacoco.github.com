@@ -1,4 +1,3 @@
-
 <img alt="angstrom.io" src="favicon.ico" width="400" height="400">
 
 ## cacoco.github.com
