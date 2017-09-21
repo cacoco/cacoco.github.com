@@ -1,0 +1,55 @@
+==================================================================
+https://keybase.io/cacoco
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://angstrom.io
+  * I am cacoco (https://keybase.io/cacoco) on keybase.
+  * I have a public key ASAPB5sfRnetgJ-AzzBsVVrvIF3Hsiz_irbWcVOgkJsHigo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01200f079b1f4677ad809f80cf306c555aef205dc7b22cff8ab6d67153a0909b078a0a",
+      "host": "keybase.io",
+      "kid": "01200f079b1f4677ad809f80cf306c555aef205dc7b22cff8ab6d67153a0909b078a0a",
+      "uid": "fd559423a66edbe0bb0694105f919a19",
+      "username": "cacoco"
+    },
+    "merkle_root": {
+      "ctime": 1506017304,
+      "hash": "9bdcd32510d61715119a7bc33aeb6bf217a1c6712606aa83330f518f92fb7c7b7a44b631fe8c1b1f5dd699cfe15f4bbe19fcb18a260fe2d8c5b5b060a13418ed",
+      "hash_meta": "745fed3f681c88f09dfa59f5b7df0cb4f795d57a7037a8b957068610c50921e7",
+      "seqno": 1439264
+    },
+    "service": {
+      "hostname": "angstrom.io",
+      "protocol": "http:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "1.0.30"
+  },
+  "ctime": 1506017346,
+  "expire_in": 504576000,
+  "prev": "63f8f17646c84c4d2127655ea7c4ec30a3567f344e260f8560516abb7fccd4c0",
+  "seqno": 6,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgDwebH0Z3rYCfgM8wbFVa7yBdx7Is/4q21nFToJCbB4oKp3BheWxvYWTFA0B7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwMGYwNzliMWY0Njc3YWQ4MDlmODBjZjMwNmM1NTVhZWYyMDVkYzdiMjJjZmY4YWI2ZDY3MTUzYTA5MDliMDc4YTBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwMGYwNzliMWY0Njc3YWQ4MDlmODBjZjMwNmM1NTVhZWYyMDVkYzdiMjJjZmY4YWI2ZDY3MTUzYTA5MDliMDc4YTBhIiwidWlkIjoiZmQ1NTk0MjNhNjZlZGJlMGJiMDY5NDEwNWY5MTlhMTkiLCJ1c2VybmFtZSI6ImNhY29jbyJ9LCJtZXJrbGVfcm9vdCI6eyJjdGltZSI6MTUwNjAxNzMwNCwiaGFzaCI6IjliZGNkMzI1MTBkNjE3MTUxMTlhN2JjMzNhZWI2YmYyMTdhMWM2NzEyNjA2YWE4MzMzMGY1MThmOTJmYjdjN2I3YTQ0YjYzMWZlOGMxYjFmNWRkNjk5Y2ZlMTVmNGJiZTE5ZmNiMThhMjYwZmUyZDhjNWI1YjA2MGExMzQxOGVkIiwiaGFzaF9tZXRhIjoiNzQ1ZmVkM2Y2ODFjODhmMDlkZmE1OWY1YjdkZjBjYjRmNzk1ZDU3YTcwMzdhOGI5NTcwNjg2MTBjNTA5MjFlNyIsInNlcW5vIjoxNDM5MjY0fSwic2VydmljZSI6eyJob3N0bmFtZSI6ImFuZ3N0cm9tLmlvIiwicHJvdG9jb2wiOiJodHRwOiJ9LCJ0eXBlIjoid2ViX3NlcnZpY2VfYmluZGluZyIsInZlcnNpb24iOjF9LCJjbGllbnQiOnsibmFtZSI6ImtleWJhc2UuaW8gZ28gY2xpZW50IiwidmVyc2lvbiI6IjEuMC4zMCJ9LCJjdGltZSI6MTUwNjAxNzM0NiwiZXhwaXJlX2luIjo1MDQ1NzYwMDAsInByZXYiOiI2M2Y4ZjE3NjQ2Yzg0YzRkMjEyNzY1NWVhN2M0ZWMzMGEzNTY3ZjM0NGUyNjBmODU2MDUxNmFiYjdmY2NkNGMwIiwic2Vxbm8iOjYsInRhZyI6InNpZ25hdHVyZSJ9o3NpZ8RApWDory6DZafberC6yxDf9FT0OUCzuTsjI/YUz/L5s/PVZYU1YL7i5FSR5AP1HFEIUX5SVSDqqounxZ3WZ88kAKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIJuOFLEMTUPZpEDH7aPg3UShDT5lVI3BlMC8xwjbG26Vo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/cacoco
+
+==================================================================
