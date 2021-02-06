@@ -1,4 +1,5 @@
 _site
+.deploy
 .bundle
 .DS_Store
 .gist-cache
