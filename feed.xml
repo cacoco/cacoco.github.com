@@ -3,11 +3,11 @@
   <channel>
     <title>life and code &amp;middot; in small doses</title>
     <description></description>
-    <link>http://angstrom.io/</link>
-    <atom:link href="http://angstrom.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 21 Sep 2017 11:15:22 -0700</pubDate>
-    <lastBuildDate>Thu, 21 Sep 2017 11:15:22 -0700</lastBuildDate>
-    <generator>Jekyll v2.5.3</generator>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Fri, 05 Feb 2021 20:55:18 -0800</pubDate>
+    <lastBuildDate>Fri, 05 Feb 2021 20:55:18 -0800</lastBuildDate>
+    <generator>Jekyll v3.9.0</generator>
     
       <item>
         <title>A Simple Finatra Example Project</title>
@@ -103,8 +103,8 @@
 Full project source available &lt;a href=&quot;https://github.com/cacoco/smally-finatra&quot;&gt;on github&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Sun, 12 Jul 2015 21:50:36 -0700</pubDate>
-        <link>http://angstrom.io/blog/2015/07/12/a-simple-finatra-example-project/</link>
-        <guid isPermaLink="true">http://angstrom.io/blog/2015/07/12/a-simple-finatra-example-project/</guid>
+        <link>http://localhost:4000/blog/2015/07/12/a-simple-finatra-example-project/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2015/07/12/a-simple-finatra-example-project/</guid>
         
         
       </item>
@@ -118,8 +118,8 @@ Full project source available &lt;a href=&quot;https://github.com/cacoco/smally-
 
 </description>
         <pubDate>Sun, 03 Nov 2013 16:36:00 -0800</pubDate>
-        <link>http://angstrom.io/blog/2013/11/03/devils-dictionary-of-programming/</link>
-        <guid isPermaLink="true">http://angstrom.io/blog/2013/11/03/devils-dictionary-of-programming/</guid>
+        <link>http://localhost:4000/blog/2013/11/03/devils-dictionary-of-programming/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2013/11/03/devils-dictionary-of-programming/</guid>
         
         
       </item>
@@ -167,14 +167,14 @@ Full project source available &lt;a href=&quot;https://github.com/cacoco/smally-
 
 </description>
         <pubDate>Sat, 04 May 2013 09:36:00 -0700</pubDate>
-        <link>http://angstrom.io/blog/2013/05/04/install-latest-maxmind-database-into-maven-repository-using-thor/</link>
-        <guid isPermaLink="true">http://angstrom.io/blog/2013/05/04/install-latest-maxmind-database-into-maven-repository-using-thor/</guid>
+        <link>http://localhost:4000/blog/2013/05/04/install-latest-maxmind-database-into-maven-repository-using-thor/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2013/05/04/install-latest-maxmind-database-into-maven-repository-using-thor/</guid>
         
         
       </item>
     
       <item>
-        <title>Be a Warning</title>
+        <title>Be A Warning</title>
         <description>&lt;div class=&quot;container-fluid&quot;&gt;
     &lt;div class=&quot;row&quot;&gt;
         &lt;img class=&quot;img-responsive&quot; alt=&quot;If you can't be an example, be a warning.&quot; src=&quot;/images/warning.png&quot;&gt;
@@ -183,8 +183,8 @@ Full project source available &lt;a href=&quot;https://github.com/cacoco/smally-
 
 </description>
         <pubDate>Fri, 12 Apr 2013 21:19:00 -0700</pubDate>
-        <link>http://angstrom.io/blog/2013/04/12/be-a-warning/</link>
-        <guid isPermaLink="true">http://angstrom.io/blog/2013/04/12/be-a-warning/</guid>
+        <link>http://localhost:4000/blog/2013/04/12/be-a-warning/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2013/04/12/be-a-warning/</guid>
         
         
       </item>
@@ -204,8 +204,8 @@ Full project source available &lt;a href=&quot;https://github.com/cacoco/smally-
 
 </description>
         <pubDate>Sun, 07 Apr 2013 19:48:00 -0700</pubDate>
-        <link>http://angstrom.io/blog/2013/04/07/office-exercises/</link>
-        <guid isPermaLink="true">http://angstrom.io/blog/2013/04/07/office-exercises/</guid>
+        <link>http://localhost:4000/blog/2013/04/07/office-exercises/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2013/04/07/office-exercises/</guid>
         
         
       </item>
@@ -227,8 +227,8 @@ Full project source available &lt;a href=&quot;https://github.com/cacoco/smally-
 
 </description>
         <pubDate>Mon, 01 Apr 2013 19:52:00 -0700</pubDate>
-        <link>http://angstrom.io/blog/2013/04/01/hibi-no-neiro/</link>
-        <guid isPermaLink="true">http://angstrom.io/blog/2013/04/01/hibi-no-neiro/</guid>
+        <link>http://localhost:4000/blog/2013/04/01/hibi-no-neiro/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2013/04/01/hibi-no-neiro/</guid>
         
         
       </item>
@@ -250,8 +250,8 @@ Full project source available &lt;a href=&quot;https://github.com/cacoco/smally-
 
 </description>
         <pubDate>Fri, 22 Mar 2013 22:48:00 -0700</pubDate>
-        <link>http://angstrom.io/blog/2013/03/22/out-of-sorts/</link>
-        <guid isPermaLink="true">http://angstrom.io/blog/2013/03/22/out-of-sorts/</guid>
+        <link>http://localhost:4000/blog/2013/03/22/out-of-sorts/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2013/03/22/out-of-sorts/</guid>
         
         
       </item>
@@ -269,8 +269,8 @@ Full project source available &lt;a href=&quot;https://github.com/cacoco/smally-
 
 </description>
         <pubDate>Sat, 16 Mar 2013 07:55:00 -0700</pubDate>
-        <link>http://angstrom.io/blog/2013/03/16/bikes-of-san-francisco/</link>
-        <guid isPermaLink="true">http://angstrom.io/blog/2013/03/16/bikes-of-san-francisco/</guid>
+        <link>http://localhost:4000/blog/2013/03/16/bikes-of-san-francisco/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2013/03/16/bikes-of-san-francisco/</guid>
         
         
       </item>
@@ -288,14 +288,14 @@ Full project source available &lt;a href=&quot;https://github.com/cacoco/smally-
 
 </description>
         <pubDate>Thu, 14 Mar 2013 21:22:00 -0700</pubDate>
-        <link>http://angstrom.io/blog/2013/03/14/damn-the-metrics/</link>
-        <guid isPermaLink="true">http://angstrom.io/blog/2013/03/14/damn-the-metrics/</guid>
+        <link>http://localhost:4000/blog/2013/03/14/damn-the-metrics/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2013/03/14/damn-the-metrics/</guid>
         
         
       </item>
     
       <item>
-        <title>Everyone Is a Moon</title>
+        <title>Everyone is a moon</title>
         <description>&lt;p&gt;&quot;Everyone is a moon, and has a dark side which he never shows to anybody.&quot; - Mark Twain&lt;/p&gt;
 
 &lt;!-- more --&gt;
@@ -309,8 +309,8 @@ Full project source available &lt;a href=&quot;https://github.com/cacoco/smally-
 
 </description>
         <pubDate>Tue, 12 Mar 2013 21:03:00 -0700</pubDate>
-        <link>http://angstrom.io/blog/2013/03/12/every-man-is-a-moon/</link>
-        <guid isPermaLink="true">http://angstrom.io/blog/2013/03/12/every-man-is-a-moon/</guid>
+        <link>http://localhost:4000/blog/2013/03/12/every-man-is-a-moon/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2013/03/12/every-man-is-a-moon/</guid>
         
         
       </item>

@@ -1,99 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>http://angstrom.io/blog/2015/07/12/a-simple-finatra-example-project/</loc>
-    <lastmod>2015-07-12T21:50:36-07:00</lastmod>
-  </url>
-  <url>
-    <loc>http://angstrom.io/blog/2013/11/03/devils-dictionary-of-programming/</loc>
-    <lastmod>2013-11-03T16:36:00-08:00</lastmod>
-  </url>
-  <url>
-    <loc>http://angstrom.io/blog/2013/05/04/install-latest-maxmind-database-into-maven-repository-using-thor/</loc>
-    <lastmod>2013-05-04T09:36:00-07:00</lastmod>
-  </url>
-  <url>
-    <loc>http://angstrom.io/blog/2013/04/12/be-a-warning/</loc>
-    <lastmod>2013-04-12T21:19:00-07:00</lastmod>
-  </url>
-  <url>
-    <loc>http://angstrom.io/blog/2013/04/07/office-exercises/</loc>
-    <lastmod>2013-04-07T19:48:00-07:00</lastmod>
-  </url>
-  <url>
-    <loc>http://angstrom.io/blog/2013/04/01/hibi-no-neiro/</loc>
-    <lastmod>2013-04-01T19:52:00-07:00</lastmod>
-  </url>
-  <url>
-    <loc>http://angstrom.io/blog/2013/03/22/out-of-sorts/</loc>
-    <lastmod>2013-03-22T22:48:00-07:00</lastmod>
-  </url>
-  <url>
-    <loc>http://angstrom.io/blog/2013/03/16/bikes-of-san-francisco/</loc>
-    <lastmod>2013-03-16T07:55:00-07:00</lastmod>
-  </url>
-  <url>
-    <loc>http://angstrom.io/blog/2013/03/14/damn-the-metrics/</loc>
-    <lastmod>2013-03-14T21:22:00-07:00</lastmod>
-  </url>
-  <url>
-    <loc>http://angstrom.io/blog/2013/03/12/every-man-is-a-moon/</loc>
-    <lastmod>2013-03-12T21:03:00-07:00</lastmod>
-  </url>
-  <url>
-    <loc>http://angstrom.io/blog/2013/03/10/sensible-tmux-defaults/</loc>
-    <lastmod>2013-03-10T21:20:00-07:00</lastmod>
-  </url>
-  <url>
-    <loc>http://angstrom.io/blog/2013/02/12/accumulator-generator-in-scala/</loc>
-    <lastmod>2013-02-12T23:01:00-08:00</lastmod>
-  </url>
-  <url>
-    <loc>http://angstrom.io/blog/2013/01/12/seven-deadly-sins-geometry/</loc>
-    <lastmod>2013-01-12T21:18:00-08:00</lastmod>
-  </url>
-  <url>
-    <loc>http://angstrom.io/blog/2012/11/10/cartooning-workshop/</loc>
-    <lastmod>2012-11-10T10:53:00-08:00</lastmod>
-  </url>
-  <url>
-    <loc>http://angstrom.io/blog/2012/10/27/childhood/</loc>
-    <lastmod>2012-10-27T21:32:00-07:00</lastmod>
-  </url>
-  <url>
-    <loc>http://angstrom.io/blog/2012/08/01/apache-buildr-and-annotation-processing-for-aws-simple-workflow/</loc>
-    <lastmod>2012-08-01T20:44:00-07:00</lastmod>
-  </url>
-  <url>
-    <loc>http://angstrom.io/blog/2012/07/11/fizzbuzz/</loc>
-    <lastmod>2012-07-11T22:07:00-07:00</lastmod>
-  </url>
-  <url>
-    <loc>http://angstrom.io/about/</loc>
-  </url>
-  <url>
-    <loc>http://angstrom.io/blog/archives/</loc>
-  </url>
-  <url>
-    <loc>http://angstrom.io/wedding/</loc>
-  </url>
-  <url>
-    <loc>http://angstrom.io/</loc>
-  </url>
-  <url>
-    <loc>http://angstrom.io/page2/</loc>
-  </url>
-  <url>
-    <loc>http://angstrom.io/page3/</loc>
-  </url>
-  <url>
-    <loc>http://angstrom.io/page4/</loc>
-  </url>
-  <url>
-    <loc>http://angstrom.io/page5/</loc>
-  </url>
-  <url>
-    <loc>http://angstrom.io/wedding/rings.html</loc>
-    <lastmod>2015-07-12T19:55:11-07:00</lastmod>
-  </url>
+<url>
+<loc>http://localhost:4000/blog/2012/07/11/fizzbuzz/</loc>
+<lastmod>2012-07-11T22:07:00-07:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/blog/2012/08/01/apache-buildr-and-annotation-processing-for-aws-simple-workflow/</loc>
+<lastmod>2012-08-01T20:44:00-07:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/blog/2012/10/27/childhood/</loc>
+<lastmod>2012-10-27T21:32:00-07:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/blog/2012/11/10/cartooning-workshop/</loc>
+<lastmod>2012-11-10T10:53:00-08:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/blog/2013/01/12/seven-deadly-sins-geometry/</loc>
+<lastmod>2013-01-12T21:18:00-08:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/blog/2013/02/12/accumulator-generator-in-scala/</loc>
+<lastmod>2013-02-12T23:01:00-08:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/blog/2013/03/10/sensible-tmux-defaults/</loc>
+<lastmod>2013-03-10T21:20:00-07:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/blog/2013/03/12/every-man-is-a-moon/</loc>
+<lastmod>2013-03-12T21:03:00-07:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/blog/2013/03/14/damn-the-metrics/</loc>
+<lastmod>2013-03-14T21:22:00-07:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/blog/2013/03/16/bikes-of-san-francisco/</loc>
+<lastmod>2013-03-16T07:55:00-07:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/blog/2013/03/22/out-of-sorts/</loc>
+<lastmod>2013-03-22T22:48:00-07:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/blog/2013/04/01/hibi-no-neiro/</loc>
+<lastmod>2013-04-01T19:52:00-07:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/blog/2013/04/07/office-exercises/</loc>
+<lastmod>2013-04-07T19:48:00-07:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/blog/2013/04/12/be-a-warning/</loc>
+<lastmod>2013-04-12T21:19:00-07:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/blog/2013/05/04/install-latest-maxmind-database-into-maven-repository-using-thor/</loc>
+<lastmod>2013-05-04T09:36:00-07:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/blog/2013/11/03/devils-dictionary-of-programming/</loc>
+<lastmod>2013-11-03T16:36:00-08:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/blog/2015/07/12/a-simple-finatra-example-project/</loc>
+<lastmod>2015-07-12T21:50:36-07:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/about/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/wedding/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/blog/archives/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/wedding/rings.html</loc>
+<lastmod>2015-07-12T19:55:11-07:00</lastmod>
+</url>
 </urlset>
