@@ -1,0 +1,12 @@
+name = "Bootstrap"
+license = "MIT"
+licenselink = "https://github.com/cacoco/cacoco.github.com/blob/master/LICENSE"
+description = ""
+homepage = "https://angstrom.io/"
+tags = ["bootstrap"]
+features = []
+min_version = "0.41.0"
+
+[author]
+  name = "Christopher Coco"
+  homepage = "https://angstrom.io/"

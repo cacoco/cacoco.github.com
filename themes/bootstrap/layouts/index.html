@@ -1,0 +1,88 @@
+{{ define "main" }}
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-3">
+      <div class="pull-left sidebar-nav">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title"><i class="bi bi-person-circle"></i>&nbsp;Personal</h3>
+          </div>
+          <!-- List group -->
+          <ul class="list-group">
+            <li class="list-group-item"><a href="/about/">about</a></li>
+            <li class="list-group-item"><a href="https://resume.github.io/?cacoco" target="_blank">github resumé</a></li>
+            <li class="list-group-item"><a href="https://www.linkedin.com/in/cacoco" target="_blank">linkedIn</a></li>
+          </ul>
+        </div>
+        <br/>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title"><i class="bi bi-globe"></i>&nbsp;On the Internet</h3>
+          </div>
+          <!-- List group -->
+          <ul class="list-group">
+            <li class="list-group-item"><a href="https://github.com/cacoco" title="code stuffs" target="_blank">github</a></li>
+            <li class="list-group-item"><a href="https://twitter.com/cacoco" title="hear me" target="_blank">twitter</a></li>
+            <li class="list-group-item"><a href="https://flickr.com/photos/strangerinberkeley/sets" title="see me" target="_blank">flickr</a></li>
+            <li class="list-group-item"><a href="https://coderwall.com/cacoco" title="i'm trying" target="_blank">coderwall</a></li>
+          </ul>
+        </div>
+        <br/>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title"><i class="bi bi-card-list"></i>&nbsp;Blog</h3>
+          </div>
+          <ul class="list-group">
+            {{ $recentposts := 5 }}
+            {{ range first 3 (where .Site.RegularPages "Type" "posts") }}
+            <li class="list-group-item"><a class="text-body" href="{{ .Permalink | relURL}}">{{ .Title | markdownify }}</a></li>
+            {{ end }}
+          </ul>
+        </div>
+        <br/>
+        <div class="panel panel-default">   
+          <span>
+            <p><iframe src="https://ghbtns.com/github-btn.html?user=cacoco&type=follow" allowtransparency="true" frameborder="0" scrolling="0" width="132" height="20"></iframe></p>
+          </span>
+          <span>
+            <a href="https://www.linkedin.com/in/ccoco"><img src="https://www.linkedin.com/img/webpromo/btn_liprofile_blue_80x15.png" width="80" height="15" border="0" alt="View Christopher Coco's profile on LinkedIn"></a>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-9">
+      <div class="p-5 mb-4 bg-light rounded-3" style="color:white; background-image: url('/images/IMG_2587.JPG')">
+        <div class="container-fluid py-5">
+          <h1 class="display-5 fw-bold">life and code.&nbsp;in small doses.</h1>
+          <p class="col-md-8 fs-4">Writings and code from another programmer.</p>
+          <div id="push"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">   
+          {{ if .Params.recentposts }}
+            {{ $recentposts = .Params.recentposts }}
+          {{ end }}       
+          {{ range first $recentposts (where .Site.RegularPages "Type" "posts") }}
+            <h2 class="mt-5"><a class="text-body" href="{{ .Permalink | relURL}}">{{ .Title | markdownify }}</a></h2>       
+            {{ if .Params.Subtitle }}
+              <h3 class="font-weight-light font-italic mb-3">{{ .Params.Subtitle | markdownify }}</h2>
+            {{ end }}        
+            <p class="text-muted mt-3">
+              <a class="text-muted" href="{{ .Permalink }}">Published {{ .Date.Format "January 2, 2006" }}</a>
+              {{ range .Params.tags }}
+                <a class="text-muted" href="{{ "/tags/" | relURL }}{{ . | urlize }}">#{{ . }}</a>
+              {{ end }}     
+            </p>
+            <article class="article">
+              <p>{{ .Summary }}</p>
+            </article>       
+            <p class="text-muted">Reading time: about {{ .ReadingTime }} minutes</p>
+            <p><a class="btn btn-primary" href="{{ .Permalink | relURL }}">Read more...</a></p>
+          {{ end }}
+        </div><!--/col-->
+      </div><!--/row-->
+    </div><!--/col-->
+  </div><!--/row-->
+</div>
+{{ end }}

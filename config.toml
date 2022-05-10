@@ -1,0 +1,37 @@
+baseURL = "https://cacoco.github.io"
+languageCode = "en-us"
+title = "life and code · in small doses"
+description = "Writings and code from another programmer."
+theme = "bootstrap"
+relativeURLs = true
+pygmentsCodeFences = true
+pygmentsUseClasses = true
+
+[Social]
+  twitter = "cacoco"
+
+[permalinks]
+  posts = '/:year/:month/:day/:title/'
+
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 110
+
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
+

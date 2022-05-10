@@ -1,8 +1,19 @@
-_site
-.deploy
-.bundle
 .DS_Store
-.gist-cache
-.code-highlighter-cache
-.sass-cache
-Gemfile.lock
+node_modules
+dist
+tmp
+
+### Hugo ###
+# Generated files by hugo
+/public/
+/resources/_gen
+/assets/jsconfig.json
+hugo_stats.json
+
+# Executable may be added to repository
+hugo.exe
+hugo.linux
+hugo.darwin
+
+# Temporary lock file while building
+/.hugo_build.lock
