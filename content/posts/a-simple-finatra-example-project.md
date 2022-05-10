@@ -5,23 +5,27 @@ draft: false
 tags: ["finatra", "scala"]
 ---
 
-Over the past year-and-a-half I've helped to develop a [Scala](https://www.scala-lang.org/) framework for writing services on-top of parts of the Twitter stack, namely [twitter-server](https://github.com/twitter/twitter-server) and [Finagle](https://github.com/twitter/finagle). This framework is called [Finatra](https://github.com/twitter/finatra) and we've recently published a [second milestone release](https://oss.sonatype.org/#nexus-search;gav~com.twitter.finatra~~2.0.0.M2~~) of the completely-rebuilt-from-the-ground-up version 2.x.
+Over the past year-and-a-half I've helped to develop a [Scala](https://www.scala-lang.org/) framework for writing services on-top of parts of the Twitter stack, namely [TwitterServer](https://github.com/twitter/twitter-server) and [Finagle](https://github.com/twitter/finagle). This framework is called [Finatra](https://github.com/twitter/finatra) and we've recently published a [second milestone release](https://oss.sonatype.org/#nexus-search;gav~com.twitter.finatra~~2.0.0.M2~~) of the completely-rebuilt-from-the-ground-up version 2.x.
 
-I recently wrote a small [Finatra](https://github.com/twitter/finatra) example service that is a [simple URL-shortener](https://github.com/cacoco/smally-finatra) using [Redis](https://redis.io/). The example builds with [sbt](https://www.scala-sbt.org/) and can be easily deployed to [Heroku](https://heroku.com).
+Checkout out the [blog post](https://blog.twitter.com/engineering/en_us/a/2015/finatra-20-the-fast-testable-scala-services-framework-that-powers-twitter) announcing the new version with more details on framework features. 
+
+In this post we'll write small [Finatra](https://github.com/twitter/finatra) example service; a simple [URL-shortener](https://github.com/cacoco/smally-finatra) using [Redis](https://redis.io/). The example builds with [sbt](https://www.scala-sbt.org/) and can be easily deployed to [Heroku](https://heroku.com).
 
 <!-- more -->
 <p/><p/>
 #### The [`smally-finatra`](https://github.com/cacoco/smally-finatra) service.<p/>
 
-At a high-level, the service accepts JSON input through a POST endpoint that represents the URL to be shortened. It then returns a JSON response with the shortened representation of the URL. The service also then supports GET requests to a shortened URL returning a 301 response to the expanded URL. Browsers will generally follow this redirect by default, thus it's simplest to just hit the shortened URL in a browser window.
+At a high-level, the service accepts JSON input through a POST endpoint that represents the URL to be shortened. It then returns a JSON response with the shortened representation of the URL. The service also then supports GET requests to a shortened URL returning a 301 response to the expanded URL. Browsers will generally follow this redirect by default, so you should be able to just open the shortened URL in a browser window.
 
-The service uses [Jedis](https://github.com/xetorthio/jedis) as a client to Redis. We set up a server that looks like this:
+The service uses [Jedis](https://github.com/xetorthio/jedis) as a client to Redis. 
+
+First, we set up a server that looks like this:
 
 ```gist {cols="8", id="e6b93886631988350abb"}
   https://gist.github.com/cacoco/e6b93886631988350abb
 ```
 
-You'll notice we configure a few [modules](https://github.com/twitter/finatra/blob/master/inject/inject-core/src/main/scala/com/twitter/inject/TwitterModule.scala) here. The Finatra `LogbackModule` which sets [`logback`](https://logback.qos.ch/) as our logging implementation for [slf4j](https://www.slf4j.org/). A `JedisClientModule` which configures the Jedis client to talk to a Redis server. And a generic sounding, `SmallyModule`. The last module defines business-logic configuration for the service. In this case, you can choose to always return `https` protocol shortened URLs. The `SmallyModule` defines a flag which you can set on the command line to toggle this behavior. The default is false.
+You'll notice we configure a few [modules](https://github.com/twitter/finatra/blob/master/inject/inject-core/src/main/scala/com/twitter/inject/TwitterModule.scala) here. The Finatra `LogbackModule` which sets [`logback`](https://logback.qos.ch/) as our logging implementation for [slf4j](https://www.slf4j.org/). A `JedisClientModule` which configures the Jedis client to talk to a Redis server. And a generic sounding, `SmallyModule`. The last module defines business-logic configuration for the service. In this case, you can choose to always return `https` protocol shortened URLs. The `SmallyModule` defines a flag which you can set on the command line to toggle this behavior. The default is `false`.
 
 We then configure the [`HttpRouter`](https://github.com/twitter/finatra/blob/master/http/src/main/scala/com/twitter/finatra/http/routing/HttpRouter.scala), setting up a few filters including the Finatra [`CommonFilters`](https://github.com/twitter/finatra/blob/master/http/src/main/scala/com/twitter/finatra/http/filters/CommonFilters.scala). We then add the `SmallyController` and a custom [`ExceptionMapper`](https://github.com/twitter/finatra/blob/master/http/src/main/scala/com/twitter/finatra/http/exceptions/ExceptionMapper.scala).
 
