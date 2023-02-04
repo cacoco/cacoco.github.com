@@ -9,9 +9,9 @@
           </div>
           <!-- List group -->
           <ul class="list-group">
-            <li class="list-group-item"><i class="bi bi-star"></i>&nbsp;<a href="/about/">about</a></li>
-            <li class="list-group-item"><i class="bi bi-soundwave"></i>&nbsp;<a href="https://resume.github.io/?cacoco" target="_blank">github résumé</a></li>
-            <li class="list-group-item"><i class="bi bi-people-fill"></i>&nbsp;<a href="https://www.linkedin.com/in/cacoco" target="_blank">linkedin</a></li>
+            <li class="list-group-item"><i class="bi bi-signpost-2"></i>&nbsp;<a href="/about/">about</a></li>
+            <li class="list-group-item"><i class="bi bi-boombox"></i>&nbsp;<a href="https://resume.github.io/?cacoco" target="_blank">github résumé</a></li>
+            <li class="list-group-item"><i class="bi bi-linkedin"></i>&nbsp;<a href="https://www.linkedin.com/in/cacoco" target="_blank">linkedin</a></li>
           </ul>
         </div>
         <br/>
@@ -21,15 +21,15 @@
           </div>
           <!-- List group -->
           <ul class="list-group">
-            <li class="list-group-item"><i class="bi bi-folder2-open"></i>&nbsp;<a href="https://github.com/cacoco" title="code stuffs" target="_blank">github</a></li>
+            <li class="list-group-item"><i class="bi bi-github"></i>&nbsp;<a href="https://github.com/cacoco" title="code stuffs" target="_blank">github</a></li>
             <li class="list-group-item"><i class="bi bi-code-slash"></i>&nbsp;<a href="https://coderwall.com/cacoco" title="i'm trying" target="_blank">coderwall</a></li>
-            <li class="list-group-item"><i class="bi bi-broadcast-pin"></i>&nbsp;<a href="https://blog.twitter.com/engineering/en_us/authors.cacoco" title="musings" target="_blank">twitter eng blog</a></li>
+            <li class="list-group-item"><i class="bi bi-bookmarks"></i>&nbsp;<a href="https://blog.twitter.com/engineering/en_us/authors.cacoco" title="old writings" target="_blank">twitter eng blog</a></li>
           </ul>
         </div>
         <br/>
         <div class="panel panel-default">
           <div class="panel-heading">
-            <h3 class="panel-title"><i class="bi bi-card-list"></i>&nbsp;Blog</h3>
+            <a href="/posts/"><h3 class="panel-title"><i class="bi bi-card-list"></i>&nbsp;Blog</h3></a>
           </div>
           <ul class="list-group">
             {{ $recentposts := 5 }}
@@ -39,10 +39,13 @@
           </ul>
         </div>
         <br/>
-        <div class="panel panel-default">   
-          <span>
-            <p><iframe src="https://ghbtns.com/github-btn.html?user=cacoco&type=follow" allowtransparency="true" frameborder="0" scrolling="0" width="132" height="20"></iframe></p>
-          </span>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h6 class="panel-title"><i class="bi bi-asterisk"></i>&nbsp;&nbsp;1&nbsp;<span>&#8491;</span>&nbsp;=&nbsp;1.0&nbsp;×&nbsp;10&nbsp;<sup>-10</sup>&nbsp;meters</h6>
+          </div>
+          <i>The&nbsp;<span>&#8491;</span>ngstr<span>&#246;</span>m ([ˈɔŋstrøm]) is a unit of length equal to 10&nbsp;<sup>-10</sup>&nbsp;m (one ten-billionth of a meter) or 0.1 nm. Its symbol is the Swedish letter&nbsp;<span>&#8491;</span></i>.<br/>
+          <br/>
+          <i>The unit was named after the Swedish physicist</i> <a href="https://en.wikipedia.org/wiki/Anders_Jonas_%C3%85ngstr%C3%B6m">Anders Jonas <span>&#8491;</span>ngstr<span>&#246;</span>m</a>&nbsp;(1814–1874).
         </div>
       </div>
     </div>
@@ -50,11 +53,12 @@
       <div class="p-5 mb-4 bg-light rounded-3" style="color:white; background-image: url('/images/IMG_2587.JPG')">
         <div class="container-fluid py-5">
           <h1 class="display-5 fw-bold">life and code.&nbsp;in small doses.</h1>
-          <p class="col-md-8 fs-4">Writings and code from another programmer.</p>
+          <p class="col-md-8 fs-4">Writings and code from a programmer.</p>
           <div id="push"></div>
         </div>
       </div>
       <div class="row">
+        <p class="col-md-12 fs-7">For more information on my background and experience, please see the <a href="/about/">about</a> section.</p>
         <div class="col-lg-12">   
           {{ if .Params.recentposts }}
             {{ $recentposts = .Params.recentposts }}

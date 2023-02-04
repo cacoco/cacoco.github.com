@@ -1,7 +1,32 @@
 {{ define "main" }}
+{{ if eq .Title "About" }}
+<div class="container-fluid">
+  <h1>{{ .Title | markdownify}}</h1>
+  <div class="row">
+    <div class="col-lg-9">
+      <div class="media">
+        <h2><img class="align-self-start mr-3 rounded-circle" src="/images/cacoco.jpg" alt="Christopher Coco" width="128" height="128">&nbsp;&nbsp;<i class="bi bi-zoom-in"></i>&nbsp;</img></h2>
+        <div class="media-body">
+          {{ .Content }}
+          <br/>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 align-items-end">
+      {{ .TableOfContents }}
+    </div>
+  </div>
+</div>
+{{ else }}
 <div class="container">
   <h1>{{ .Title | markdownify}}</h1>
 
+  {{ if .Params.toc }}
+  <h2>{{ i18n "tableOfContents" }}</h2>
+    {{ .TableOfContents }}
+  {{ end }}
+
   {{ .Content }}
 </div>
+{{ end }}
 {{ end }}

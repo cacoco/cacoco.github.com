@@ -1,17 +1,26 @@
-baseURL = "https://angstrom.io"
+baseURL = "https://angstrom.io/"
 languageCode = "en-us"
+defaultContentLanguage = 'en'
+contentDir = "content"
 title = "life and code · in small doses"
 description = "Writings and code from another programmer."
 theme = "bootstrap"
-relativeURLs = true
+relativeURLs = false
 pygmentsCodeFences = true
 pygmentsUseClasses = true
+autoHeadingID = true
 
 [Social]
-  twitter = "cacoco"
+  twitter = '#'
 
 [permalinks]
   posts = '/:year/:month/:day/:title/'
+
+[markup]
+  [markup.tableOfContents]
+    startLevel = 3
+    endLevel = 6
+    ordered = false
 
 [menu]
   [[menu.main]]

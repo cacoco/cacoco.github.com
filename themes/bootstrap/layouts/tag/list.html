@@ -4,7 +4,7 @@
     {{ .Name | humanize }}
   </h1>
 
-  {{ if eq .Kind "taxonomyTerm" }}
+  {{ if eq .Kind "taxonomy" }}
     {{ range $.Site.Taxonomies.tags.ByCount }}
       <div class="row mt-2">
         <div class="d-none d-sm-block col-sm-2 mt-auto offset-sm-2 text-right">
