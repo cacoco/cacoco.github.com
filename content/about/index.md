@@ -14,7 +14,7 @@ I was inspired by a former colleague to put together a public version of a [brag
 
 #### Company Building
 
-Throughout my time at Twitter and in my various roles, I have actively participated in many company and culture-building efforts, including:
+Throughout my time at Twitter and in my various roles, I have actively focused on making a positive impact, including:
 
 * [@Blackbirds](https://twitter.com/blackbirds) Employee Resource Group Lead [2015-2016]
 * [Black Executive Leadership Program](https://www.credly.com/badges/822c231c-6e31-4c80-b361-79272d48c352?source=linked_in_profile) [2021]
@@ -33,11 +33,11 @@ Throughout my time at Twitter and in my various roles, I have actively participa
 * Mentor for multiple University of San Francisco Computer Science [Capstone Projects](https://www.usfca.edu/arts-sciences/programs/undergraduate/computer-science/capstone-project) [2018]
 * Technical Design Shepherd for many infrastructure and product projects
 * Member of the Technical Architecture Group (TAG)
-* Member of the Senior-IC Platform Group (Platforum)
-	- Co-chair and author of membership and working group guidelines
-* Member of the Twitter Migrations Working Group (MWG)
-	- Helped plan, execute and track technology migrations across engineering
-* Constant cross-team work to improve the developer experience and the ability to deliver with better velocity
+* Co-chair, member, and multiple working group leader of the Platform Infrastructure senior IC Group (Platforum).
+* Member of the Twitter Engineering Migrations Working Group (MWG). Helped plan, execute, and track technology migrations across engineering.
+* Constant cross-team work to improve Developer Experience and increase developer productivity.
+* A recognized leader in the area of JVM logging technologies.
+* Supported thousands of internal and external customers of the Finatra framework. A frequent contributor to other teams' projects, and a champion of testing and writing tests.
 
 #### Technical Lead - Compute Integrations Team [2022]
 
