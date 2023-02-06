@@ -6,7 +6,7 @@ draft: false
 footer: true
 ---
 
-I am a [Principal](https://www.linkedin.com/pulse/what-principal-engineer-anyway-douglas-w-arcuri/)-level Software Engineer located in San Francisco, CA. I have many years of experience specializing in Distributed Systems, Platform Infrastructure, API Design & Frameworks, and Open Source Software. I pride myself mentorship and I get a great sense of accomplishment from helping others realize they belong.
+I am a [Principal](https://www.linkedin.com/pulse/what-principal-engineer-anyway-douglas-w-arcuri/)-level Software Engineer located in San Francisco, CA. I have many years of experience specializing in Distributed Systems, Platform Infrastructure, API Design & Frameworks, and Open Source Software. I pride myself on mentorship and I get a great sense of accomplishment from helping others realize they belong.
 
 I was inspired by a former colleague to put together a public version of a [brag document](https://jvns.ca/blog/brag-documents/). Below are some highlights from my most recent time in my career at Twitter.
 
