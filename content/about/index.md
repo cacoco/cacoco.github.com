@@ -1,8 +1,7 @@
 ---
 title: About
 permalink: /about/
-date: 2013-03-12 21:02
-draft: false
+header: true
 footer: true
 ---
 
@@ -86,14 +85,14 @@ The Core Systems Libraries team was responsible for developing, supporting, and 
 	- [Finatra](https://github.com/twitter/finatra)
 	- [Dodo](https://github.com/twitter/dodo)
 * Creator and maintainer of internal microservice scaffolding library ("Beaker") for easily creating new Finatra-based microservices and applications.
-* Creator and maintainer of the [Finatra framework](https://github.com/twitter/finatra/graphs/contributors) & primary [Documentation](https://twitter.github.io/finatra/) author
-* Provided internal and [external](https://gitter.im/twitter/finatra) Finatra support to users
-* Creator and maintainer of the [Dodo](https://github.com/twitter/dodo/graphs/contributors) project builder
+* Creator and maintainer of the [Finatra framework](https://github.com/twitter/finatra/graphs/contributors) & primary [documentation](https://twitter.github.io/finatra/) author
+* Provided Finatra support to both internal and [external](https://gitter.im/twitter/finatra) users
+* Creator and maintainer of the [Dodo](https://github.com/twitter/dodo/graphs/contributors) project builder and [associated GitHub Action](https://github.com/twitter/dodo-build)
 * Creator and maintainer of several [Twitter Util](https://github.com/twitter/util) projects:
 	- [util-slf4j-api](https://github.com/twitter/util/tree/develop/util-slf4j-api)
 	- [util-slf4j-jul-bridge](https://github.com/twitter/util/tree/develop/util-slf4j-jul-bridge)
-	- [util-validator](https://github.com/twitter/util/tree/develop/util-validator) & primary [Documentation](https://twitter.github.io/util/guide/util-validator/index.html) author
-	- [util-jackson](https://github.com/twitter/util/tree/develop/util-jackson) & primary [Documentation](https://twitter.github.io/util/guide/util-jackson/index.html) author
+	- [util-validator](https://github.com/twitter/util/tree/develop/util-validator) & primary [documentation](https://twitter.github.io/util/guide/util-validator/index.html) author
+	- [util-jackson](https://github.com/twitter/util/tree/develop/util-jackson) & primary [documentation](https://twitter.github.io/util/guide/util-jackson/index.html) author
 	- [util-reflect](https://github.com/twitter/util/tree/develop/util-reflect)
 	- [util-mock](https://github.com/twitter/util/tree/develop/util-mock)
 * A primary maintainer of the Twitter [Util App](https://github.com/twitter/util/tree/develop/util-app) framework library

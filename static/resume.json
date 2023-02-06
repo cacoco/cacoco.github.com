@@ -1,0 +1,433 @@
+{
+  "$schema" : "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "meta" : {
+    "version" : "v1.0.0",
+    "canonical" : "https://github.com/jsonresume/resume-schema/blob/v1.0.0/schema.json",
+    "theme": "jacrys"
+  },
+  "basics" : {
+    "name" : "Christopher Coco",
+    "label" : "Senior Staff Software Engineer",
+    "image" : "https://angstrom.io/images/cacoco-small.png",
+    "email" : "coco@alumni.rice.edu",
+    "url" : "https://angstrom.io",
+    "summary" : "I like to build scalable things.<br/><br/>And drink coffee.<br/><br/>I am a Principal-level Software Engineer located in San Francisco, CA. I have many years of experience specializing in Distributed Systems, Platform Infrastructure, API Design & Frameworks, and Open Source Software. I pride myself on mentorship and I get a great sense of accomplishment from helping others realize they belong.",
+    "location" : {
+      "city" : "San Francisco",
+      "region": "CA",
+      "countryCode" : "US"
+    },
+    "profiles" : [
+      {
+        "network" : "LinkedIn",
+        "username" : "cacoco",
+        "url" : "https://www.linkedin.com/in/cacoco/"
+      },
+      {
+        "network" : "GitHub",
+        "username" : "cacoco",
+        "url" : "https://github.com/cacoco"
+      }
+    ]
+  },
+  "work" : [
+    {
+      "name" : "Twitter",
+      "position" : "Sr. Staff Software Engineer",
+      "startDate" : "2012-10-31",
+      "endDate" : "2022-11-30",
+      "summary" : "Software engineer working at a Principal level across the company, primarily in the Platform (infrastructure) organization. Throughout my time at Twitter and in my various roles, I have actively focused on making a positive impact, including:<br/><br/><a href=\"https://twitter.com/blackbirds\">@Blackbirds</a> Employee Resource Group Lead [2015-2016].<br/><br/>Volunteer and volunteer coordinator - <a href=\"https://www.stanthonysf.org/services/tech-lab/\">Tenderloin Technology Lab at St. Anthony's</a> [2012 - 2016].<br/><br/>Twitter Engineering Mentor Program, New Hire & Intern mentor.<br/><br/>Twitter Open Source Shepherd and Technical Design Shepherd for many infrastructure and product projects.<br/><br/>Founding member of Engineering Interview Process standardization (\"Luna\" Process) and founding interview shepherd (+1 reviewer model). Luna Process course instructor for new hires.<br/><br/>Multiple-time attendee to conferences for recruiting and candidate interviewing on behalf of multiple teams (Tapia, NSBE, Grace Hopper).<br/><br/>Twitter Earlybird Camp interviewer, mentor & judge, Twitter #FirstFlight interviewer, panelist & Twitter Academy cultural mentor.<br/><br/>Introduction to <a href=\"https://github/twitter/finatra\">Finatra</a> course instructor.<br/><br/>Open source at Twitter course material reviewer and instructor.<br/><br/>Member of the Twitter Technical Architecture Group (TAG).<br/><br/>Co-chair, member, and multiple working group leader of the Platform Infrastructure senior IC Group (Platforum).<br/><br/>Member of the Twitter Engineering Migrations Working Group (MWG); helped plan, execute, and track technology migrations across engineering.<br/><br/>Constant cross-team work to improve Developer Experience and increase developer productivity.<br/><br/>A recognized leader in the area of JVM logging technologies.<br/><br/>Supported thousands of internal and external customers of the Finatra framework; frequent contributor to other teams' projects, and a champion of testing and writing tests.",
+      "url" : "https://www.linkedin.com/company/twitter/",
+      "location" : "San Francisco, CA"
+    },
+    {
+      "name" : "Twitter",
+      "position" : "Technical Lead - Compute Integrations Team",
+      "startDate" : "2022-05-31",
+      "endDate" : "2022-11-30",
+      "summary" : "The Compute organization provided a scalable, efficient, and cost-effective computing platform for all of Twitter. The Compute Integrations Team was responsible for integrating Kubernetes with various Twitter-specific technologies like Service Discovery, application configuration federation, application observability, and chargeback. The team was also fully responsible for the Compute-org-managed Kubernetes clusters in GCP.<br/><br/>Work to optimize service discovery in Kubernetes clusters by moving the service discovery infrastructure in Kubernetes to be regional (in this case per data center) rather than per cluster.<br/><br/>Work to design an automated way of on-premise Kubernetes cluster discovery and registration for better integration into existing Twitter infrastructure and more visibility and introspection into the running clusters.<br/><br/>High-priority work to secure the global package store infrastructure (\"Packer\"):<br/>&emsp;&mdash;&nbsp;Java-based Finatra service with a python client. The client is distributed on developer laptops, via the package store for other infrastructure components, e.g. CI/CD components for package retrieval, and via a Linux RPM for data center host management infrastructure services.<br/>&emsp;&mdash;&nbsp;Work involved updating the server to support both internal mutual-TLS (mTLS) and TLS (in addition to Kerberos) and updating the Python client to ensure it negotiated connections from the various locations of deployment correctly (either mTLS where a client certificate could be presented or via TLS where Kerberos was also in use).<br/>&emsp;&mdash;&nbsp;A massive undertaking to update all instances of the distributed Python client which involved multiple Puppet runs to release new versions to the data center machines (with minimal documentation and a dwindling number of experts around to ensure that catastrophe was avoided).",
+      "url" : "https://www.linkedin.com/company/twitter/",
+      "location" : "San Francisco Bay Area"
+    },
+    {
+      "name" : "Twitter",
+      "position" : "Technical Lead - Twitter Open Source Program Office",
+      "startDate" : "2021-01-31",
+      "endDate" : "2022-05-31",
+      "summary" : "Developed internal GitHub API HTTP client in Scala.<br/><br/>Developed Open Source project cataloging service pulling data from GitHub on Twitter Open Source projects and uploading to a set of BigQuery tables in order to allow Product Managers access for developing insights into Twitter's open source landscape.<br/><br/>Unowned 3rd Party dependency Working Group Lead: helped to come up with the definition and tiers of ownership for 3rd party libraries in the central code monorepo. Worked to catalog and find owners for all unowned JVM 3rd party libraries in the central code monorepo.<br/><br/>Creator of the <a href=\"https://opensource.twitter.dev/status/#active\">Open Source Project status model</a> and associated labels.<br/><br/>Led the discussion and work to decide on a standard metadata description for Open Source projects extensible to internal projects to help with the \"system comprehension\" work to register and catalog internal services.<br/><br/>Proposed, led, and assisted various technology migration efforts across engineering as part of the Twitter Migrations Working Group (MWG).<br/><br/>Maintained and improved the internal \"GitHub Manager\" service -- originally an intern project written in Python. Added mTLS support and distributed logging as well as Okta integration for login.<br/><br/>Served as company GitHub administrator, supporting engineers open sourcing new projects and GitHub repository membership maintenance and administration.<br/><br/>Wrote the primer on \"How to open source code at Twitter\" and technical documentation on using GitHub actions and performing open source releases via the OSSRH.",
+      "url" : "https://www.linkedin.com/company/twitter/",
+      "location" : "San Francisco Bay Area"
+    },
+    {
+      "name" : "Twitter",
+      "position" : "Senior Member, Core Systems Libraries (CSL) Team",
+      "startDate" : "2016-01-31",
+      "endDate" : "2021-01-31",
+      "summary" : "The Core Systems Libraries team was responsible for developing, supporting, and maintaining the foundational Twitter-stack libraries for distributed systems. Thousands of internal Twitter microservices and numerous Open Source consumers consumed and extended these libraries.<br/><br/>The Open Source Twitter-stack projects owned by the CSL team include the following:<br/>&emsp;&mdash;&nbsp;Util:&nbsp;<a href=\"https://github.com/twitter/util\">https://github.com/twitter/util</a><br/>&emsp;&mdash;&nbsp;Scrooge:&nbsp;<a href=\"https://github.com/twitter/scrooge\">https://github.com/twitter/scrooge</a><br/>&emsp;&mdash;&nbsp;Finagle:&nbsp;<a href=\"https://github.com/twitter/finagle\">https://github.com/twitter/finagle</a><br/>&emsp;&mdash;&nbsp;TwitterServer:&nbsp;<a href=\"https://github.com/twitter/twitter-server\">https://github.com/twitter/twitter-server</a><br/>&emsp;&mdash;&nbsp;Finatra:&nbsp;<a href=\"https://github.com/twitter/finatra\">https://github.com/twitter/finatra</a><br/>&emsp;&mdash;&nbsp;Dodo:&nbsp;<a href=\"https://github.com/twitter/dodo\">https://github.com/twitter/dodo</a><br/><br/>Creator and maintainer of internal microservice scaffolding library (\"Beaker\") for easily creating new Finatra-based microservices and applications.<br/><br/>Creator and maintainer of the Finatra framework & primary <a href=\"https://twitter.github.io/finatra/\">documentation</a> author.<br/><br/>Provided Finatra support to both internal and <a href=\"https://gitter.im/twitter/finatra\">external</a> users.<br/><br/>Creator and maintainer of the Dodo project builder and <a href=\"https://github.com/twitter/dodo-build\">associated GitHub Action</a>.<br/><br/>Creator and maintainer of several Twitter Util projects:<br/>&emsp;&mdash;&nbsp;<a href=\"https://github.com/twitter/util/tree/develop/util-slf4j-api\">util-slf4j-api</a><br/>&emsp;&mdash;&nbsp;<a href=\"https://github.com/twitter/util/tree/develop/util-slf4j-jul-bridge\">util-slf4j-jul-bridge</a><br/><a href=\"https://github.com/twitter/util/tree/develop/util-validator\">&emsp;&mdash;&nbsp;util-validator</a>&nbsp;&&nbsp;primary&nbsp;<a href=\"https://twitter.github.io/util/guide/util-validator/index.html\">documentation</a>&nbsp;author<br/>&emsp;&mdash;&nbsp;<a href=\"https://github.com/twitter/util/tree/develop/util-jackson\">util-jackson</a>&nbsp;&&nbsp;primary&nbsp;<a href=\"https://twitter.github.io/util/guide/util-jackson/index.html\">documentation</a>&nbsp;author<br/>&emsp;&mdash;&nbsp;<a href=\"https://github.com/twitter/util/tree/develop/util-reflect\">util-reflect</a><br/>&emsp;&mdash;&nbsp;<a href=\"https://github.com/twitter/util/tree/develop/util-mock\">util-mock</a><br/><br/>A primary maintainer of the Twitter Util App framework library.<br/><br/>A primary maintainer of the TwitterServer server framework.<br/><br/>Helped various framework and library technology migration efforts across engineering.",
+      "url" : "https://www.linkedin.com/company/twitter/",
+      "location" : "San Francisco Bay Area"
+    },
+    {
+      "name" : "Twitter",
+      "position" : "Technical Lead Data API Team",
+      "startDate" : "2013-04-30",
+      "endDate" : "2016-01-31",
+      "summary" : "Architect and Senior Engineer for <a href=\"https://blog.twitter.com/official/en_us/a/2012/coming-soon-nielsen-twitter-tv-rating.html\">Nielsen Twitter TV Rating (NTTR) System</a> (\"Project Kingfisher\").<br/><br/>Led requirements gathering with Nielsen -- functioning as PM, and TL through the first 3 phases of the project. The team eventually expanded to 4 full-time engineers, a PM, TPM, and a partner engineer.<br/><br/>Project expanded to other partners in different global markets: Japan, Italy, Spain, Great Britain, Australia, and France in addition to Nielsen in the US.<br/><br/>The design is a self-repairing task system that ingested Tweet IDs about particular TV shows in a market from partners. These came in hourly buckets for reporting which the system would use to then crank over Twitter's engagement data on each Tweet to return anonymized hourly bucketed information on authors and user engagements. <br/><br/>The system maintained a \"sandbox\" set of endpoints which were the first to be rolled with updates such that partners could validate against incoming changes without affecting production workloads.<br/><br/>The project included creating one of the first Scala clients for the internal Blobstore (internal AWS S3 equivalent)<br/><br/>Also included creating one of the first Scala clients to the internal \"NoSQL\" K/V store: <a href=\"https://www.wired.com/2014/04/twitter-manhattan/\">Manhattan</a><br/><br/>Architect and Senior Engineer for Twitter 2014 Midterm Election framework powering the 2014 Midterm election dashboard: https://blog.twitter.com/en_us/a/2014/introducing-the-twitter-us-2014-election-website.<br/><br/>Maintainer of the primary client event ingestion system (\"Rufous\") which powered all company metrics and ML models.<br/><br/>Performed due diligence on target companies for acquisition.<br/><br/>Created and open-sourced <a href=\"https://blog.twitter.com/engineering/en_us/a/2015/finatra-20-the-fast-testable-scala-services-framework-that-powers-twitter\">v2 of the Finatra framework</a>.<br/><br/>Summer intern mentor.",
+      "url" : "https://www.linkedin.com/company/twitter/",
+      "location" : "San Francisco Bay Area"
+    },
+    {
+      "name" : "Twitter",
+      "position" : "Senior Member, The API Team",
+      "startDate" : "2012-10-31",
+      "endDate" : "2013-04-30",
+      "summary" : "Ported many Twitter <a href=\"https://rubyonrails.org/\">Ruby-on-Rails</a> application API endpoints to new <a href=\"https://www.scala-lang.org/\">Scala</a>-based service (while learning Scala).<br/><br/>Helped create a <a href=\"https://medium.com/@lfgcampos/tap-compare-testing-2b8bedce1779\">\"tap compare\"</a> system for validating new Scala-based API endpoints against existing Rails endpoints.<br/><br/>Optimized bare-metal deployments of massive Scala application (\"Woodstar\") serving migrated Twitter API endpoints<br/><br/>Summer intern mentor.<br/><br/>Active in interviewing and hiring new engineers.",
+      "url" : "https://www.linkedin.com/company/twitter/",
+      "location" : "San Francisco Bay Area"
+    },
+    {
+      "name" : "Flite",
+      "position" : "Principal Engineer/Architect",
+      "startDate" : "2012-02-28",
+      "endDate" : "2012-10-31",
+      "summary" : "Returned to Flite in a lesser management role after a stint at Heroku with the hope to focus more as an individual contributor.<br/><br/>Served as manager of the company Operations team and performed the role of systems architect, code reviewer, lead engineer, and DevOps engineer. In my spare time, I function as a platform architect, code reviewer, and dev-tool implementer. <br/><br/>Created an internal developer tool (Ruby gem) for automating mundane developer tasks. <br/><br/>Worked on moving the company over from subversion to git and Github for code repository. <br/><br/>Prototyped new metrics workflow architecture using AWS Java SDK to submit jobs to AWS EMR and made use of SQS and SNS to monitor and report on re-tries and failures. <br/><br/>Prototyped a new application deployment system using AWS Simple workflow. <br/><br/>Worked on a new architecture for metrics collection and aggregation using AWS HBase support.<br/><br/>Co-inventor on US Patent No. 20130007108: https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/20130007108.",
+      "url" : "https://www.linkedin.com/company/flite/"
+    },
+    {
+      "name" : "Heroku",
+      "position" : "Senior Member, Technical Staff",
+      "startDate" : "2011-10-31",
+      "endDate" : "2012-02-28",
+      "summary" : "Heroku (pronounced her-OH-koo) is a polyglot cloud application platform for building and deploying web apps.<br/><br/>Worked on platform payment system, migrating applications from Rails 2.x to Rails 3.x. Architected new event-based billing system to integrate with core event processor to allow for better billing precision.<br/><br/>Worked on third-party integration (\"add-ons\") API to genericize disparate pieces into a coherent system.<br/><br/>Prototyped internal metrics system using Clojure and ClojureScript to funnel data from Splunk forwarders to internal \"visibility\" systems for analysis of platform metrics.",
+      "url" : "https://www.linkedin.com/company/heroku/",
+      "location" : "San Francisco, CA"
+    },
+    {
+      "name" : "Widgetbox",
+      "position" : "Director of Engineering",
+      "startDate" : "2007-05-31",
+      "endDate" : "2011-07-31",
+      "summary" : "Principle Engineer serving as Director of Engineering.<br/><br/>Helped grow the company from a 9-person team to 60+ employees including setting up new development and QA practices, introducing build, release, and continuous integration systems, and mentoring and leading other developers.<br/><br/>Implemented company pixel-based tracking mechanism metrics collection infrastructure. <br/><br/>Developed Hadoop + Hive framework for MapReduce enormous amount of data collected on ads running in the wild. Expanded real-time metrics collection and reporting infrastructure using Redis via the JRedis library for java.<br/><br/>Architected and implemented a company self-service recurring billing payment system. <br/><br/>Helped implement Memcached caching layer around DAOs using aspects. Helped architect and implement re-design to the serving platform.<br/><br/>Helped to design and implement scalable feed and content proxies using Memcached and CDN caching. Implemented a feed aggregator and builder using java, AWS SimpleDB and S3.<br/>Implemented a company URL shortening service in java using a distributed counter in SimpleDB.<br/><br/>Set up and maintained a continuous integration environment using Hudson and Sonar.<br/>Helped design & implement testable code infrastructure using Spring IoC framework, Hibernate, and TestNG.<br/><br/>Implemented automated regression test framework using Selenium/Webdriver. Prototyped with Selenium IDE, Selenium RC, and Selenium Grid.<br/><br/>Implemented a Maven build process to replace homegrown Ant solution. Set up internal Nexus repository and became de-facto release engineer.<br/><br/>Helped answer and debug customer & end-user support issues. Primary second-level support for self-service billing and payment-related issues.<br/><br/>Served as a member of the company operations team. Provided on-call 24x7 support for application infrastructure and development liaison to the team. Contributed to operations roadmap, priorities, infrastructure, and development.",
+      "url" : "",
+      "location" : "San Francisco, CA"
+    },
+    {
+      "name" : "GameSpot",
+      "position" : "Senior Software Engineer, GameSpot  (CNET Entertainment, CNET Networks)",
+      "startDate" : "2006-01-31",
+      "endDate" : "2007-02-28",
+      "summary" : "Architected and implemented a distributed java server solution for managing large-size media content downloads from CNET's stack to a windows client service.<br/><br/>Built a component for managing system bandwidth at the point of download based on SNMP monitoring (using SNMP4J).<br/><br/>Prototyped a P2P-based solution for chunking and distributing content across non-fee-based users for exclusive use by fee-based subscribers.<br/><br/>Developed a java web service in-game score reporting and tournament management tool for integration with GameSpot's tournament management architecture.<br/><br/>Interviewed and hired the client-side development team.<br/><br/>Co-inventor on US Patent No. 20090327079: https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/20090327079.",
+      "url" : "https://www.linkedin.com/company/gamespot/"
+    },
+    {
+      "name" : "Apple Computer, Inc.",
+      "position" : "Senior Programmer/Analyst, IS&T Retail Internet Applications",
+      "startDate" : "2005-02-28",
+      "endDate" : "2005-11-30",
+      "summary" : "Led onshore development for point-of-sale client/server solution for Apple Retail stores.<br/><br/>Designed solutions, performed code reviews and managed integration with an offshore component.<br/><br/>Re-designed and re-wrote legacy POS server using an SOA approach in java.<br/><br/>Added more scalability and redundancy to POS system by adding in-store infrastructure.<br/><br/>Helped troubleshoot in-store issues with retail staff over phone.<br/><br/>Architected and implemented new java server application and stack behind Apple's EasyPay™ mobile point-of-sale solution -- implemented on a strict and very tight timeline. See: https://appleinsider.com/articles/05/12/30/easypay_a_big_success_at_apple_retail_stores<br/>https://appleinsider.com/articles/09/11/03/exclusive_look_at_apples_new_ipod_touch_based_easypay_checkout<br/><br/>Provided technical direction and code for client-side functionality running on Symbian devices.<br/><br/>Helped develop processes to aid in the software development process including source-code management and build & release processes.<br/><br/>Interviewed and built out onshore team (both full-time and contractor positions).",
+      "url" : "https://www.linkedin.com/company/apple/"
+    },
+    {
+      "name" : "Vignette, Corp.",
+      "position" : "Senior Software Engineer, Application Builder Team",
+      "startDate" : "2002-09-30",
+      "endDate" : "2004-11-30",
+      "summary" : "(via Epicentric, Inc. acquisition)<br/><br/>Architected and wrote company Web Services for Remote Portlets (WSRP) Producer.<br/><br/>Created a generic \"web-service\" parser. Given a location to a WSDL file (either URL or via browsing UDDI), the code could read all operations and expose them as remote procedure calls consumable by the rest of the server framework. This allowed for great extensibility inside of the company's Application Builder product.<br/><br/>Developed a java web-services toolkit to aid in integrating various company products. The toolkit provided a flexible way to expose each product's API as a web service wrapped in WS-Security.<br/><br/>Served as representative and voting member on the WSRP TC.<br/><br/>Functioned as an editor and contributor to the WSRP TC Frequently Asked Questions (FAQ) document for version 1.0 of the protocol (https://www.oasis-open.org/committees/download.php/10953/wsrp-faq-draft-0.30.html).",
+      "url" : "https://www.linkedin.com/company/vignette/"
+    },
+    {
+      "name" : "Epicentric, Inc.",
+      "position" : "Senior Software Engineer, Module Team",
+      "startDate" : "2000-12-31",
+      "endDate" : "2002-09-30",
+      "summary" : "Designed and implemented custom Java object-oriented web modules to run within the company's portal framework.<br/><br/>Designed and created portlet applications to integrate with the company's proprietary content management system as well as with Outlook Email & Outlook Tasks.<br/><br/>Implemented a single-sign-on (SSO) solution into the server application which allowed for pluggable SSO authorities.<br/><br/>The company was acquired by Vignette, Corp.",
+      "url" : "https://www.linkedin.com/company/epicentric/"
+    },
+    {
+      "name" : "Context Integration",
+      "position" : "Consultant, E-Commerce and Web Solutions Group",
+      "startDate" : "1999-08-31",
+      "endDate" : "2000-12-31",
+      "summary" : "With one other engineer, wrote a java administrator interface for an intranet community framework. The tool was integrated with third-party tools such as polls, chats, and discussion boards.<br/><br/>Developed with a team of 5 engineers an internet training portal using BroadVision for a computer-based training company.<br/><br/>Integrated Documentum's document management system with a custom java-based knowledge management system running on BEA's WebLogic application server for a large venture capital firm.<br/><br/>Led quality assurance team in building & testing applications for an internet-based transportation company. Responsibilities included defect tracking, Use-Case management, test planning, and client management.<br/><br/>Implemented functional and load tests using Rational Performance Studio software for numerous projects as part of the Testing team.",
+      "url" : "https://www.linkedin.com/company/contextworld/"
+    },
+    {
+      "name" : "Rice University Space Physics & Astronomy Department",
+      "position" : "Research Assistant",
+      "startDate" : "1997-07-31",
+      "endDate" : "1999-05-31",
+      "summary" : "Completed undergraduate senior thesis work on analyzing the unexplained broadening of spectral lines from the Orion Nebula using WFPC2 data obtained from the Hubble space telescope and ground-based data from the W. M. Keck Observatory in Mauna Kea, Hawai'i.<br/><br/>Served as an assistant researcher for two professors of Astronomy. Tasks included extensive work in spectral line analysis, waves and optics, spectrometry, spectroscopy, and statistical thermodynamics. Used data reduction techniques to quantify previous research results and verify theoretical models with observed data. Work included heavy usage of Unix machines and Unix shells. Performed data reduction and analysis on multiple papers published by the professors. <br/><br/>Performed basic UNIX administration of the department's UNIX network.",
+      "url" : "https://www.linkedin.com/school/riceuniversity/",
+      "location" : "Houston, Texas"
+    }
+  ],
+  "volunteer" : [
+    {
+      "organization" : "Ultimate Impact",
+      "position" : "President of the Board of Directors",
+      "startDate" : "2016-12-31",
+      "endDate" : "2022-12-31",
+      "summary" : "Ultimate Impact is a nonprofit that offers at-risk youth a fun and active framework for social, emotional, and physical development by providing a positive emotional outlet, adult role models, and a supportive team community through ultimate Frisbee. Due to the Spirit of the Game and with a focus on sportsmanship and camaraderie, ultimate has the ability to create a strong community for players across a spectrum of geographies and backgrounds. Since ultimate is self-officiating, players learn to take responsibility for their own behavior and are empowered to use their own judgment and ethics to govern the game play. <br/><br/>Ultimate Impact provides a safe, positive, and inclusive environment for girls and boys. Given the strengths of the sport and its emphasis on fair play and self-regulation in particular, Ultimate Impact strengthens the physical, social, and emotional development of youth (ages 6-18) from underrepresented communities.<br/></br/>Served as president of the board directors for the organization, helping it grow from 3 board members and 1 full-time employee to 7 board members, 5 full-time staff, 12 part-time staff, and many amazing volunteers.",
+      "url" : "https://ultimate-impact.org/"
+    },
+    {
+      "organization" : "Code2040",
+      "position" : "Mentor",
+      "startDate" : "2018-06-30",
+      "endDate" : "2018-09-30",
+      "summary" : "Served as a Fellows Mentor",
+      "url" : "https://www.code2040.org/"
+    },
+    {
+      "organization" : "Tenderloin Technology Lab",
+      "position" : "Personal Tutor",
+      "startDate" : "2012-12-31",
+      "endDate" : "2016-10-31",
+      "summary" : "Helping adults answer a range of computer-related questions from creating resumes, to filling out job or housing applications, setting up social-media accounts, and scanning documents.",
+      "url" : "https://www.stanthonysf.org/services/tech-lab/"
+    },
+    {
+      "organization" : "Code2040",
+      "position" : "Mentor",
+      "startDate" : "2016-06-30",
+      "endDate" : "2016-08-31",
+      "summary" : "Served as a Fellows Mentor",
+      "url" : "https://www.code2040.org/"
+    }
+  ],
+  "education" : [
+    {
+      "institution" : "Rice University",
+      "area" : "Physics (Space Physics Option)",
+      "studyType" : "B.A.",
+      "startDate" : "1994-08-31",
+      "endDate" : "1999-05-31"
+    },
+    {
+      "institution" : "Rice University",
+      "area" : "Studio Art",
+      "studyType" : "B.A.",
+      "startDate" : "1994-08-31",
+      "endDate" : "1999-05-31"
+    },
+    {
+      "institution" : "Louisiana School for Math, Science and the Arts",
+      "area" : "Arts and Science double-focused",
+      "studyType" : "High School Diploma",
+      "startDate" : "1992-12-31",
+      "endDate" : "1994-12-31"
+    }
+  ],
+  "awards" : [
+    {
+      "title": "US Patent No. 20090327079",
+      "date": "2014-11-01",
+      "awarder": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/20090327079",
+      "summary": "System and Method for a Delivery Network Architecture"
+    },
+    {
+      "title": "US Patent No. 20130007108",
+      "date": "2013-01-03",
+      "awarder": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/20130007108",
+      "summary": "Live Updates of Embeddable Units"
+    }
+  ],
+  "certificates" : [
+    {
+      "name" : "Black Executive Leadership Program",
+      "issuer" : "McKinsey & Company",
+      "date" : "2021-08-31",
+      "url" : "https://www.credly.com/badges/822c231c-6e31-4c80-b361-79272d48c352?source=linked_in_profile"
+    },
+    {
+      "name" : "Sun Certified Programmer for the Java 2 Platform",
+      "date": "2000-03-03",
+      "issuer" : "Sun Microsystems"
+    }
+  ],
+  "publications" : [
+    {
+      "name" : "Twitter goes to #NSBE42",
+      "publisher" : "Twitter, Inc.",
+      "releaseDate" : "2016-03-31",
+      "summary" : "Twitter goes to #NSBE42",
+      "url" : "https://blog.twitter.com/engineering/en_us/topics/insights/2016/twitter-goes-to-nsbe42"
+    },
+    {
+      "name" : "Finatra 2.0: the fast, testable Scala services framework that powers Twitter",
+      "publisher" : "Twitter, Inc.",
+      "releaseDate" : "2015-12-09",
+      "summary" : "Finatra is a framework for easily building API services on top of Finagle and TwitterServer.",
+      "url" : "https://blog.twitter.com/engineering/en_us/a/2015/finatra-20-the-fast-testable-scala-services-framework-that-powers-twitter"
+    }
+  ],
+  "skills" : [
+    {
+      "name" : "Distributed Systems",
+      "keywords": [
+        "Scheduling",
+        "Scalability",
+        "Client / Server",
+        "Fault-tolerance",
+        "Concurrency",
+        "Microservices",
+        "High Availability",
+        "Latency",
+        "Containers",
+        "Java Virtual Machine (JVM)",
+        "Apache Thrift",
+        "Representational State Transfer (REST)",
+        "Web Services"
+      ],
+      "level": "Senior"
+    },
+    {
+      "name" : "API Design",
+      "keywords": [
+        "Service-Oriented Architecture (SOA)",
+        "Requirements Gathering",
+        "Use Case Analysis",
+        "Test Driven Development",
+        "JSON",
+        "API Development",
+        "Customer Support",
+        "Open-Source Software"
+      ],
+      "level": "Senior"
+    },
+    {
+      "name" : "Leadership",
+      "keywords": [
+        "Agile Methodologies",
+        "Mentorship",
+        "Analytical Skills",
+        "Prioritization",
+        "Requirements Gathering",
+        "Servant Leadership"
+      ],
+      "level": "Senior"
+    },
+    {
+      "name" : "Tools, Technologies & Languages",
+      "": [
+        "SQL",
+        "MySQL",
+        "Java",
+        "Scala",
+        "XML",
+        "JSON",
+        "HTML",
+        "Shell Scripting",
+        "Javascript",
+        "K/V stores",
+        "Build Systems"
+      ],
+      "level": "Senior"  
+    }
+  ],
+  "languages" : [
+    {
+      "fluency" : "Native Speaker",
+      "language" : "English"
+    },
+    {
+      "fluency" : "Elementary",
+      "language" : "French"
+    },
+    {
+      "fluency" : "Elementary",
+      "language" : "Spanish"
+    }, 
+    {
+      "fluency" : "Limited working",
+      "language" : "Portuguese"
+    }
+  ],
+  "interests" : [
+    { 
+      "name": "Reading" 
+    },
+    {
+      "name": "Open Source"
+    },
+    {
+      "name": "Martial Arts"
+    },
+    { 
+      "name": "Running" 
+    },
+    { 
+      "name": "Ultimate Frisbee" 
+    }
+  ],
+  "references" : [
+    {
+      "name" : "Edmond Meinfelder",
+      "reference" : "Chris is an excellent developer and architect, consistently implementing best practices in his work. When I first worked with him, we had to designed a complex, scalable system with few resources in limited time. We worked effectively as a team, receiving CNET Inventor Awards for work leading to patents. I have to attribute part of that success to Chris' ability to challenge me to clearly communicate my solutions. It's clear that Chris' drive pushes him to constantly grow so that his best work always improves with time. I would be glad to work with Chris again."
+    }
+  ],
+  "projects" : [
+    {
+      "name" : "Finatra",
+      "description" : "Fast, testable, Scala HTTP services built on Twitter-Server and Finagle.",
+      "startDate" : "2013-01-31",
+      "endDate" : "2022-11-30",
+      "url" : "https://github.com/twitter/finatra",     
+      "entity": "Twitter, Inc."
+    },
+    {
+      "name" : "Dodo",
+      "description" : "The Twitter OSS Project Builder.",
+      "startDate" : "2016-07-21",
+      "endDate" : "2022-11-30",
+      "url" : "https://github.com/twitter/dodo",     
+      "entity": "Twitter, Inc."
+    },
+    {
+      "name" : "Dodo-Build",
+      "description" : "A Github Action for running Dodo: The Twitter OSS Project Builder.",
+      "startDate" : "2020-05-03",
+      "endDate" : "2022-11-30",
+      "url" : "https://github.com/twitter/dodo-build",     
+      "entity": "Twitter, Inc."
+    },
+    {
+      "name" : "Twitter Util",
+      "description" : "Wonderful reusable code from Twitter.",
+      "startDate" : "2016-01-01",
+      "endDate" : "2022-11-30",
+      "url" : "https://github.com/twitter/util",     
+      "entity": "Twitter, Inc."
+    },
+    {
+      "name" : "TwitterServer",
+      "description" : "Twitter-Server defines a template from which services at Twitter are built.",
+      "startDate" : "2016-01-01",
+      "endDate" : "2022-11-30",
+      "url" : "https://github.com/twitter/twitter-server",     
+      "entity": "Twitter, Inc."
+    },
+    {
+      "name" : "Scrooge",
+      "description" : "A Thrift parser/generator.",
+      "startDate" : "2016-01-01",
+      "endDate" : "2022-11-30",
+      "url" : "https://github.com/twitter/scrooge",     
+      "entity": "Twitter, Inc."
+    },
+    {
+      "name" : "Finagle",
+      "description" : "A fault tolerant, protocol-agnostic RPC system.",
+      "startDate" : "2016-01-01",
+      "endDate" : "2022-11-30",
+      "url" : "https://github.com/twitter/finagle",     
+      "entity": "Twitter, Inc."
+    },
+    {
+      "name" : "clj-ua",
+      "startDate" : "2011-10-31",
+      "description" : "A user-agent parser in clojure.",
+      "url" : "https://github.com/cacoco/clj-ua"
+    }
+  ]
+}
