@@ -310,7 +310,7 @@
     },
     {
       "name" : "Tools, Technologies & Languages",
-      "": [
+      "keywords": [
         "SQL",
         "MySQL",
         "Java",
