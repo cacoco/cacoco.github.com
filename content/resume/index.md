@@ -1030,7 +1030,17 @@ blockquote,
             <div class="skills clearfix">
               <div class="item-skills">
                   Tools, Technologies &amp; Languages
-                  <span class="skill-level">Senior</span>
+                  <span class="skill-level">SQL</span>
+                  <span class= "skill badge">MySQL</span>
+                  <span class= "skill badge">Java</span>
+                  <span class= "skill badge">Scala</span>
+                  <span class= "skill badge">XML</span>
+                  <span class= "skill badge">JSON</span>
+                  <span class= "skill badge">HTML</span>
+                  <span class= "skill badge">Shell Scripting</span>
+                  <span class= "skill badge">Javascript</span>
+                  <span class= "skill badge">K/V stores</span>
+                  <span class= "skill badge">Build Systems</span>
               </div>
               <div class="col-sm-offset-1 col-sm-12 clearfix">
               </div>
