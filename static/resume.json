@@ -198,6 +198,7 @@
   "education" : [
     {
       "institution" : "Rice University",
+      "url": "https://www.rice.edu",
       "area" : "Physics (Space Physics Option)",
       "studyType" : "B.A.",
       "startDate" : "1994-08-31",
@@ -205,6 +206,7 @@
     },
     {
       "institution" : "Rice University",
+      "url": "https://www.rice.edu",
       "area" : "Studio Art",
       "studyType" : "B.A.",
       "startDate" : "1994-08-31",
@@ -212,6 +214,7 @@
     },
     {
       "institution" : "Louisiana School for Math, Science and the Arts",
+      "url": "https://www.lsmsa.edu",
       "area" : "Arts and Math double-focused",
       "studyType" : "High School Diploma",
       "startDate" : "1992-12-31",

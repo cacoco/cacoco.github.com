@@ -561,8 +561,8 @@ footer: false
             <li>
               <div class="year pull-left">1994 1999</div>
               <div class="description pull-right">
-                <h3>Rice University</h3>
-                <div class="where"></div>
+                <h3><a href="https://www.rice.edu" target="_blank">Rice University</a></h3>
+                <div class="where">Houston, TX</div>
                 <p><i class= "fas fa-graduation-cap ico"></i> B.A.</p>
                 <p>Physics (Space Physics Option)</p>
               </div>
@@ -570,8 +570,8 @@ footer: false
             <li>
               <div class="year pull-left">1994 1999</div>
               <div class="description pull-right">
-                <h3>Rice University</h3>
-                <div class="where"></div>
+                <h3><a href="https://www.rice.edu" target="_blank">Rice University</a></h3>
+                <div class="where">Houston, TX</div>
                 <p><i class= "fas fa-graduation-cap ico"></i> B.A.</p>
                 <p>Studio Art</p>
               </div>
@@ -579,8 +579,8 @@ footer: false
             <li>
               <div class="year pull-left">1992 1994</div>
               <div class="description pull-right">
-                <h3>Louisiana School for Math, Science and the Arts</h3>
-                <div class="where"></div>
+                <h3><a href="https://www.lsmsa.edu" target="_blank">Louisiana School for Math, Science and the Arts</a></h3>
+                <div class="where">Natchitoches, LA</div>
                 <p><i class= "fas fa-graduation-cap ico"></i> High School Diploma</p>
                 <p>Arts and Math double-focused</p>
               </div>
