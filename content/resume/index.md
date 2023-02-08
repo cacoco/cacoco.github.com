@@ -62,7 +62,7 @@ footer: false
                   <div class="where">
                     Twitter
                     <div class="pull-right">
-                      San Francisco Bay Area
+                      San Francisco, CA
                     </div>
                   </div>
                   <div class="address">
@@ -86,7 +86,7 @@ footer: false
                   <div class="where">
                     Twitter
                     <div class="pull-right">
-                      San Francisco Bay Area
+                      San Francisco, CA
                     </div>
                   </div>
                   <div class="address">
@@ -110,7 +110,7 @@ footer: false
                   <div class="where">
                     Twitter
                     <div class="pull-right">
-                      San Francisco Bay Area
+                      San Francisco, CA
                     </div>
                   </div>
                   <div class="address">
@@ -134,7 +134,7 @@ footer: false
                   <div class="where">
                     Twitter
                     <div class="pull-right">
-                      San Francisco Bay Area
+                      San Francisco, CA
                     </div>
                   </div>
                   <div class="address">
@@ -158,7 +158,7 @@ footer: false
                   <div class="where">
                     Twitter
                     <div class="pull-right">
-                      San Francisco Bay Area
+                      San Francisco, CA
                     </div>
                   </div>
                   <div class="address">
@@ -181,6 +181,9 @@ footer: false
                 <div class="details">
                   <div class="where">
                     Flite
+                    <div class="pull-right">
+                      San Francisco, CA
+                    </div>
                   </div>
                   <div class="address">
                     <a href="https:&#x2F;&#x2F;www.linkedin.com&#x2F;company&#x2F;flite&#x2F;" target= "_blank"><i class="fas fa-globe ico"></i> https:&#x2F;&#x2F;www.linkedin.com&#x2F;company&#x2F;flite&#x2F;</a>
@@ -247,6 +250,9 @@ footer: false
                 <div class="details">
                   <div class="where">
                     GameSpot
+                    <div class="pull-right">
+                      San Francisco, CA
+                    </div>
                   </div>
                   <div class="address">
                     <a href="https:&#x2F;&#x2F;www.linkedin.com&#x2F;company&#x2F;gamespot&#x2F;" target= "_blank"><i class="fas fa-globe ico"></i> https:&#x2F;&#x2F;www.linkedin.com&#x2F;company&#x2F;gamespot&#x2F;</a>
@@ -268,6 +274,9 @@ footer: false
                 <div class="details">
                   <div class="where">
                     Apple Computer, Inc.
+                    <div class="pull-right">
+                      Cupertino, CA
+                    </div>
                   </div>
                   <div class="address">
                     <a href="https:&#x2F;&#x2F;www.linkedin.com&#x2F;company&#x2F;apple&#x2F;" target= "_blank"><i class="fas fa-globe ico"></i> https:&#x2F;&#x2F;www.linkedin.com&#x2F;company&#x2F;apple&#x2F;</a>
@@ -289,6 +298,9 @@ footer: false
                 <div class="details">
                   <div class="where">
                     Vignette, Corp.
+                     <div class="pull-right">
+                      San Francisco, CA
+                     </div>
                   </div>
                   <div class="address">
                     <a href="https:&#x2F;&#x2F;www.linkedin.com&#x2F;company&#x2F;vignette&#x2F;" target= "_blank"><i class="fas fa-globe ico"></i> https:&#x2F;&#x2F;www.linkedin.com&#x2F;company&#x2F;vignette&#x2F;</a>
@@ -310,6 +322,9 @@ footer: false
                 <div class="details">
                   <div class="where">
                     Epicentric, Inc.
+                     <div class="pull-right">
+                      San Francisco, CA
+                     </div>
                   </div>
                   <div class="address">
                     <a href="https:&#x2F;&#x2F;www.linkedin.com&#x2F;company&#x2F;epicentric&#x2F;" target= "_blank"><i class="fas fa-globe ico"></i> https:&#x2F;&#x2F;www.linkedin.com&#x2F;company&#x2F;epicentric&#x2F;</a>
@@ -331,6 +346,9 @@ footer: false
                 <div class="details">
                   <div class="where">
                     Context Integration
+                    <div class="pull-right">
+                      South San Francisco, CA
+                    </div>
                   </div>
                   <div class="address">
                     <a href="https:&#x2F;&#x2F;www.linkedin.com&#x2F;company&#x2F;contextworld&#x2F;" target= "_blank"><i class="fas fa-globe ico"></i> https:&#x2F;&#x2F;www.linkedin.com&#x2F;company&#x2F;contextworld&#x2F;</a>
@@ -353,7 +371,7 @@ footer: false
                   <div class="where">
                     Rice University Space Physics &amp; Astronomy Department
                     <div class="pull-right">
-                      Houston, Texas
+                      Houston, TX
                     </div>
                   </div>
                   <div class="address">
