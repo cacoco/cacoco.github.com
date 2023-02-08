@@ -212,7 +212,7 @@
     },
     {
       "institution" : "Louisiana School for Math, Science and the Arts",
-      "area" : "Arts and Science double-focused",
+      "area" : "Arts and Math double-focused",
       "studyType" : "High School Diploma",
       "startDate" : "1992-12-31",
       "endDate" : "1994-12-31"
@@ -251,7 +251,7 @@
       "name" : "Twitter goes to #NSBE42",
       "publisher" : "Twitter, Inc.",
       "releaseDate" : "2016-03-31",
-      "summary" : "Twitter goes to #NSBE42",
+      "summary" : "A wrap-up of Twitter Engineering at the #NSBE42 conference.",
       "url" : "https://blog.twitter.com/engineering/en_us/topics/insights/2016/twitter-goes-to-nsbe42"
     },
     {

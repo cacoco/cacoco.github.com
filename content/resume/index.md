@@ -436,7 +436,7 @@ blockquote,
                   <div class="job-details col-xs-11">
                     <div class="profession">Sr. Staff Software Engineer</div>
                     <div class="description">
-                      Software engineer working at a Principal level across the company, primarily in the Platform (infrastructure) organization. Throughout my time at Twitter and in my various roles, I have actively focused on making a positive impact, including:<br/><br/><a href="https://twitter.com/blackbirds">@Blackbirds</a> Employee Resource Group Lead [2015-2016].<br/><br/>Volunteer and volunteer coordinator - <a href="https://www.stanthonysf.org/services/tech-lab/">Tenderloin Technology Lab at St. Anthony's</a> [2012 - 2016].<br/><br/>Twitter Engineering Mentor Program, New Hire & Intern mentor.<br/><br/>Twitter Open Source Shepherd and Technical Design Shepherd for many infrastructure and product projects.<br/><br/>Founding member of Engineering Interview Process standardization ("Luna" Process) and founding interview shepherd (+1 reviewer model). Luna Process course instructor for new hires.<br/><br/>Multiple-time attendee to conferences for recruiting and candidate interviewing on behalf of multiple teams (Tapia, NSBE, Grace Hopper).<br/><br/>Twitter Earlybird Camp interviewer, mentor & judge, Twitter #FirstFlight interviewer, panelist & Twitter Academy cultural mentor.<br/><br/>Introduction to <a href="https://github/twitter/finatra">Finatra</a> course instructor.<br/><br/>Open source at Twitter course material reviewer and instructor.<br/><br/>Member of the Twitter Technical Architecture Group (TAG).<br/><br/>Co-chair, member, and multiple working group leader of the Platform Infrastructure senior IC Group (Platforum).<br/><br/>Member of the Twitter Engineering Migrations Working Group (MWG); helped plan, execute, and track technology migrations across engineering.<br/><br/>Constant cross-team work to improve Developer Experience and increase developer productivity.<br/><br/>A recognized leader in the area of JVM logging technologies.<br/><br/>Supported thousands of internal and external customers of the Finatra framework; frequent contributor to other teams' projects, and a champion of testing and writing tests.
+                      Software engineer working at a Principal level across the company, primarily in the Platform (infrastructure) organization. Throughout my time at Twitter and in my various roles, I have actively focused on making a positive impact, including:<br/><br/><a href="https://twitter.com/blackbirds">@Blackbirds</a> Employee Resource Group Lead [2015-2016].<br/><br/>Volunteer and volunteer coordinator - <a href="https://www.stanthonysf.org/services/tech-lab/">Tenderloin Technology Lab at St. Anthony's</a> [2012 - 2016].<br/><br/>Twitter Engineering Mentor Program, New Hire & Intern mentor.<br/><br/>Twitter Open Source Shepherd and Technical Design Shepherd for many infrastructure and product projects.<br/><br/>Founding member of Engineering Interview Process standardization ("Luna" Process) and founding interview shepherd (+1 reviewer model). Luna Process course instructor for new hires.<br/><br/>Multiple-time attendee to conferences for recruiting and candidate interviewing on behalf of multiple teams (Tapia, NSBE, Grace Hopper)&nbsp;[<a href="https://blog.twitter.com/engineering/en_us/topics/insights/2016/twitter-goes-to-nsbe42">1</a>] [<a href="https://twitter.com/judyc/status/568240999409037313">2</a>] [<a href="https://twitter.com/Tapia_con/status/568271071931187200">3</a>] [<a href="https://twitter.com/Blackbirds/status/713034148663824384">4</a>] [<a href="https://twitter.com/Blackbirds/status/713107693360119808">5</a>] [<a href="">6</a>] [<a href="https://twitter.com/gpena/status/713525245680832516">7</a>].<br/><br/>Twitter Earlybird Camp interviewer, mentor & judge, Twitter #FirstFlight interviewer, panelist & Twitter Academy cultural mentor.<br/><br/>Introduction to <a href="https://github/twitter/finatra">Finatra</a> course instructor.<br/><br/>Open source at Twitter course material reviewer and instructor.<br/><br/>Member of the Twitter Technical Architecture Group (TAG).<br/><br/>Co-chair, member, and multiple working group leader of the Platform Infrastructure senior IC Group (Platforum).<br/><br/>Member of the Twitter Engineering Migrations Working Group (MWG); helped plan, execute, and track technology migrations across engineering.<br/><br/>Constant cross-team work to improve Developer Experience and increase developer productivity.<br/><br/>A recognized leader in the area of JVM logging technologies.<br/><br/>Supported thousands of internal and external customers of the Finatra framework; frequent contributor to other teams' projects, and a champion of testing and writing tests.
                     </div>
                   </div>
                 </div>
@@ -532,7 +532,7 @@ blockquote,
                   <div class="job-details col-xs-11">
                     <div class="profession">Technical Lead Data API Team</div>
                     <div class="description">
-                      Architect and Senior Engineer for <a href="https://blog.twitter.com/official/en_us/a/2012/coming-soon-nielsen-twitter-tv-rating.html">Nielsen Twitter TV Rating (NTTR) System</a> ("Project Kingfisher").<br/><br/>Led requirements gathering with Nielsen -- functioning as PM, and TL through the first 3 phases of the project. The team eventually expanded to 4 full-time engineers, a PM, TPM, and a partner engineer.<br/><br/>Project expanded to other partners in different global markets: Japan, Italy, Spain, Great Britain, Australia, and France in addition to Nielsen in the US.<br/><br/>The design is a self-repairing task system that ingested Tweet IDs about particular TV shows in a market from partners. These came in hourly buckets for reporting which the system would use to then crank over Twitter's engagement data on each Tweet to return anonymized hourly bucketed information on authors and user engagements. <br/><br/>The system maintained a "sandbox" set of endpoints which were the first to be rolled with updates such that partners could validate against incoming changes without affecting production workloads.<br/><br/>The project included creating one of the first Scala clients for the internal Blobstore (internal AWS S3 equivalent)<br/><br/>Also included creating one of the first Scala clients to the internal "NoSQL" K/V store: <a href="https://www.wired.com/2014/04/twitter-manhattan/">Manhattan</a><br/><br/>Architect and Senior Engineer for Twitter 2014 Midterm Election framework powering the 2014 Midterm election dashboard: https://blog.twitter.com/en_us/a/2014/introducing-the-twitter-us-2014-election-website.<br/><br/>Maintainer of the primary client event ingestion system ("Rufous") which powered all company metrics and ML models.<br/><br/>Performed due diligence on target companies for acquisition.<br/><br/>Created and open-sourced <a href="https://blog.twitter.com/engineering/en_us/a/2015/finatra-20-the-fast-testable-scala-services-framework-that-powers-twitter">v2 of the Finatra framework</a>.<br/><br/>Summer intern mentor.
+                      Architect and Senior Engineer for <a href="https://blog.twitter.com/official/en_us/a/2012/coming-soon-nielsen-twitter-tv-rating.html">Nielsen Twitter TV Rating (NTTR) System</a> ("Project Kingfisher") [<a href="https://martech.org/nielsen-launches-twitter-tv-ratings-potentially-a-key-social-metric-for-advertisers/">8</a>] [<a href="https://www.theverge.com/web/2013/10/7/4811410/nielsen-tv-twitter-rating-starts-today">9</a>] [<a href="https://www.nielsen.com/insights/2013/new-study-confirms-correlation-between-twitter-and-tv-ratings/">10</a>].<br/>&emsp;&mdash;&nbsp;Led requirements gathering with Nielsen company, SocialGuide [<a href="https://www.forbes.com/sites/michaelhumphrey/2012/11/12/nielsen-acquires-social-tv-metrics-company-soc">11</a>] -- functioning as PM, and TL through the first 3 phases of the project. The team eventually expanded to 4 full-time engineers, a PM, TPM, and a partner engineer.<br/>&emsp;&mdash;&nbsp;Project expanded to other partners in different global markets: Japan, Italy, Spain, Great Britain, Australia, and France in addition to Nielsen in the US&nbsp;[<a href="https://www.digitaltveurope.com/2014/10/02/kantar-media-readies-twitter-tv-ratings-tools/">12</a>] [<a href="https://thenextweb.com/news/twitter-tv-ratings-heading-to-japan-next-year-in-move-to-attract-more-advertisers]">13</a>].<br/>&emsp;&mdash;&nbsp;The design is a self-repairing task system that ingested Tweet IDs about particular TV shows in a market from partners. These came in hourly buckets for reporting which the system would use to then crank over Twitter's engagement data on each Tweet to return anonymized hourly bucketed information on authors and user engagements. <br/>&emsp;&mdash;&nbsp;The system maintained a "sandbox" set of endpoints which were the first to be rolled with updates such that partners could validate against incoming changes without affecting production workloads.<br/>&emsp;&mdash;&nbsp;The project included creating one of the first Scala clients for the internal Blobstore (internal AWS S3 equivalent)<br/>&emsp;&mdash;&nbsp;Also included creating one of the first Scala clients to the internal "NoSQL" K/V store: "<a href="https://www.wired.com/2014/04/twitter-manhattan/">Manhattan</a>"<br/><br/>Architect and Senior Engineer for Twitter 2014 Midterm Election framework powering the 2014 Midterm election dashboard: https://blog.twitter.com/en_us/a/2014/introducing-the-twitter-us-2014-election-website.<br/><br/>Maintainer of the primary client event ingestion system ("Rufous") which powered all company metrics and ML models.<br/><br/>Performed due diligence on target companies for acquisition&nbsp;[<a href="https://techcrunch.com/2014/04/15/twitter-acquires-longtime-partner-and-social-data-analytics-provider-gnip">14</a>].<br/><br/>Created and open-sourced <a href="https://blog.twitter.com/engineering/en_us/a/2015/finatra-20-the-fast-testable-scala-services-framework-that-powers-twitter">v2 of the Finatra framework</a>.<br/><br/>Summer intern mentor.
                     </div>
                   </div>
                 </div>
@@ -886,28 +886,28 @@ blockquote,
             <h2><i class= "fas fa-code-branch ico"></i> Projects</h2>
             <ul class="list-group">
               <li class="list-group-item">
-                <span style="font-weight:bold">Finatra</span>: Fast, testable, Scala HTTP services built on Twitter-Server and Finagle.
+                <span style="font-weight:bold"><a href="https://github.com/twitter/finatra" target= "_blank">Finatra</a></span>: Fast, testable, Scala HTTP services built on Twitter-Server and Finagle.
               </li>
               <li class="list-group-item">
-                <span style="font-weight:bold">Dodo</span>: The Twitter OSS Project Builder.
+                <span style="font-weight:bold"><a href="https://github.com/twitter/dodo" target= "_blank">Dodo</a></span>: The Twitter OSS Project Builder.
               </li>
               <li class="list-group-item">
-                <span style="font-weight:bold">Dodo-Build</span>: A Github Action for running Dodo: The Twitter OSS Project Builder.
+                <span style="font-weight:bold"><a href="https://github.com/twitter/dodo-build" target= "_blank">Dodo-Build</a></span>: A Github Action for running Dodo: The Twitter OSS Project Builder.
               </li>
               <li class="list-group-item">
-                <span style="font-weight:bold">Twitter Util</span>: Wonderful reusable code from Twitter.
+                <span style="font-weight:bold"><a href="https://github.com/twitter/util" target= "_blank">Twitter Util</a></span>: Wonderful reusable code from Twitter.
               </li>
               <li class="list-group-item">
-                <span style="font-weight:bold">TwitterServer</span>: Twitter-Server defines a template from which services at Twitter are built.
+                <span style="font-weight:bold"><a href="https://github.com/twitter/twitter-server" target= "_blank">TwitterServer</a></span>: Twitter-Server defines a template from which services at Twitter are built.
               </li>
               <li class="list-group-item">
-                <span style="font-weight:bold">Scrooge</span>: A Thrift parser&#x2F;generator.
+                <span style="font-weight:bold"><a href="https://github.com/twitter/scrooge" target= "_blank">Scrooge</a></span>: A Thrift parser&#x2F;generator.
               </li>
               <li class="list-group-item">
-                <span style="font-weight:bold">Finagle</span>: A fault tolerant, protocol-agnostic RPC system.
+                <span style="font-weight:bold"><a href="https://github.com/twitter/finagle" target= "_blank">Finagle</a></span>: A fault tolerant, protocol-agnostic RPC system.
               </li>
               <li class="list-group-item">
-                <span style="font-weight:bold">clj-ua</span>: A user-agent parser in clojure.
+                <span style="font-weight:bold"><a href="https://github.com/cacoco/clj-ua" target= "_blank">clj-ua</a></span>: A user-agent parser in clojure.
               </li>
             </ul>
           </div>
@@ -917,8 +917,7 @@ blockquote,
           <div class="box clearfix">
             <h2><i class="fas fa-bullseye ico"></i> Contact</h2>
             <div class="contact-item">
-              <div class="icon pull-left text-center"><span class="fas fa-map-marker fa-fw"></span></div>
-              
+              <div class="icon pull-left text-center"><span class="fas fa-map-marker fa-fw"></span></div>          
               <div class="title only  pull-right">San Francisco, CA US</div>
             </div>
             <div class="contact-item">
@@ -968,7 +967,7 @@ blockquote,
                   <h3>Louisiana School for Math, Science and the Arts</h3>
                   <div class="where"></div>
                   <p><i class= "fas fa-graduation-cap ico"></i> High School Diploma</p>
-                  <p>Arts and Science double-focused</p>
+                  <p>Arts and Math double-focused</p>
                 </div>
               </li>
             </ul>
@@ -1030,6 +1029,9 @@ blockquote,
             <div class="skills clearfix">
               <div class="item-skills">
                   Tools, Technologies &amp; Languages
+                  <span class="skill-level">Senior</span>
+              </div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix">
                   <span class="skill-level">SQL</span>
                   <span class= "skill badge">MySQL</span>
                   <span class= "skill badge">Java</span>
@@ -1057,9 +1059,9 @@ blockquote,
                 <div class="publisher"><i class= "fas fa-bookmark ico"></i> Twitter, Inc.</div>
                 <div class="year">31 March  2016</div>
                 <div class="address">
-                  <a href="https:&#x2F;&#x2F;blog.twitter.com&#x2F;engineering&#x2F;en_us&#x2F;topics&#x2F;insights&#x2F;2016&#x2F;twitter-goes-to-nsbe42" target= "_blank"><i class="fas fa-globe ico"></i> https:&#x2F;&#x2F;blog.twitter.com&#x2F;engineering&#x2F;en_us&#x2F;topics&#x2F;insights&#x2F;2016&#x2F;twitter-goes-to-nsbe42</a>
+                  <a href="https:&#x2F;&#x2F;blog.twitter.com&#x2F;engineering&#x2F;en_us&#x2F;topics&#x2F;insights&#x2F;2016&#x2F;twitter-goes-to-nsbe42" target= "_blank"><i class="fas fa-globe ico"></i> Article Link</a>
                 </div>
-                <p>Twitter goes to #NSBE42</p>
+                <p>A wrap-up of Twitter Engineering at the #NSBE42 conference.</p>
               </div>
             </div>
             <div class="publication panel panel-default">
@@ -1070,7 +1072,7 @@ blockquote,
                 <div class="publisher"><i class= "fas fa-bookmark ico"></i> Twitter, Inc.</div>
                 <div class="year">09 December  2015</div>
                 <div class="address">
-                  <a href="https:&#x2F;&#x2F;blog.twitter.com&#x2F;engineering&#x2F;en_us&#x2F;a&#x2F;2015&#x2F;finatra-20-the-fast-testable-scala-services-framework-that-powers-twitter" target= "_blank"><i class="fas fa-globe ico"></i> https:&#x2F;&#x2F;blog.twitter.com&#x2F;engineering&#x2F;en_us&#x2F;a&#x2F;2015&#x2F;finatra-20-the-fast-testable-scala-services-framework-that-powers-twitter</a>
+                  <a href="https:&#x2F;&#x2F;blog.twitter.com&#x2F;engineering&#x2F;en_us&#x2F;a&#x2F;2015&#x2F;finatra-20-the-fast-testable-scala-services-framework-that-powers-twitter" target= "_blank"><i class="fas fa-globe ico"></i> Article Link</a>
                 </div>
                 <p>Finatra is a framework for easily building API services on top of Finagle and TwitterServer.</p>
               </div>
