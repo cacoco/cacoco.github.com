@@ -1122,7 +1122,7 @@ blockquote,
             <blockquote>
               <div>Chris is an excellent developer and architect, consistently implementing best practices in his work. When I first worked with him, we had to designed a complex, scalable system with few resources in limited time. We worked effectively as a team, receiving CNET Inventor Awards for work leading to patents. I have to attribute part of that success to Chris' ability to challenge me to clearly communicate my solutions. It's clear that Chris' drive pushes him to constantly grow so that his best work always improves with time. I would be glad to work with Chris again.</div>
               <footer>
-                <a href="" target= "_blank">Edmond Meinfelder</a>
+                <a href="https://www.linkedin.com/in/meinfelder/" target= "_blank">Edmond Meinfelder</a>
               </footer>
             </blockquote><br>
           </div>
