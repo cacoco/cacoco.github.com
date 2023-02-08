@@ -440,7 +440,12 @@ footer: false
             <div class="job clearfix">
               <div class="row">
                 <div class="details">
-                  <div class="where">Ultimate Impact</div>
+                  <div class="where">
+                    Ultimate Impact
+                    <div class="pull-right">
+                      San Francisco Bay Area
+                    </div>
+                  </div>
                   <div class="address">
                     <a href="https:&#x2F;&#x2F;ultimate-impact.org&#x2F;" target= "_blank"><i class="fas fa-globe ico"></i> https:&#x2F;&#x2F;ultimate-impact.org&#x2F;</a>
                   </div>
@@ -459,7 +464,12 @@ footer: false
             <div class="job clearfix">
               <div class="row">
                 <div class="details">
-                  <div class="where">Code2040</div>
+                  <div class="where">
+                    Code2040
+                    <div class="pull-right">
+                      San Francisco, CA
+                    </div>
+                  </div>
                   <div class="address">
                     <a href="https:&#x2F;&#x2F;www.code2040.org&#x2F;" target= "_blank"><i class="fas fa-globe ico"></i> https:&#x2F;&#x2F;www.code2040.org&#x2F;</a>
                   </div>
@@ -478,7 +488,12 @@ footer: false
             <div class="job clearfix">
               <div class="row">
                 <div class="details">
-                  <div class="where">Tenderloin Technology Lab</div>
+                  <div class="where">
+                    Tenderloin Technology Lab
+                    <div class="pull-right">
+                      San Francisco, CA
+                    </div>
+                  </div>
                   <div class="address">
                     <a href="https:&#x2F;&#x2F;www.stanthonysf.org&#x2F;services&#x2F;tech-lab&#x2F;" target= "_blank"><i class="fas fa-globe ico"></i> https:&#x2F;&#x2F;www.stanthonysf.org&#x2F;services&#x2F;tech-lab&#x2F;</a>
                   </div>
@@ -489,7 +504,7 @@ footer: false
                 <div class="job-details col-xs-11">
                   <div class="profession">Personal Tutor</div>
                   <div class="description">
-                    Helping adults answer a range of computer-related questions from creating resumes, to filling out job or housing applications, setting up social-media accounts, and scanning documents.
+                    Helped adults answer a range of computer-related questions from creating resumes, filling out job or housing applications, setting up social-media accounts, and scanning documents.
                   </div>
                 </div>
               </div>
@@ -497,7 +512,12 @@ footer: false
             <div class="job clearfix">
               <div class="row">
                 <div class="details">
-                  <div class="where">Code2040</div>
+                  <div class="where">
+                    Code2040
+                    <div class="pull-right">
+                      San Francisco, CA
+                    </div>
+                  </div>
                   <div class="address">
                     <a href="https:&#x2F;&#x2F;www.code2040.org&#x2F;" target= "_blank"><i class="fas fa-globe ico"></i> https:&#x2F;&#x2F;www.code2040.org&#x2F;</a>
                   </div>
