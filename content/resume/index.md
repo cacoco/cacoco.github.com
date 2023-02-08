@@ -374,7 +374,7 @@ footer: false
         </div>
         <!-- AWARDS -->
         <div class="box">
-          <h2><i class="fas fa-certificate ico"></i> Awards</h2>
+          <h2><i class="fas fa-certificate ico"></i> Patents</h2>
           <ul id="awards" class="clearfix">
             <li>
               <div class="year pull-left">November  2014</div>
