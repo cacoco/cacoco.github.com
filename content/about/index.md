@@ -10,4 +10,3 @@ I am a [Principal](https://www.linkedin.com/pulse/what-principal-engineer-anyway
 ## Work History
 
 Please take a look at my [resumé](/resume/) or my [LinkedIn profile](https://www.linkedin.com/in/cacoco/).
-
