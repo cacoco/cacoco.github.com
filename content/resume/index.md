@@ -623,7 +623,7 @@ footer: false
                 <h3><a href="https://www.lsmsa.edu" target="_blank">Louisiana School for Math, Science and the Arts</a></h3>
                 <div class="where">Natchitoches, LA</div>
                 <p><i class= "fas fa-graduation-cap ico"></i> High School Diploma</p>
-                <p>Arts and Math double-focused</p>
+                <p>Arts and Sciences double-focused</p>
               </div>
             </li>
           </ul>
