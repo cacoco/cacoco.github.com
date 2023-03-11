@@ -27,7 +27,7 @@ footer: false
         <!-- ABOUT ME -->
         <div class="box">
           <h2><i class="fas fa-user ico"></i> About</h2>
-          <p>I like to build scalable things.<br/><br/>And drink coffee.<br/><br/>I am a Principal-level Software Engineer located in San Francisco, CA. I have many years of experience specializing in Distributed Systems, Platform Infrastructure, API Design & Frameworks, and Open Source Software. I pride myself on mentorship and I get a great sense of accomplishment from helping others realize they belong.</p>
+          <p>I like to build scalable things.<br/><br/>And drink coffee.<br/><br/>I am a Principal-level Software Engineer located in San Francisco, CA. I have many years of experience specializing in Distributed Systems, Platform Infrastructure, API Frameworks & Design, and Open Source Software. I pride myself on mentorship and I get a great sense of accomplishment from helping others realize they belong.</p>
         </div>
         <!-- WORK EXPERIENCE -->
         <div class="box">
@@ -398,7 +398,7 @@ footer: false
           <h2><i class="fas fa-certificate ico"></i> Patents</h2>
           <ul id="awards" class="clearfix">
             <li>
-              <div class="year pull-left">November  2014</div>
+              <div class="year pull-left">December  2009</div>
               <div class="description pull-right">
                 <h3>System and Method for a Delivery Network Architecture</h3>
                 <p><i class="fas fa-trophy ico"></i>&nbsp;<a href="https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/20090327079" target="_blank">US Patent No. 20090327079</a></p>
