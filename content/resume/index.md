@@ -27,7 +27,7 @@ footer: false
         <!-- ABOUT ME -->
         <div class="box">
           <h2><i class="fas fa-user ico"></i> About</h2>
-          <p>I like to build scalable things.<br/><br/>And drink coffee.<br/><br/>I am a Principal-level Software Engineer located in San Francisco, CA. I have many years of experience specializing in Distributed Systems, Platform Infrastructure, API Frameworks & Design, and Open Source Software. I pride myself on mentorship and I get a great sense of accomplishment from helping others realize they belong.</p>
+          <p>I like to build scalable things.<br/><br/>And drink coffee.<br/><br/>I am a Principal-level Software Engineer located in San Francisco, CA. I have many years of experience specializing in Distributed Systems, Platform Infrastructure, API Frameworks & Design, and Open Source Software. I pride myself on mentorship and enjoy the feeling of accomplishment from helping others realize they belong.</p>
         </div>
         <!-- WORK EXPERIENCE -->
         <div class="box">
