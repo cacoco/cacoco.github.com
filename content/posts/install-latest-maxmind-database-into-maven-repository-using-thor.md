@@ -3,6 +3,7 @@ title: "Install Latest Maxmind Database Into Maven Repository Using Thor"
 date: "2013-05-04"
 draft: false
 tags: ["maven", "thor", "maxmind"]
+header: true
 ---
 
 In a previous life, my company used the [MaxMind](https://www.maxmind.com/en/home) GeoIP database for geo-location information based on client IP addresses. We packaged the .dat as a JAR included on the classpath for use in instantiating a [com.maxmind.geoip.LookupService](https://github.com/maxmind/geoip-api-java/blob/master/source/com/maxmind/geoip/LookupService.java) object which we wrapped with a custom service.

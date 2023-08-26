@@ -2,6 +2,7 @@
 title: "Childhood"
 date: "2012-10-27"
 draft: false
+header: true
 ---
 
 #### Childhood Flow Chart

@@ -1,4 +1,4 @@
-{{ if .Params.footer }}
+{{ if or (.Params.footer) (eq .Title "Posts") (eq .Title "Tags") }}
 <footer class="footer mt-auto py-3 bg-light">
   <div class="container" style="text-align: center;">
     <p class="text-muted">

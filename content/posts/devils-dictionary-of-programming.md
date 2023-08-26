@@ -2,6 +2,7 @@
 title: "Devils Dictionary of Programming"
 date: "2013-11-03"
 draft: false
+header: true
 ---
 
 [Devil's Dictionary of Programming](https://programmingisterrible.com/post/65781074112/devils-dictionary-of-programming) courtesy of [https://programmingisterrible.com](https://programmingisterrible.com/)

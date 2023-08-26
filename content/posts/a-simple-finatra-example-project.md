@@ -3,6 +3,7 @@ title: "A Simple Finatra Example Project"
 date: "2015-07-12T21:50:36-07:00"
 draft: false
 tags: ["Finatra", "Scala", "Twitter"]
+header: true
 ---
 
 Over the past year-and-a-half I've helped to develop a [Scala](https://www.scala-lang.org/) framework for writing services on-top of parts of the Twitter stack, namely [TwitterServer](https://github.com/twitter/twitter-server) and [Finagle](https://github.com/twitter/finagle). This framework is called [Finatra](https://github.com/twitter/finatra) and we've recently published a [second milestone release](https://oss.sonatype.org/#nexus-search;gav~com.twitter.finatra~~2.0.0.M2~~) of the completely-rebuilt-from-the-ground-up version 2.x.

@@ -3,6 +3,7 @@ title: "Foggy City"
 date: 2023-02-03T15:48:25-08:00
 draft: false
 tags: ["san francisco", "fog"]
+header: true
 ---
 
 {{< rawhtml >}}

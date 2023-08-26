@@ -2,6 +2,7 @@
 title: "Hibi No Neiro"
 date: "2013-04-01"
 draft: false
+header: true
 ---
 
 SOUR '日々の音色 (Hibi no neiro)'

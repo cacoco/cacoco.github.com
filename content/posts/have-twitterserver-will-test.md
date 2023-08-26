@@ -3,6 +3,7 @@ title: "Have TwitterServer Will Test"
 date: "2016-02-01"
 draft: false
 tags: ["TwitterServer", "finatra", "scala", "Twitter"]
+header: true
 ---
 
 Did you know you can use [Finatra](https://twitter.github.io/finatra)’s [Feature Tests](https://twitter.github.io/finatra/user-guide/testing/feature_tests.html) utilities for testing any [TwitterServer](https://twitter.github.io/twitter-server/)? That is, you can start a locally running server and write tests which issue requests to it as long the server extends from `c.t.server.TwitterServer`. It doesn’t specifically have to be a Finatra server.

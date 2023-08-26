@@ -19,6 +19,8 @@
 </div>
 {{ else if eq .Title "Resume" }}
 {{ .Content }}
+{{ else if eq .Title "GitHub" }}
+{{ .Content }}
 {{ else }}
 <div class="container">
   <h1>{{ .Title | markdownify}}</h1>

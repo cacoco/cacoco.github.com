@@ -3,6 +3,7 @@ title: "Fizzbuzz"
 date: "2012-07-11"
 draft: false
 tags: ["fizzbuzz", "clojure"]
+header: true
 ---
 
 *Birds do it. Bees do it. Even educated fleas do it. So let's do it.*

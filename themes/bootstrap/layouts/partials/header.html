@@ -1,4 +1,4 @@
-{{ if .Params.header }}
+{{ if or (.Params.header) (eq .Title "Posts") (eq .Title "Tags") }}
 <nav class="navbar navbar-expand navbar-dark fixed-top bg-dark">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -13,7 +13,7 @@
         <li class="nav-item"><a class="nav-link active" href="/about/"><i class="bi bi-signpost-2" style="color: white;"></i>&nbsp;About</a></li>
         <li class="nav-item"><a class="nav-link active" href="/posts/"><i class="bi bi-card-list" style="color: white;"></i>&nbsp;Blog</a></li>
         <li class="nav-item"><a class="nav-link active" href="/tags/"><i class="bi bi-tags" style="color: white;"></i>&nbsp;Tags</a></li>
-        <li class="nav-item"><a class="nav-link active" href="https://github.com/cacoco"><i class="bi bi-github" style="color: white;"></i></a></li>
+        <li class="nav-item"><a class="nav-link active" href="https://github.com/cacoco"><i class="bi bi-github" style="color: white;"></i>&nbsp;GitHub</a></li>
       </ul>
       <div class="navbar-text navbar-right">
         <i class="bi bi-asterisk" style="color: white;"></i><span style="color: white;">&nbsp;<a href="https://angstrom.io"><span>&#229;</span>ngstr<span>&#246;</span>m.io</a>&nbsp;</span>
