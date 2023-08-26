@@ -1,7 +1,7 @@
 ---
-title: ångstromio-util
+title: ångströmio-util
 url: /github/angstromio/angstromio-util/
-description: ångstromio-util
+description: ångströmio-util
 header: true
 footer: true
 ---
