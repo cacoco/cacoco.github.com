@@ -36,6 +36,30 @@ footer: false
               <div class="row">
                 <div class="details">
                   <div class="where">
+                    Stealth Mode Company
+                    <div class="pull-right">
+                      San Francisco Bay Area, CA
+                    </div>
+                  </div>
+                  <div class="address">
+                    <a href="https:&#x2F;&#x2F;www.linkedin.com&#x2F;company&#x2F;stealthmode14&#x2F;" target= "_blank"><i class="fas fa-globe ico"></i> https:&#x2F;&#x2F;www.linkedin.com&#x2F;company&#x2F;stealthmode14&#x2F;</a>
+                  </div>
+                  <div class="year">November 2023 - Present</div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="job-details col-xs-11">
+                  <div class="profession">Principal Engineer, Infrastructure Software Lead</div>
+                  <div class="description">
+                    Software Engineer in charge of infrastructure software at early stage startup.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="job clearfix">
+              <div class="row">
+                <div class="details">
+                  <div class="where">
                     Twitter
                     <div class="pull-right">
                       San Francisco, CA
