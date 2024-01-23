@@ -49,9 +49,9 @@ footer: false
               </div>
               <div class="row">
                 <div class="job-details col-xs-11">
-                  <div class="profession">Principal Engineer, Infrastructure Software Lead</div>
+                  <div class="profession">Principal Engineer, Software Infrastructure Lead</div>
                   <div class="description">
-                    Software Engineer in charge of infrastructure software at early stage startup.
+                    Leading software infrastructure at early stage startup.
                   </div>
                 </div>
               </div>
