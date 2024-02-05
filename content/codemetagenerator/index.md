@@ -2,6 +2,9 @@
 This project is a [CodeMeta](https://codemeta.github.io/) project description generator written in [Go](https://go.dev/). View the [project on GitHub](https://github.com/cacoco/codemetagenerator).
 
 ## Installation
+---
+
+### Manually
 To install this project, you need to have [Go](https://go.dev/) installed on your machine. Once you have Go installed, you can clone this repository and build the project.
 
 ```bash
@@ -12,7 +15,16 @@ go build
 
 Then install via `go install`
 
+### Via [Homebrew](https://brew.sh/)
+
+```bash
+brew tap cacoco/tap
+brew install codemetagenerator
+```
+
 ## Usage
+---
+
 To run this project, you can use the following commands:
 
 ```bash 
@@ -92,10 +104,14 @@ codemetagenerator generate
 The syntax follows the `sjson` ([https://github.com/tidwall/sjson](https://github.com/tidwall/sjson)) [Path Syntax](https://github.com/tidwall/sjson?tab=readme-ov-file#path-syntax).
 
 ## CodeMeta
+---
+
 [CodeMeta](https://codemeta.github.io) is a [JSON-LD](https://json-ld.org/) file format used to describe software projects. See a [full example](https://github.com/ropensci/codemetar/blob/main/codemeta.json).
 
 
 ## License
+---
+
 [Apache License 2.0](https://spdx.org/licenses/Apache-2.0.html)
 
 Copyright 2024 [Christopher Coco](https://angstrom.io/about)
