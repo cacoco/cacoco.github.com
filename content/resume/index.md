@@ -14,10 +14,10 @@ footer: false
         <div id="photo-header" class="text-center">
           <!-- PHOTO (AVATAR) -->
           <div id="photo">
-            <img src="https:&#x2F;&#x2F;angstrom.io&#x2F;images&#x2F;cacoco-small.png" alt="avatar">
+            <img src="/images&#x2F;cacoco-hd.png" alt="avatar">
           </div>
-          <div id="text-header" style="margin-top: 10px;">
-            <h1>Christopher Coco<br><span>Senior Staff Software Engineer</span></h1>
+          <div id="text-header" style="margin-top: 5px;">
+            <h1>Christopher Coco<br><span>Principal Software Engineer</span></h1>
           </div>
         </div>
       </div>
@@ -27,7 +27,7 @@ footer: false
         <!-- ABOUT ME -->
         <div class="box">
           <h2><i class="fas fa-user ico"></i> About</h2>
-          <p>I like to build scalable things.<br/><br/>And drink coffee.<br/><br/>I am a Principal-level Software Engineer located in San Francisco, CA. I have many years of experience specializing in Distributed Systems, Platform Infrastructure, API Frameworks & Design, and Open Source Software. I pride myself on mentorship and enjoy the feeling of accomplishment from helping others realize they belong.</p>
+          <p>I like to build scalable things.<br/><br/>And drink coffee.<br/><br/>I am a Principal Software Engineer located in San Francisco, CA. I have many years of experience specializing in Distributed Systems, Platform Infrastructure, API Frameworks & Design, and Open Source Software. I pride myself on mentorship and enjoy the feeling of accomplishment from helping others realize they belong.</p>
         </div>
         <!-- WORK EXPERIENCE -->
         <div class="box">
@@ -36,13 +36,13 @@ footer: false
               <div class="row">
                 <div class="details">
                   <div class="where">
-                    Stealth Mode Company
+                    Verrus
                     <div class="pull-right">
                       San Francisco Bay Area, CA
                     </div>
                   </div>
                   <div class="address">
-                    <a href="https:&#x2F;&#x2F;www.linkedin.com&#x2F;company&#x2F;stealthmode14&#x2F;" target= "_blank"><i class="fas fa-globe ico"></i> https:&#x2F;&#x2F;www.linkedin.com&#x2F;company&#x2F;stealthmode14&#x2F;</a>
+                    <a href="https:&#x2F;&#x2F;www.linkedin.com&#x2F;company&#x2F;verrus&#x2F;mycompany&#x2F;" target= "_blank"><i class="fas fa-globe ico"></i> https:&#x2F;&#x2F;www.linkedin.com&#x2F;company&#x2F;verrus&#x2F;</a>
                   </div>
                   <div class="year">November 2023 - Present</div>
                 </div>
@@ -51,7 +51,31 @@ footer: false
                 <div class="job-details col-xs-11">
                   <div class="profession">Principal Engineer, Software Infrastructure Lead</div>
                   <div class="description">
-                    Leading software infrastructure at early stage startup.
+                    Leading infrastructure development at Verrus.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="job clearfix">
+              <div class="row">
+                <div class="details">
+                  <div class="where">
+                    Personal goal pursuit
+                    <div class="pull-right">
+                      San Francisco Bay Area, CA
+                    </div>
+                  </div>
+                  <div class="address">
+                    <a href="#" target= "_blank"><i class="fas fa-globe ico"></i> Home</a>
+                  </div>
+                  <div class="year">November 2022 - November 2023</div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="job-details col-xs-11">
+                  <div class="profession">Career Break</div>
+                  <div class="description">
+                    I am currently focused on being a stay-at-home Dad to my young children.
                   </div>
                 </div>
               </div>
