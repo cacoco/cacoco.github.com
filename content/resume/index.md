@@ -441,50 +441,6 @@ footer: false
               </div>
             </div>
         </div>
-        <!-- AWARDS -->
-        <div class="box">
-          <h2><i class="fas fa-certificate ico"></i> Patents</h2>
-          <ul id="awards" class="clearfix">
-            <li>
-              <div class="year pull-left">December  2009</div>
-              <div class="description pull-right">
-                <h3>System and Method for a Delivery Network Architecture</h3>
-                <p><i class="fas fa-trophy ico"></i>&nbsp;<a href="https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/20090327079" target="_blank">US Patent No. 20090327079</a></p>
-                <p/>
-              </div>
-            </li>
-            <li>
-              <div class="year pull-left">January  2013</div>
-              <div class="description pull-right">
-                <h3>Live Updates of Embeddable Units</h3>
-                <p><i class="fas fa-trophy ico"></i>&nbsp;<a href="https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/20130007108" target="_blank">US Patent No. 20130007108</a></p>
-                <p/>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <!-- CERTIFICATES -->
-        <div class="box">
-          <h2><i class="fas fa-file-contract ico"></i>&nbsp;Certificates</h2>
-          <ul id="awards" class="clearfix">
-            <li>
-              <div class="year pull-left">August 2021</div>
-              <div class="description pull-right">
-                <h3>Black Executive Leadership Program</h3>
-                <p><i class="fas fa-stamp ico"></i>&nbsp;<a href="https://www.credly.com/badges/822c231c-6e31-4c80-b361-79272d48c352?source=linked_in_profile" target="_blank">McKinsey&nbsp;&&nbsp;Company</a></p>
-                <p/>
-              </div>
-            </li>
-            <li>
-              <div class="year pull-left">August 2000</div>
-              <div class="description pull-right">
-                <h3>Sun Certified Programmer for the Java 2 Platform</h3>
-                <p><i class="fas fa-stamp ico"></i>&nbsp;<a href="https://angstrom.io/images/SunCertJavaProgrammer.pdf" target="_blank">Sun&nbsp;Microsystems</a></p>
-                <p/>
-              </div>
-            </li>
-          </ul>
-        </div>
         <!-- VOLUNTEER -->
         <div class="box">
           <h2><i class= "fas fa-users ico"></i> Volunteer</h2>
@@ -585,10 +541,47 @@ footer: false
               </div>
             </div>
         </div>
+      </div>
+      <div class="col-xs-12 col-sm-5">
+        <!-- CONTACT -->
+        <div class="box clearfix">
+          <h2><i class="fas fa-bullseye ico"></i> Contact</h2>
+          <div class="contact-item">
+            <div class="icon pull-left text-center"><span class="fas fa-map-marker fa-fw"></span></div>
+            <div class="title pull-right">Location</div>          
+            <div class="description pull-right">San Francisco, CA US</div>
+          </div>
+          <div class="contact-item">
+            <div class="icon pull-left text-center"><span class="fas fa-envelope fa-fw"></span></div>
+            <div class="title pull-right">Email</div>
+            <div class="description pull-right"><a href="mailto:coco@alumni.rice.edu" target="_blank">coco@alumni.rice.edu</a></div>
+          </div>
+          <div class="contact-item">
+            <div class="icon pull-left text-center"><span class="fas fa-globe fa-fw"></span></div>
+            <div class="title pull-right">Website</div>
+            <div class="description pull-right"><a href="https:&#x2F;&#x2F;angstrom.io">https:&#x2F;&#x2F;angstrom.io</a></div>
+          </div>
+          <div class="contact-item">
+            <div class="icon pull-left text-center"><span class="fab fa-linkedin fa-fw"></span></div>
+            <div class="title pull-right">LinkedIn</div>
+            <div class="description pull-right"><a href="https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;cacoco&#x2F;" target="_blank">https://www.linkedin.com/in/cacoco</a></div>
+          </div>
+          <div class="contact-item">
+            <div class="icon pull-left text-center"><span class="fab fa-github fa-fw"></span></div>
+            <div class="title pull-right">GitHub</div>
+            <div class="description pull-right"><a href="https:&#x2F;&#x2F;github.com&#x2F;cacoco" target="_blank">https://github.com/cacoco</a></div>
+          </div>
+        </div>
         <!-- PROJECTS -->
         <div class="box">
-          <h2><i class= "fas fa-code-branch ico"></i> Projects</h2>
+          <h2><i class="fab fa-fw fa-xl fa-github"></i> GitHub Projects</h2>
           <ul class="list-group">
+            <li class="list-group-item">
+              <span style="font-weight:bold"><a href="https://github.com/cacoco/codemetagenerator" target= "_blank">Codemetagenerator</a></span>: Interactive generator to create a CodeMeta SoftwareSourceCode description written in Go..
+            </li>
+            <li class="list-group-item">
+              <span style="font-weight:bold"><a href=" https://github.com/angstromio" target= "_blank">ångstrom.io</a></span>: A Kotlin application framework and utilities.
+            </li>
             <li class="list-group-item">
               <span style="font-weight:bold"><a href="https://github.com/twitter/finatra" target= "_blank">Finatra</a></span>: Fast, testable, Scala HTTP services built on Twitter-Server and Finagle.
             </li>
@@ -615,33 +608,49 @@ footer: false
             </li>
           </ul>
         </div>
-      </div>
-      <div class="col-xs-12 col-sm-5">
-        <!-- CONTACT -->
-        <div class="box clearfix">
-          <h2><i class="fas fa-bullseye ico"></i> Contact</h2>
-          <div class="contact-item">
-            <div class="icon pull-left text-center"><span class="fas fa-map-marker fa-fw"></span></div>          
-            <div class="title only  pull-right">San Francisco, CA US</div>
-          </div>
-          <div class="contact-item">
-            <div class="icon pull-left text-center"><span class="fas fa-envelope fa-fw"></span></div>
-            <div class="title only pull-right"><a href="mailto:coco@alumni.rice.edu" target="_blank">coco@alumni.rice.edu</a></div>
-          </div>
-          <div class="contact-item">
-            <div class="icon pull-left text-center"><span class="fas fa-globe fa-fw"></span></div>
-            <div class="title only pull-right"><a href="https:&#x2F;&#x2F;angstrom.io">https:&#x2F;&#x2F;angstrom.io</a></div>
-          </div>
-          <div class="contact-item">
-            <div class="icon pull-left text-center"><span class="fab fa-linkedin fa-fw"></span></div>
-            <div class="title pull-right">LinkedIn</div>
-            <div class="description pull-right"><a href="https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;cacoco&#x2F;" target="_blank">cacoco</a></div>
-          </div>
-          <div class="contact-item">
-            <div class="icon pull-left text-center"><span class="fab fa-github fa-fw"></span></div>
-            <div class="title pull-right">GitHub</div>
-            <div class="description pull-right"><a href="https:&#x2F;&#x2F;github.com&#x2F;cacoco" target="_blank">cacoco</a></div>
-          </div>
+        <!-- AWARDS -->
+        <div class="box">
+          <h2><i class="fas fa-certificate ico"></i> Patents</h2>
+          <ul id="awards" class="clearfix">
+            <li>
+              <div class="year pull-left">December  2009</div>
+              <div class="description pull-right">
+                <h3>System and Method for a Delivery Network Architecture</h3>
+                <p><i class="fas fa-trophy ico"></i>&nbsp;<a href="https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/20090327079" target="_blank">US Patent No. 20090327079</a></p>
+                <p/>
+              </div>
+            </li>
+            <li>
+              <div class="year pull-left">January  2013</div>
+              <div class="description pull-right">
+                <h3>Live Updates of Embeddable Units</h3>
+                <p><i class="fas fa-trophy ico"></i>&nbsp;<a href="https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/20130007108" target="_blank">US Patent No. 20130007108</a></p>
+                <p/>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- CERTIFICATES -->
+        <div class="box">
+          <h2><i class="fas fa-file-contract ico"></i>&nbsp;Certifications</h2>
+          <ul id="awards" class="clearfix">
+            <li>
+              <div class="year pull-left">August 2021</div>
+              <div class="description pull-right">
+                <h3>Black Executive Leadership Program</h3>
+                <p><i class="fas fa-stamp ico"></i>&nbsp;<a href="https://www.credly.com/badges/822c231c-6e31-4c80-b361-79272d48c352?source=linked_in_profile" target="_blank">McKinsey&nbsp;&&nbsp;Company</a></p>
+                <p/>
+              </div>
+            </li>
+            <li>
+              <div class="year pull-left">August 2000</div>
+              <div class="description pull-right">
+                <h3>Sun Certified Programmer for the Java 2 Platform</h3>
+                <p><i class="fas fa-stamp ico"></i>&nbsp;<a href="https://angstrom.io/images/SunCertJavaProgrammer.pdf" target="_blank">Sun&nbsp;Microsystems</a></p>
+                <p/>
+              </div>
+            </li>
+          </ul>
         </div>
         <!-- EDUCATION -->
         <div class="box">
