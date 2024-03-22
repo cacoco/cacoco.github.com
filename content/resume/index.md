@@ -36,7 +36,7 @@ footer: false
               <div class="row">
                 <div class="details">
                   <div class="where">
-                    Verrus
+                    Verrus, LLC
                     <div class="pull-right">
                       San Francisco Bay Area, CA
                     </div>
