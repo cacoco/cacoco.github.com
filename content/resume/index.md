@@ -577,7 +577,7 @@ footer: false
           <h2><i class="fab fa-fw fa-xl fa-github"></i> GitHub Projects</h2>
           <ul class="list-group">
             <li class="list-group-item">
-              <span style="font-weight:bold"><a href="https://github.com/cacoco/codemetagenerator" target= "_blank">Codemetagenerator</a></span>: Interactive generator to create a CodeMeta SoftwareSourceCode description written in Go..
+              <span style="font-weight:bold"><a href="https://github.com/cacoco/codemetagenerator" target= "_blank">Codemetagenerator</a></span>: Interactive generator to create a CodeMeta SoftwareSourceCode description written in Go.
             </li>
             <li class="list-group-item">
               <span style="font-weight:bold"><a href=" https://github.com/angstromio" target= "_blank">ångstrom.io</a></span>: A Kotlin application framework and utilities.
