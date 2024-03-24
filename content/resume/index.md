@@ -549,7 +549,7 @@ footer: false
           <div class="contact-item">
             <div class="icon pull-left text-center"><span class="fas fa-map-marker fa-fw"></span></div>
             <div class="title pull-right">Location</div>          
-            <div class="description pull-right">San Francisco, CA US</div>
+            <div class="description pull-right"><a href="https://www.sfgate.com/local/article/snopes-golden-gate-park-sf-photo-fact-check-18547712.php">San Francisco, CA US</a></div>
           </div>
           <div class="contact-item">
             <div class="icon pull-left text-center"><span class="fas fa-envelope fa-fw"></span></div>
